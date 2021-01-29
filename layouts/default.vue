@@ -12,3 +12,9 @@ export default defineComponent({
   name: 'AppsPage',
 })
 </script>
+
+<style lang="scss" scoped>
+.page {
+  height: 100vh;
+}
+</style>

@@ -16,12 +16,10 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .logo {
-  padding: 0.25rem;
-
   a {
     color: inherit;
     font-size: 1.25rem;
-    text-decoration: none;
+    font-weight: bold;
   }
 }
 </style>

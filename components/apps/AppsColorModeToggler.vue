@@ -37,6 +37,7 @@ export default defineComponent({
   cursor: pointer;
   display: flex;
   justify-content: center;
+  margin-left: 2rem;
   padding: 0.25rem;
 }
 </style>
