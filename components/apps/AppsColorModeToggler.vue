@@ -10,8 +10,8 @@
 
 <script>
 import { defineComponent, useContext } from '@nuxtjs/composition-api'
-import MoonIcon from '@/assets/icons/moon.svg?inline'
-import SunIcon from '@/assets/icons/sun.svg?inline'
+import MoonIcon from '@/assets/icons/moon.svg'
+import SunIcon from '@/assets/icons/sun.svg'
 
 export default defineComponent({
   name: 'AppsColorModeToggler',

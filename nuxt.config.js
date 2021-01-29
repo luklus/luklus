@@ -28,7 +28,8 @@ export default {
     '@nuxtjs/composition-api',
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/svg',
+    'nuxt-svg-loader',
+    // '@nuxtjs/svg',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
