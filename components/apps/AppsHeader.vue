@@ -1,7 +1,9 @@
 <template>
   <header class="apps-header">
-    <apps-logo />
-    <apps-color-mode-toggler />
+    <div class="wrap apps-header__wrap">
+      <apps-lang-toggler />
+      <apps-color-mode-toggler />
+    </div>
   </header>
 </template>
 
@@ -15,9 +17,15 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .apps-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &__wrap {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+  }
 }
 </style>
