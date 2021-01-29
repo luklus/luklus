@@ -28,10 +28,17 @@ export default {
     '@nuxtjs/composition-api',
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
+    'nuxt-svg-loader',
+    // '@nuxtjs/svg',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxt/content', '@nuxtjs/pwa', 'nuxt-i18n'],
+
+  colorMode: {
+    preference: 'light',
+    fallback: 'light',
+  },
 
   content: {},
 

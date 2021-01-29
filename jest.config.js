@@ -8,10 +8,12 @@ module.exports = {
   transform: {
     '^.+\\.js$': 'babel-jest',
     '.*\\.(vue)$': 'vue-jest',
+    '^.+\\.svg$': '<rootDir>/svgTransform.js',
   },
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/components/**/*.vue',
     '<rootDir>/pages/**/*.vue',
   ],
+  setupFilesAfterEnv: ['./jest.setup.js'],
 }
