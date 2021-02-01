@@ -20,6 +20,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .apps-footer {
   color: var(--c-gray-900);
+  margin: 2rem 0;
 
   &__wrap {
     align-items: center;
@@ -28,7 +29,6 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-bottom: 2rem;
     padding: 2rem;
 
     p {

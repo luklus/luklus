@@ -16,6 +16,77 @@
         <linkedin-icon />
       </div>
     </base-hero>
+
+    <div class="wrap">
+      <section class="about">
+        <h2>{{ $t('about') }}</h2>
+        <base-paragraph>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
+            repudiandae consectetur quibusdam rerum minima distinctio esse amet,
+            aut eveniet, perspiciatis, nam nesciunt dolorum delectus! Est vitae,
+            omnis culpa officia ullam officiis molestias? Illo ullam eos quaerat
+            ipsum, repudiandae voluptatem vel odio dicta libero deleniti quam
+            iure consectetur praesentium odit veritatis.
+          </p>
+        </base-paragraph>
+
+        <p>Languages</p>
+        <ul>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>Node JS</li>
+          <li>PHP</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+
+        <p>Frameworks</p>
+        <ul>
+          <li>Vue</li>
+          <li>React</li>
+          <li>Angular</li>
+          <li>Express</li>
+          <li>AdonisJS</li>
+          <li>Laravel</li>
+        </ul>
+
+        <p>Others Tools</p>
+        <ul>
+          <li>Axios</li>
+          <li>Vuex</li>
+          <li>NPM</li>
+          <li>Express</li>
+          <li>AdonisJS</li>
+          <li>Laravel</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <section class="about">
+        <h2>Experience</h2>
+        <base-paragraph>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
+            repudiandae consectetur quibusdam rerum minima distinctio esse amet,
+            aut eveniet, perspiciatis, nam nesciunt dolorum delectus! Est vitae,
+            omnis culpa officia ullam officiis molestias? Illo ullam eos quaerat
+            ipsum, repudiandae voluptatem vel odio dicta libero deleniti quam
+            iure consectetur praesentium odit veritatis.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
+            repudiandae consectetur quibusdam rerum minima distinctio esse amet,
+            aut eveniet, perspiciatis, nam nesciunt dolorum delectus! Est vitae,
+            omnis culpa officia ullam officiis molestias? Illo ullam eos quaerat
+            ipsum, repudiandae voluptatem vel odio dicta libero deleniti quam
+            iure consectetur praesentium odit veritatis.
+          </p>
+        </base-paragraph>
+      </section>
+    </div>
   </main>
 </template>
 
@@ -41,7 +112,6 @@ export default defineComponent({
   &__headers {
     h1 {
       font-size: 4rem;
-      margin: 1rem 0;
     }
 
     h2 {
@@ -62,10 +132,27 @@ export default defineComponent({
 
   &__social {
     color: var(--text-secondary);
-    margin: 2rem 0.25rem;
+    margin: 0.25rem;
 
     svg {
       margin-right: 1rem;
+    }
+  }
+}
+
+.about {
+  height: 100vh;
+  padding: 4rem 2rem;
+
+  ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    li {
+      background-color: var(--c-yellow-400);
+      border-radius: 0.25rem;
+      margin: 1rem 1rem 1rem 0;
+      padding: 0.5em 1rem;
     }
   }
 }

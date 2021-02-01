@@ -35,19 +35,22 @@ export default {
   content: {},
 
   i18n: {
+    defaultLocale: 'pl',
+    langDir: 'locales/',
+    lazy: true,
     locales: [
       {
         code: 'en',
+        iso: 'en-US',
         file: 'en-US.js',
       },
       {
         code: 'pl',
+        iso: 'pl-PL',
         file: 'pl-PL.js',
       },
     ],
-    lazy: true,
-    langDir: 'locales/',
-    defaultLocale: 'pl',
+    seo: true,
   },
 
   pwa: {
