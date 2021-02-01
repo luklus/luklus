@@ -16,11 +16,13 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .base-hero {
+  height: 100vh;
+
   &__wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     padding: 2rem;
   }
 }
