@@ -13,7 +13,7 @@
 import { computed, defineComponent, useContext } from '@nuxtjs/composition-api'
 
 export default defineComponent({
-  name: 'AppsColorModeToggler',
+  name: 'AppsLangToggler',
 
   setup() {
     const {
@@ -31,11 +31,9 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .apps-lang-toggler {
-  color: var(--c-gray-300);
-  cursor: pointer;
-
   a {
-    color: inherit;
+    color: var(--c-gray-400);
+    cursor: pointer;
     font-weight: bold;
     margin: 0 0.25rem;
 

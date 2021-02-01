@@ -1,4 +1,4 @@
 export default {
-  hi: 'Cześć, jestem',
+  hi: 'cześć, jestem',
   name: 'Łukasz Łusiak',
 }

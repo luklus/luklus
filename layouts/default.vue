@@ -2,6 +2,7 @@
   <div id="luklus">
     <apps-header />
     <Nuxt class="page" />
+    <apps-footer />
   </div>
 </template>
 
@@ -12,9 +13,3 @@ export default defineComponent({
   name: 'AppsPage',
 })
 </script>
-
-<style lang="scss" scoped>
-.page {
-  height: 100vh;
-}
-</style>
