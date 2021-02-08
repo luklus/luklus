@@ -31,34 +31,28 @@
           </p>
         </base-paragraph>
 
-        <p>Languages</p>
         <ul>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>Node JS</li>
-          <li>PHP</li>
-          <li>HTML</li>
-          <li>CSS</li>
+          <base-label>JavaScript</base-label>
+          <base-label>TypeScript</base-label>
+          <base-label>Node</base-label>
+          <base-label>PHP</base-label>
         </ul>
 
-        <p>Frameworks</p>
         <ul>
-          <li>Vue</li>
-          <li>React</li>
-          <li>Angular</li>
-          <li>Express</li>
-          <li>AdonisJS</li>
-          <li>Laravel</li>
+          <base-label
+            >Vue
+            <heart-icon />
+          </base-label>
+          <base-label>React</base-label>
+          <base-label>Angular</base-label>
+          <base-label>jQuery :)</base-label>
         </ul>
 
-        <p>Others Tools</p>
         <ul>
-          <li>Axios</li>
-          <li>Vuex</li>
-          <li>NPM</li>
-          <li>Express</li>
-          <li>AdonisJS</li>
-          <li>Laravel</li>
+          <base-label>Vue</base-label>
+          <base-label>React</base-label>
+          <base-label>Angular</base-label>
+          <base-label>jQuery :)</base-label>
         </ul>
       </section>
     </div>
@@ -93,6 +87,7 @@
 <script>
 import { defineComponent } from '@nuxtjs/composition-api'
 import GithubIcon from '@/assets/icons/github.svg'
+import HeartIcon from '@/assets/icons/heart.svg'
 import LinkedinIcon from '@/assets/icons/linkedin.svg'
 import TwitterIcon from '@/assets/icons/twitter.svg'
 
@@ -101,6 +96,7 @@ export default defineComponent({
 
   components: {
     GithubIcon,
+    HeartIcon,
     LinkedinIcon,
     TwitterIcon,
   },
@@ -145,15 +141,9 @@ export default defineComponent({
   padding: 4rem 2rem;
 
   ul {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-
-    li {
-      background-color: var(--c-yellow-400);
-      border-radius: 0.25rem;
-      margin: 1rem 1rem 1rem 0;
-      padding: 0.5em 1rem;
-    }
+    max-width: 40rem;
   }
 }
 </style>
