@@ -15,6 +15,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .base-paragraph {
   color: var(--text);
+  margin-bottom: 2rem;
 
   p {
     margin-bottom: 1rem;
