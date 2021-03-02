@@ -14,18 +14,14 @@
         </p>
       </base-paragraph>
 
-      <h3>Jezyki programowania</h3>
+      <h3>{{ $t('tools') }}</h3>
       <ul>
         <base-label>HTML</base-label>
         <base-label>CSS</base-label>
         <base-label>JavaScript</base-label>
         <base-label>TypeScript</base-label>
         <base-label>PHP</base-label>
-        <base-label>Python</base-label>
-      </ul>
-
-      <h3>Framewroki i biblioteki</h3>
-      <ul>
+        <base-label>Laravel</base-label>
         <base-label>Vue <heart-icon /></base-label>
         <base-label>Nuxt.js <heart-icon /></base-label>
         <base-label>React</base-label>
@@ -34,10 +30,10 @@
         <base-label>jQuery <smile-icon /></base-label>
       </ul>
 
-      <h3>Inne narzędzia</h3>
+      <h3>{{ $t('toolsOther') }}</h3>
       <ul>
-        <base-label>Adobe InDesign</base-label>
-        <base-label>Adobe Photoshop</base-label>
+        <base-label>InDesign</base-label>
+        <base-label>Photoshop</base-label>
         <base-label>Adobe XD</base-label>
         <base-label>Axios</base-label>
         <base-label>Figma <heart-icon /></base-label>
@@ -47,6 +43,10 @@
         <base-label>SASS/SCSS</base-label>
         <base-label>Vuex</base-label>
         <base-label>Webpack</base-label>
+        <base-label>Vercel</base-label>
+        <base-label>Netlify</base-label>
+        <base-label>Rest API</base-label>
+        <base-label>GraphQl</base-label>
       </ul>
     </section>
   </div>
@@ -70,8 +70,11 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .part-home-me {
-  height: 100vh;
-  padding: 2rem;
+  padding: 4rem 2rem;
+
+  h3 {
+    margin: 1rem 0;
+  }
 
   ul {
     display: flex;

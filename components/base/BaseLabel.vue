@@ -18,6 +18,7 @@ export default defineComponent({
   background-color: var(--c-yellow-400);
   border-radius: 0.25rem;
   color: var(--text);
+  cursor: default;
   display: flex;
   font-weight: bold;
   margin: 0 1rem 1rem 0;
@@ -38,6 +39,10 @@ export default defineComponent({
     position: absolute;
     top: 0.25rem;
     width: 0.5rem;
+  }
+
+  &:hover {
+    background-color: var(--c-yellow-500);
   }
 }
 </style>
