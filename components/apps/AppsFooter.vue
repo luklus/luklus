@@ -18,8 +18,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/base/mixn';
+
 .apps-footer {
   color: var(--c-gray-900);
+  margin: 2rem;
 
   &__wrap {
     align-items: center;
@@ -28,14 +31,22 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-bottom: 2rem;
     padding: 2rem;
+    text-align: center;
 
     p {
       &:first-of-type {
         font-weight: bold;
       }
     }
+
+    @include mq(sm) {
+      text-align: left;
+    }
+  }
+
+  @include mq(lg) {
+    margin: 2rem 0;
   }
 }
 </style>
