@@ -18,6 +18,7 @@ export default {
   components: true,
 
   buildModules: [
+    '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/composition-api',
     '@nuxtjs/eslint-module',

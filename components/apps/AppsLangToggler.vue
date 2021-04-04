@@ -38,7 +38,7 @@ export default defineComponent({
     margin: 0 0.25rem;
 
     &.nuxt-link-exact-active {
-      color: var(--c-yellow-400);
+      color: var(--primary);
     }
   }
 }

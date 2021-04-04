@@ -15,7 +15,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .base-label {
   align-items: center;
-  background-color: var(--c-yellow-400);
+  background-color: var(--primary);
   border-radius: 0.25rem;
   color: var(--text);
   cursor: default;
@@ -42,7 +42,7 @@ export default defineComponent({
   }
 
   &:hover {
-    background-color: var(--c-yellow-500);
+    background-color: var(--primary-hover);
   }
 }
 </style>
