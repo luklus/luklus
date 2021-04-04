@@ -1,55 +1,34 @@
 <template>
-  <div class="wrap">
-    <section class="part-home-me">
-      <h2>{{ $t('about') }}</h2>
+  <section class="part-home-me wrap">
+    <h2>{{ $t('about') }}</h2>
 
-      <base-paragraph>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
-          repudiandae consectetur quibusdam rerum minima distinctio esse amet,
-          aut eveniet, perspiciatis, nam nesciunt dolorum delectus! Est vitae,
-          omnis culpa officia ullam officiis molestias? Illo ullam eos quaerat
-          ipsum, repudiandae voluptatem vel odio dicta libero deleniti quam iure
-          consectetur praesentium odit veritatis.
-        </p>
-      </base-paragraph>
+    <base-paragraph>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
+        repudiandae consectetur quibusdam rerum minima distinctio esse amet, aut
+        eveniet, perspiciatis, nam nesciunt dolorum delectus! Est vitae, omnis
+        culpa officia ullam officiis molestias? Illo ullam eos quaerat ipsum,
+        repudiandae voluptatem vel odio dicta libero deleniti quam iure
+        consectetur praesentium odit veritatis.
+      </p>
+    </base-paragraph>
 
-      <h3>{{ $t('tools') }}</h3>
-      <ul>
-        <base-label>HTML</base-label>
-        <base-label>CSS</base-label>
-        <base-label>JavaScript</base-label>
-        <base-label>TypeScript</base-label>
-        <base-label>PHP</base-label>
-        <base-label>Laravel</base-label>
-        <base-label>Vue <heart-icon /></base-label>
-        <base-label>Nuxt.js <heart-icon /></base-label>
-        <base-label>React</base-label>
-        <base-label>Next.js <heart-icon /></base-label>
-        <base-label>Angular</base-label>
-        <base-label>jQuery <smile-icon /></base-label>
-      </ul>
+    <h3>{{ $t('tools') }}</h3>
+    <ul>
+      <base-label v-for="item in toolsList" :key="item.name">
+        {{ item.name }}
+        <component :is="`${item.icon}-icon`" v-if="item.icon"></component>
+      </base-label>
+    </ul>
 
-      <h3>{{ $t('toolsOther') }}</h3>
-      <ul>
-        <base-label>InDesign</base-label>
-        <base-label>Photoshop</base-label>
-        <base-label>Adobe XD</base-label>
-        <base-label>Axios</base-label>
-        <base-label>Figma <heart-icon /></base-label>
-        <base-label>Node</base-label>
-        <base-label>Parcell</base-label>
-        <base-label>RxJS</base-label>
-        <base-label>SASS/SCSS</base-label>
-        <base-label>Vuex</base-label>
-        <base-label>Webpack</base-label>
-        <base-label>Vercel</base-label>
-        <base-label>Netlify</base-label>
-        <base-label>Rest API</base-label>
-        <base-label>GraphQl</base-label>
-      </ul>
-    </section>
-  </div>
+    <h3>{{ $t('toolsOther') }}</h3>
+    <ul>
+      <base-label v-for="item in otherList" :key="item.name">
+        {{ item.name }}
+        <component :is="`${item.icon}-icon`" v-if="item.icon"></component>
+      </base-label>
+    </ul>
+  </section>
 </template>
 
 <script>
@@ -59,11 +38,47 @@ import HeartIcon from '@/assets/icons/heart.svg'
 import SmileIcon from '@/assets/icons/smile.svg'
 
 export default defineComponent({
-  name: 'HomePage',
+  name: 'HomePageMe',
 
   components: {
     HeartIcon,
     SmileIcon,
+  },
+
+  setup() {
+    return {
+      toolsList: [
+        { name: 'HTML', icon: false },
+        { name: 'CSS', icon: false },
+        { name: 'JavaScript', icon: false },
+        { name: 'TypeScript', icon: false },
+        { name: 'PHP', icon: false },
+        { name: 'Laravel', icon: false },
+        { name: 'Vue', icon: 'heart' },
+        { name: 'Nuxt.js', icon: 'heart' },
+        { name: 'React', icon: false },
+        { name: 'Next.js', icon: 'heart' },
+        { name: 'Angular', icon: false },
+        { name: 'jQuery', icon: 'smile' },
+      ],
+      otherList: [
+        { name: 'InDesign', icon: false },
+        { name: 'Photoshop', icon: false },
+        { name: 'Adobe XD', icon: false },
+        { name: 'Axios', icon: false },
+        { name: 'Figma', icon: 'heart' },
+        { name: 'Node', icon: false },
+        { name: 'Parcell', icon: false },
+        { name: 'RxJS', icon: false },
+        { name: 'SASS/SCSS', icon: false },
+        { name: 'Vuex', icon: false },
+        { name: 'Webpack', icon: false },
+        { name: 'Vercel', icon: false },
+        { name: 'Netlify', icon: false },
+        { name: 'Rest API', icon: false },
+        { name: 'GraphQl', icon: false },
+      ],
+    }
   },
 })
 </script>

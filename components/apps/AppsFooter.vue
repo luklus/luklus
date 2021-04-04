@@ -26,7 +26,7 @@ export default defineComponent({
 
   &__wrap {
     align-items: center;
-    background-color: var(--c-yellow-400);
+    background-color: var(--primary);
     border-radius: 1.25rem 1.25rem 1.25rem 0;
     display: flex;
     flex-direction: column;

@@ -12,9 +12,13 @@
   --bg: var(--c-gray-50);
   --text: var(--c-gray-900);
   --text-secondary: var(--c-gray-400);
+  --primary: var(--c-yellow-400);
+  --primary-hover: var(--c-yellow-500);
 }
 
 .dark-mode {
   --bg: var(--c-gray-900);
   --text: var(--c-gray-50);
+  --primary: var(--c-yellow-500);
+  --primary-hover: var(--c-yellow-400);
 }

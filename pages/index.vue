@@ -2,7 +2,11 @@
   <main class="home">
     <part-home-hero />
 
-    <part-home-me />
+    <lazy-part-home-me />
+
+    <lazy-part-home-timeline />
+
+    <lazy-part-home-side-projects />
   </main>
 </template>
 
