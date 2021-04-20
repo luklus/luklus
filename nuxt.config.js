@@ -61,4 +61,8 @@ export default {
   },
 
   build: {},
+
+  static: {
+    prefix: false,
+  },
 }

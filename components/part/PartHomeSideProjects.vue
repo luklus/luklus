@@ -53,19 +53,19 @@ export default defineComponent({
     const sideProjectsList = [
       {
         desc: props.textSideAuto,
-        imgs: '/images/autotip.png',
+        imgs: './images/autotip.png',
         link: 'https://www.autotip.pl',
         name: 'AUTO tip',
       },
       {
         desc: props.textSideCovid,
-        imgs: '/images/covid19track.png',
+        imgs: './images/covid19track.png',
         link: 'https://covid19track.vercel.app',
         name: 'COVID 19 Track',
       },
       {
         desc: props.textSideMovie,
-        imgs: '/images/nexttmdb.png',
+        imgs: './images/nexttmdb.png',
         link: 'https://next-tmdb.vercel.app',
         name: 'Next TMDB',
       },
