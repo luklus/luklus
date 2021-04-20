@@ -1,11 +1,11 @@
 <template>
-  <section class="part-home-timeline wrap">
+  <section class="home-timeline wrap">
     <h2>{{ $t('experience') }}</h2>
 
     <div class="part">
-      <ul class="part-home-experience">
+      <ul class="home-experience">
         <li v-for="item in experienceList" :key="item.name">
-          <div class="part-home-experience__base">
+          <div class="home-experience__base">
             <p>{{ item.year }}</p>
             <h3>
               {{ item.role }}
@@ -17,10 +17,6 @@
               {{ item.desc }}
             </p>
           </base-paragraph>
-          <!-- <base-label v-for="icon in item.techList" :key="icon.name">
-            {{ icon.name }}
-            <component :is="`${icon.icon}-icon`" v-if="icon.icon"></component>
-          </base-label> -->
         </li>
       </ul>
     </div>
@@ -33,47 +29,58 @@ import { defineComponent } from '@nuxtjs/composition-api'
 export default defineComponent({
   name: 'HomePageTimeline',
 
-  setup() {
+  props: {
+    textTimelineAtos: {
+      required: true,
+      type: String,
+    },
+
+    textTimelineDivante: {
+      required: true,
+      type: String,
+    },
+  },
+
+  setup(props) {
+    const experienceList = [
+      {
+        company: 'Divante Sp. z o.o.',
+        companyLink: 'https://divante.com',
+        desc: props.textTimelineDivante,
+        techList: [
+          { name: 'HTML', icon: false },
+          { name: 'CSS', icon: false },
+          { name: 'JavaScript', icon: false },
+        ],
+        year: '2019 - 2021',
+      },
+      {
+        company: 'Atos Poland Global Services Sp. z o.o.',
+        companyLink: 'https://atos.net',
+        desc: props.textTimelineAtos,
+        role: 'Frontend Developer',
+        techList: [
+          { name: 'HTML', icon: false },
+          { name: 'CSS', icon: false },
+          { name: 'JavaScript', icon: false },
+        ],
+        year: '2018 - 2019',
+      },
+    ]
+
     return {
-      experienceList: [
-        {
-          company: 'Divante Sp. z o.o.',
-          companyLink: 'https://divante.com',
-          desc:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repudiandae consectetur quibusdam rerum minima distinctio esse amet, aut eveniet, perspiciatis, nam nesciunt dolorum delectus! Est vitae, omnis culpa officia ullam officiis molestias? Illo ullam eos quaerat ipsum, repudiandae voluptatem vel odio dicta libero deleniti quam iure consectetur praesentium odit veritatis.',
-          role: 'Frontend Developer',
-          techList: [
-            { name: 'HTML', icon: false },
-            { name: 'CSS', icon: false },
-            { name: 'JavaScript', icon: false },
-          ],
-          year: '2019 - 2021',
-        },
-        {
-          company: 'Atos Poland Global Services Sp. z o.o.',
-          companyLink: 'https://atos.net',
-          desc:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repudiandae consectetur quibusdam rerum minima distinctio esse amet, aut eveniet, perspiciatis, nam nesciunt dolorum delectus! Est vitae, omnis culpa officia ullam officiis molestias? Illo ullam eos quaerat ipsum, repudiandae voluptatem vel odio dicta libero deleniti quam iure consectetur praesentium odit veritatis.',
-          role: 'Frontend Developer',
-          techList: [
-            { name: 'HTML', icon: false },
-            { name: 'CSS', icon: false },
-            { name: 'JavaScript', icon: false },
-          ],
-          year: '2018 - 2019',
-        },
-      ],
+      experienceList,
     }
   },
 })
 </script>
 
 <style lang="scss" scoped>
-.part-home-timeline {
+.home-timeline {
   padding: 4rem 2rem;
 }
 
-.part-home-experience {
+.home-experience {
   border-left: 1px solid var(--primary);
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +93,7 @@ export default defineComponent({
   }
 }
 
-.part-home-experience__base {
+.home-experience__base {
   margin-bottom: 1rem;
 
   h3 {

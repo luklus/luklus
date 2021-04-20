@@ -19,7 +19,7 @@ export default defineComponent({
 
   p {
     margin-bottom: 1rem;
-    max-width: 40rem;
+    max-width: 34rem;
     font-weight: 300;
   }
 }

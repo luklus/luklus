@@ -20,7 +20,7 @@ export default {
   buildModules: [
     '@nuxt/image',
     '@nuxtjs/color-mode',
-    '@nuxtjs/composition-api',
+    '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     'nuxt-svg-loader',

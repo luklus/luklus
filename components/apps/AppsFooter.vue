@@ -3,8 +3,8 @@
     <div class="apps-footer__wrap wrap">
       <p>luklus.me</p>
       <br />
-      <p>Polityka Prywatności</p>
-      <p>© 2021 Łukasz Łusiak. All rights reserved.</p>
+      <!-- <p>Polityka Prywatności</p> -->
+      <p>© 2021 Łukasz Łusiak. {{ $t('rights') }}.</p>
     </div>
   </footer>
 </template>
