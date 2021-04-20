@@ -30,7 +30,13 @@ export default {
     'nuxt-svg-loader',
   ],
 
-  modules: ['@nuxt/content', '@nuxtjs/pwa', 'nuxt-i18n', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/pwa',
+    'nuxt-i18n',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+  ],
 
   colorMode: {
     preference: 'light',
@@ -69,5 +75,6 @@ export default {
 
   sitemap: {
     hostname: process.env.BASE_PAGE,
+    i18n: true,
   },
 }

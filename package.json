@@ -26,6 +26,7 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/composition-api": "^0.23.2",
     "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.10.2",
     "nuxt": "^2.15.4",
