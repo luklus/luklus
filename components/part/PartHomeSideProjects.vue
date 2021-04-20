@@ -8,10 +8,11 @@
         :key="item.name"
         :href="item.link"
         class="home-side-projects-grid__item"
+        rel="noopener"
         target="_blank"
       >
         <div class="home-side-projects-grid__imgs">
-          <img :src="item.imgs" alt="Side Project Image" />
+          <img :src="item.imgs" alt="Side Project Image" loading="lazy" />
         </div>
         <div class="home-side-projects-grid__data">
           <h3>{{ item.name }}</h3>

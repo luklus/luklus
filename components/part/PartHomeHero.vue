@@ -10,9 +10,17 @@
     </div>
 
     <div class="home-hero__social">
-      <a href="https://github.com/luklus" target="_blank"><github-icon /></a>
       <a
+        aria-label="GitHub"
+        href="https://github.com/luklus"
+        rel="noopener"
+        target="_blank"
+        ><github-icon
+      /></a>
+      <a
+        aria-label="LinkedIn"
         href="https://www.linkedin.com/in/łukasz-łusiak-58868215b/"
+        rel="noopener"
         target="_blank"
       >
         <linkedin-icon

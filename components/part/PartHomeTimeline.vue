@@ -9,7 +9,9 @@
             <p>{{ item.year }}</p>
             <h3>
               {{ item.role }}
-              <a :href="item.companyLink" target="_blank">{{ item.company }}</a>
+              <a :href="item.companyLink" rel="noopener" target="_blank">{{
+                item.company
+              }}</a>
             </h3>
           </div>
           <base-paragraph>
@@ -47,6 +49,7 @@ export default defineComponent({
         company: 'Divante Sp. z o.o.',
         companyLink: 'https://divante.com',
         desc: props.textTimelineDivante,
+        role: 'Frontend Developer',
         techList: [
           { name: 'HTML', icon: false },
           { name: 'CSS', icon: false },

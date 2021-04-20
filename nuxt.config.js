@@ -6,7 +6,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'luklus.me - Łukasz Łusiak',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -26,7 +30,7 @@ export default {
     'nuxt-svg-loader',
   ],
 
-  modules: ['@nuxt/content', '@nuxtjs/pwa', 'nuxt-i18n'],
+  modules: ['@nuxt/content', '@nuxtjs/pwa', 'nuxt-i18n', '@nuxtjs/sitemap'],
 
   colorMode: {
     preference: 'light',
@@ -36,6 +40,7 @@ export default {
   content: {},
 
   i18n: {
+    baseUrl: process.env.BASE_PAGE,
     defaultLocale: 'pl',
     langDir: 'locales/',
     lazy: true,
@@ -51,7 +56,7 @@ export default {
         file: 'pl-PL.js',
       },
     ],
-    seo: true,
+    seo: false,
   },
 
   pwa: {
@@ -62,7 +67,7 @@ export default {
 
   build: {},
 
-  static: {
-    prefix: false,
+  sitemap: {
+    hostname: process.env.BASE_PAGE,
   },
 }
