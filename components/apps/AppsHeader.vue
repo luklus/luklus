@@ -17,10 +17,11 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .apps-header {
-  // background-color: var(--bg);
+  background-color: var(--bg);
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 
   &__wrap {
     align-items: center;

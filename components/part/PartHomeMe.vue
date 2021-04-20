@@ -1,15 +1,10 @@
 <template>
-  <section class="part-home-me wrap">
+  <section class="home-me wrap">
     <h2>{{ $t('about') }}</h2>
 
     <base-paragraph>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
-        repudiandae consectetur quibusdam rerum minima distinctio esse amet, aut
-        eveniet, perspiciatis, nam nesciunt dolorum delectus! Est vitae, omnis
-        culpa officia ullam officiis molestias? Illo ullam eos quaerat ipsum,
-        repudiandae voluptatem vel odio dicta libero deleniti quam iure
-        consectetur praesentium odit veritatis.
+        {{ textAbout }}
       </p>
     </base-paragraph>
 
@@ -45,38 +40,46 @@ export default defineComponent({
     SmileIcon,
   },
 
+  props: {
+    textAbout: {
+      required: true,
+      type: String,
+    },
+  },
+
   setup() {
     return {
       toolsList: [
-        { name: 'HTML', icon: false },
-        { name: 'CSS', icon: false },
-        { name: 'JavaScript', icon: false },
-        { name: 'TypeScript', icon: false },
-        { name: 'PHP', icon: false },
-        { name: 'Laravel', icon: false },
-        { name: 'Vue', icon: 'heart' },
-        { name: 'Nuxt.js', icon: 'heart' },
-        { name: 'React', icon: false },
-        { name: 'Next.js', icon: 'heart' },
         { name: 'Angular', icon: false },
+        { name: 'CSS', icon: false },
+        { name: 'HTML', icon: false },
+        { name: 'JavaScript', icon: false },
         { name: 'jQuery', icon: 'smile' },
+        { name: 'Laravel', icon: false },
+        { name: 'Next.js', icon: 'heart' },
+        { name: 'Nuxt.js', icon: 'heart' },
+        { name: 'PHP', icon: false },
+        { name: 'React', icon: false },
+        { name: 'TypeScript', icon: false },
+        { name: 'Vue', icon: 'heart' },
       ],
       otherList: [
-        { name: 'InDesign', icon: false },
-        { name: 'Photoshop', icon: false },
         { name: 'Adobe XD', icon: false },
         { name: 'Axios', icon: false },
         { name: 'Figma', icon: 'heart' },
+        { name: 'Git', icon: false },
+        { name: 'GraphQl', icon: false },
+        { name: 'InDesign', icon: false },
+        { name: 'Netlify', icon: false },
         { name: 'Node', icon: false },
         { name: 'Parcell', icon: false },
+        { name: 'Photoshop', icon: false },
+        { name: 'Rest API', icon: false },
         { name: 'RxJS', icon: false },
         { name: 'SASS/SCSS', icon: false },
+        { name: 'Vercel', icon: false },
         { name: 'Vuex', icon: false },
         { name: 'Webpack', icon: false },
-        { name: 'Vercel', icon: false },
-        { name: 'Netlify', icon: false },
-        { name: 'Rest API', icon: false },
-        { name: 'GraphQl', icon: false },
       ],
     }
   },
@@ -84,7 +87,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.part-home-me {
+.home-me {
   padding: 4rem 2rem;
 
   h3 {

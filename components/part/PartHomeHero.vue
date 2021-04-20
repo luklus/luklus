@@ -1,18 +1,22 @@
 <template>
   <base-hero>
-    <div class="part-home-hero__message">
+    <div class="home-hero__message">
       <p>{{ $t('hi') }}</p>
     </div>
 
-    <div class="part-home-hero__header">
+    <div class="home-hero__header">
       <h1>{{ $t('name') }}</h1>
       <h2>{{ $t('role') }}</h2>
     </div>
 
-    <div class="part-home-hero__social">
-      <github-icon />
-      <twitter-icon />
-      <linkedin-icon />
+    <div class="home-hero__social">
+      <a href="https://github.com/luklus" target="_blank"><github-icon /></a>
+      <a
+        href="https://www.linkedin.com/in/łukasz-łusiak-58868215b/"
+        target="_blank"
+      >
+        <linkedin-icon
+      /></a>
     </div>
   </base-hero>
 </template>
@@ -21,7 +25,6 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 import GithubIcon from '@/assets/icons/github.svg'
 import LinkedinIcon from '@/assets/icons/linkedin.svg'
-import TwitterIcon from '@/assets/icons/twitter.svg'
 
 export default defineComponent({
   name: 'PartHomeHero',
@@ -29,13 +32,12 @@ export default defineComponent({
   components: {
     GithubIcon,
     LinkedinIcon,
-    TwitterIcon,
   },
 })
 </script>
 
 <style lang="scss" scoped>
-.part-home-hero {
+.home-hero {
   &__header {
     h1 {
       font-size: 4rem;
@@ -58,8 +60,15 @@ export default defineComponent({
   }
 
   &__social {
-    color: var(--text-secondary);
-    margin: 0.25rem;
+    a {
+      color: var(--text-secondary);
+      margin: 0.25rem;
+      transition: color 300ms ease;
+
+      &:hover {
+        color: var(--primary-hover);
+      }
+    }
 
     svg {
       margin-right: 1rem;
