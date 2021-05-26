@@ -84,7 +84,7 @@ export default defineComponent({
 }
 
 .home-experience {
-  border-left: 1px solid var(--primary);
+  border-left: 2px solid var(--primary);
   display: flex;
   flex-wrap: wrap;
   max-width: 40rem;

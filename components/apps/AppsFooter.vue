@@ -4,7 +4,7 @@
       <p>luklus.me</p>
       <br />
       <!-- <p>Polityka Prywatności</p> -->
-      <p>© 2021 Łukasz Łusiak. {{ $t('rights') }}.</p>
+      <p>© 2021 {{ $t('name') }}. {{ $t('rights') }}.</p>
     </div>
   </footer>
 </template>

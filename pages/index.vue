@@ -20,29 +20,21 @@
 </template>
 
 <script>
-import {
-  computed,
-  defineComponent,
-  useAsync,
-  useContext,
-} from '@nuxtjs/composition-api'
-
-export default defineComponent({
+export default {
   name: 'HomePage',
 
-  setup() {
-    const { $content } = useContext()
-    const {
-      app: { i18n },
-    } = useContext()
+  async asyncData({ $content }) {
+    const pageInfo = await $content('home').fetch()
 
-    const pageInfo = useAsync(() => $content('home').fetch())
-
-    const pageInfoLang = computed(
-      () => pageInfo.value[i18n?.localeProperties?.code]
-    )
-
-    return { pageInfoLang }
+    return {
+      pageInfo,
+    }
   },
-})
+
+  computed: {
+    pageInfoLang() {
+      return this.pageInfo[this.$i18n.locale]
+    },
+  },
+}
 </script>

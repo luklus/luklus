@@ -15,9 +15,9 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: ['@/assets/styles/main.scss'],
+  css: ['vuejs-noty/dist/vuejs-noty.css', '@/assets/styles/main.scss'],
 
-  plugins: [],
+  plugins: ['@/plugins/vf.js', '@/plugins/noty.client.js'],
 
   components: true,
 
