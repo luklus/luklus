@@ -36,7 +36,7 @@ export default {
     meta: [
       {
         content:
-          'luklus.me - Łukasz Łusiak. Portfolio, Doświadczenie, Kontakt.',
+          'luklus.me - Łukasz Łusiak. CV, Portfolio, Doświadczenie, Kontakt.',
         hid: 'description',
         name: 'description',
       },
