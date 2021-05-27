@@ -31,6 +31,14 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        async: true,
+        hid: 'thesemetrics',
+        src: 'https://unpkg.com/thesemetrics@latest',
+        type: 'text/javascript',
+      },
+    ],
   },
 
   i18n: {
