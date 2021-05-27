@@ -15,16 +15,26 @@
         href="https://github.com/luklus"
         rel="noopener"
         target="_blank"
-        ><github-icon
-      /></a>
+      >
+        <GithubIcon />
+      </a>
       <a
         aria-label="LinkedIn"
         href="https://www.linkedin.com/in/łukasz-łusiak-58868215b/"
         rel="noopener"
         target="_blank"
       >
-        <linkedin-icon
-      /></a>
+        <LinkedinIcon />
+      </a>
+      <a
+        aria-label="LinkedIn"
+        download=""
+        href="/file/CV.pdf"
+        rel="noopener"
+        target="_blank"
+        @click="sendData"
+        ><LoadIcon /> CV</a
+      >
     </div>
   </base-hero>
 </template>
@@ -33,6 +43,7 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 import GithubIcon from '@/assets/icons/github.svg'
 import LinkedinIcon from '@/assets/icons/linkedin.svg'
+import LoadIcon from '@/assets/icons/load.svg'
 
 export default defineComponent({
   name: 'PartHomeHero',
@@ -40,6 +51,23 @@ export default defineComponent({
   components: {
     GithubIcon,
     LinkedinIcon,
+    LoadIcon,
+  },
+
+  methods: {
+    async sendData() {
+      await fetch('https://formsubmit.co/ajax/ll_code@outlook.com', {
+        body: JSON.stringify({
+          _subject: 'Pobrano CV ze strony luklus.me',
+          _template: 'box',
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        method: 'POST',
+      })
+    },
   },
 })
 </script>
@@ -69,8 +97,11 @@ export default defineComponent({
 
   &__social {
     a {
+      align-items: center;
       color: var(--text-secondary);
-      margin: 0.25rem;
+      display: inline-flex;
+      font-weight: 700;
+      margin: 0.25rem 1rem 0.25rem 0.25rem;
       transition: color 300ms ease;
 
       &:hover {
@@ -79,7 +110,7 @@ export default defineComponent({
     }
 
     svg {
-      margin-right: 1rem;
+      margin-right: 0.25rem;
     }
   }
 }
