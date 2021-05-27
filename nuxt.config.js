@@ -31,12 +31,15 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+
     script: [
       {
+        'data-dnt': 'false',
+        'data-host': 'https://microanalytics.io',
         async: true,
-        hid: 'thesemetrics',
-        src: 'https://unpkg.com/thesemetrics@latest',
-        type: 'text/javascript',
+        defer: true,
+        id: 'ZwSg9rf6GA',
+        src: 'https://microanalytics.io/js/script.js',
       },
     ],
   },
