@@ -27,7 +27,7 @@ export default defineComponent({
     align-items: center;
     display: flex;
     justify-content: flex-end;
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 }
 </style>

@@ -4,10 +4,12 @@
 
     <div class="part">
       <div class="home-contact__link">
-        <a href="mailto:ll_code@outlook.com" rel="noreferrer"
-          ><MailIcon /> ll_code@outlook.com</a
-        >
-        <a href="tel:606688439" rel="noreferrer"><MobiIcon /> 606688439</a>
+        <a href="mailto:ll_code@outlook.com" rel="noreferrer">
+          <MailIcon /> <span>ll_code@outlook.com</span>
+        </a>
+        <a href="tel:606688439" rel="noreferrer">
+          <MobiIcon /> <span>606688439</span>
+        </a>
       </div>
       <div class="home-contact-bg">
         <form class="home-contact-form" @submit.prevent="sendForm">
@@ -62,6 +64,9 @@
           </div>
         </form>
       </div>
+      <p class="home-contact__info">
+        {{ $t('gdpr') }}
+      </p>
     </div>
   </section>
 </template>
@@ -151,6 +156,13 @@ export default {
 .home-contact {
   padding: 4rem 2rem;
 
+  &__info {
+    font-size: 0.75rem;
+    margin: 0.25rem auto;
+    max-width: 40rem;
+    text-align: center;
+  }
+
   &__link {
     align-items: flex-start;
     display: flex;
@@ -159,10 +171,14 @@ export default {
 
     a {
       align-items: center;
-      color: var(--c-text);
+      color: var(--primary);
       display: inline-flex;
       font-size: 1.25rem;
       margin-bottom: 0.5rem;
+
+      span {
+        color: var(--text);
+      }
 
       svg {
         margin-right: 1rem;

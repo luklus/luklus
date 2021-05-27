@@ -9,6 +9,8 @@ export default {
   formName: 'Imię i Nazwisko',
   formSuccess: 'Dziekuję, formularz został wysłany!',
   formText: 'Wiadomość ...',
+  gdpr:
+    'Wysyłając formularz wyrażasz zgodę na przetwarzanie danych osobowych podanych w formularzu. Przekazane dane będą wykorzytane wyłącznie w celu udzielenia odpowiedzi na pytanie zawarte w formularzu.',
   hi: 'cześć, jestem',
   name: 'Łukasz Łusiak',
   rights: 'Wszelkie prawa zastrzeżone',

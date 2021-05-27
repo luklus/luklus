@@ -9,6 +9,8 @@ export default {
   formName: 'First and last name',
   formSuccess: 'Thank you, the form has been sent!',
   formText: 'Message ...',
+  gdpr:
+    'By submitting the form, you consent to the processing of personal data provided in the form. The data provided will be used solely for the purpose of answering the question contained in the form.',
   hi: 'hi, i am',
   name: 'Lukas Lusiak',
   rights: 'All rights reserved',

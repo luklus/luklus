@@ -1,5 +1,23 @@
 export default {
-  target: 'static',
+  build: {},
+
+  buildModules: [
+    '@nuxt/image',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/composition-api/module',
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
+    'nuxt-svg-loader',
+  ],
+
+  colorMode: {
+    preference: 'light',
+    fallback: 'light',
+  },
+
+  components: true,
+
+  css: ['vuejs-noty/dist/vuejs-noty.css', '@/assets/styles/main.scss'],
 
   head: {
     title: 'luklus',
@@ -14,36 +32,6 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-
-  css: ['vuejs-noty/dist/vuejs-noty.css', '@/assets/styles/main.scss'],
-
-  plugins: ['@/plugins/vf.js', '@/plugins/noty.client.js'],
-
-  components: true,
-
-  buildModules: [
-    '@nuxt/image',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/composition-api/module',
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
-    'nuxt-svg-loader',
-  ],
-
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/pwa',
-    'nuxt-i18n',
-    '@nuxtjs/robots',
-    '@nuxtjs/sitemap',
-  ],
-
-  colorMode: {
-    preference: 'light',
-    fallback: 'light',
-  },
-
-  content: {},
 
   i18n: {
     baseUrl: process.env.BASE_PAGE,
@@ -65,16 +53,27 @@ export default {
     seo: false,
   },
 
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/pwa',
+    'nuxt-i18n',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+  ],
+
+  plugins: ['@/plugins/vf.js', '@/plugins/noty.client.js'],
+
   pwa: {
     manifest: {
-      lang: 'pl',
+      lang: 'en',
+      theme_color: '#000',
     },
   },
-
-  build: {},
 
   sitemap: {
     hostname: process.env.BASE_PAGE,
     i18n: true,
   },
+
+  target: 'static',
 }

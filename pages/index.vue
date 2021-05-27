@@ -31,6 +31,18 @@ export default {
     }
   },
 
+  head: {
+    title: 'luklus.me - Łukasz Łusiak',
+    meta: [
+      {
+        content:
+          'luklus.me - Łukasz Łusiak. Portfolio, Doświadczenie, Kontakt.',
+        hid: 'description',
+        name: 'description',
+      },
+    ],
+  },
+
   computed: {
     pageInfoLang() {
       return this.pageInfo[this.$i18n.locale]
