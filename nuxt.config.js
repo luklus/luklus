@@ -30,7 +30,7 @@ export default {
         content: 'luklus.me - Łukasz Łusiak',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/png', href: '/icon.png' }],
 
     script: [
       {
