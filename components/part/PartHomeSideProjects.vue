@@ -12,7 +12,12 @@
         target="_blank"
       >
         <div class="home-side-projects-grid__imgs">
-          <img :src="item.imgs" alt="Side Project Image" loading="lazy" />
+          <nuxt-img
+            :src="item.imgs"
+            alt="Side Project Image"
+            loading="lazy"
+            width="512"
+          />
         </div>
         <div class="home-side-projects-grid__data">
           <h3>{{ item.name }}</h3>
