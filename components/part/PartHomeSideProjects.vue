@@ -12,7 +12,12 @@
         target="_blank"
       >
         <div class="home-side-projects-grid__imgs">
-          <img :src="item.imgs" alt="Side Project Image" loading="lazy" />
+          <nuxt-img
+            :src="item.imgs"
+            alt="Side Project Image"
+            loading="lazy"
+            width="512"
+          />
         </div>
         <div class="home-side-projects-grid__data">
           <h3>{{ item.name }}</h3>
@@ -39,6 +44,11 @@ export default defineComponent({
       type: String,
     },
 
+    textSideArt: {
+      required: true,
+      type: String,
+    },
+
     textSideCovid: {
       required: true,
       type: String,
@@ -52,6 +62,12 @@ export default defineComponent({
 
   setup(props) {
     const sideProjectsList = [
+      {
+        desc: props.textSideArt,
+        imgs: '/images/zielinskiart.png',
+        link: 'https://www.zielinskiart.pl',
+        name: 'Zielinski ART',
+      },
       {
         desc: props.textSideAuto,
         imgs: '/images/autotip.png',
