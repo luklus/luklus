@@ -1,11 +1,12 @@
 {
   "en": {
-    "about": "I have been a Frontend Developer since 2018. Before that, for several years - as a self-taught person - I was creating more or less successful private projects, both on the backend and frontend side (Laravel and Vue). taking the challenge in programming websites and web applications. In my work I pay attention to the basics (code semantics and accessibility). All the time I try to keep up with new solutions, especially related to Headless and JAM-stack. I have been following its development since version 0.12). I'm interested in React and its ecosystem. I've been dealing with Angular a lot lately. I appreciate its advantages;) ",
+    "about": "I have been a frontend developer since 2018. Before that, for several years - as a self-taught person - I was creating more or less successful private projects, both on the backend and frontend side (Laravel and Vue). Thanks to the experience gained at that time, I decided to change my profession and take up the challenge of programming websites and web applications. In my work, I pay attention to the basics (code semantics and accessibility). I am constantly trying to keep up with new solutions, especially those related to Headless and JAM-stack. As for frameworks: I like Vue (I've been following its development since 0.12). I'm interested in React and its ecosystem. I've been dealing with Angular a lot lately. I appreciate its advantages;)",
     "timelineAtos": "Atos is a large, international company in which I had the opportunity to implement several small projects for internal needs. Participation in an e-commerce project written from scratch was also a great experience for me. Technologies used during work: Vue, Nuxt, JavaScript, HTML, CSS (SCSS). ",
     "timelineDivante": "Participation in e-commerce projects. Working with Vue Storefront, Storefront UI, Spartacus SAP libraries. Frontend team leader in one of the projects. Technologies used during work: Angular, Vue, Nuxt, HTML, CSS (SCSS) ), TypeScript. ",
     "sideAuto": "Website for a friendly company providing mechanical services. Technologies: Vue, Nuxt.",
     "sideCovid": "Website displaying historical data related to the COVID 19 epidemic. Technologies: React, Next.",
-    "sideMovie": "TMDB movie database client. Technologies: React, Next."
+    "sideMovie": "TMDB movie database client. Technologies: React, Next.",
+    "sideArt": "Website of a professional jewelery shop offering luxury jewelery to order."
   },
   "pl": {
     "about": "Frontend Developerem jestem od 2018 roku. Wcześniej przez kilka lat - jako samouk - tworzyłem mniej lub bardziej udane prywatne projekty, zarówno po stronie backendu i frontendu (Laravel i Vue). Dzięki zdobytemu wtedy doświadczeniu zdecydowałem się na zmianę zawodu i podjęcie wyzwania w programowaniu stron i aplikacji internetowych. W swojej pracy zwracam uwagę na podstawy (semantykę kodu oraz dostępność). Cały czas staram się nadążać za nowymi rozwiązaniami, szczególnie związanymi z Headless i JAM-stackiem. Co do frameworków, to: Lubię Vue (śledzę jego rozwój od wersji 0.12). Interesuje mnie React i jego ekosystem. Ostatnio mam sporo do czynienia z Angularem. Doceniam jego zalety ;)",
@@ -13,6 +14,7 @@
     "timelineDivante": "Udział w projektach z branży e-commerce. Praca z bibliotekami Vue Storefront, Storefront UI, Spartacus SAP. Lider zespołu Frontend w jednym z projektów. Technologie używane podczas pracy: Angular, Vue, Nuxt, HTML, CSS (SCSS), TypeScript.",
     "sideAuto": "Strona dla zaprzyjaźnionej firmy świadczącej usługi mechaniczne. Technologie: Vue, Nuxt.",
     "sideCovid": "Strona wyświetlająca dane historyczne związane z epidemią COVID 19. Technologie: React, Next.",
-    "sideMovie": "Klient filmowej bazy danych TMDB. Technologie: React, Next."
+    "sideMovie": "Klient filmowej bazy danych TMDB. Technologie: React, Next.",
+    "sideArt": "Strona profesjonalnego zakładu jubilerskiego oferującego luksusową biżuterię na zamówienie."
   }
 }

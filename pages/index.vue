@@ -11,6 +11,7 @@
 
     <lazy-part-home-side-projects
       :text-side-auto="pageInfoLang.sideAuto"
+      :text-side-art="pageInfoLang.sideArt"
       :text-side-covid="pageInfoLang.sideCovid"
       :text-side-movie="pageInfoLang.sideMovie"
     />

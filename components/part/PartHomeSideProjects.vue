@@ -39,6 +39,11 @@ export default defineComponent({
       type: String,
     },
 
+    textSideArt: {
+      required: true,
+      type: String,
+    },
+
     textSideCovid: {
       required: true,
       type: String,
@@ -52,6 +57,12 @@ export default defineComponent({
 
   setup(props) {
     const sideProjectsList = [
+      {
+        desc: props.textSideArt,
+        imgs: '/images/zielinskiart.png',
+        link: 'https://www.zielinskiart.pl',
+        name: 'Zielinski ART',
+      },
       {
         desc: props.textSideAuto,
         imgs: '/images/autotip.png',
