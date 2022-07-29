@@ -12,4 +12,15 @@ h1 {
 h2 {
   color: #6b7280;
   font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  max-width: 40rem;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
 }

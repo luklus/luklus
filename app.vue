@@ -2,6 +2,8 @@
   <!-- <header>Header</header> -->
   <main class="page">
     <PartHero />
+    <PartInfo />
+    <PartTool />
     <section class="page__part">Hello</section>
     <section class="page__part">Hello</section>
   </main>
