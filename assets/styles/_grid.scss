@@ -1,0 +1,11 @@
+.part {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 1.25rem;
+  scroll-snap-align: start;
+  width: 100%;
+}
