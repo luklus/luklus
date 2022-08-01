@@ -1,0 +1,19 @@
+.list {
+  border-left: 2px solid var(--c-primary);
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 40rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.item {
+  margin-bottom: 2rem;
+
+  p {
+    &:first-of-type {
+      color: var(--c-gray-600);
+      margin-bottom: 0;
+    }
+  }
+}

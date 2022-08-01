@@ -1,0 +1,87 @@
+// ROOT
+
+:root {
+  --c-black: #111827;
+  --c-gray-400: #9ca3af;
+  --c-gray-600: #4b5563;
+  --c-primary: #fbbf24;
+  --c-primary-active: #f87171;
+  --c-white: #f9fafb;
+}
+
+// DELS
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+// HTML
+
+html,
+body {
+  color: var(--c-black);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+// TYPO
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  color: var(--c-gray-400);
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+
+p {
+  max-width: 40rem;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1.25rem;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// GRID
+
+.part {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 1.25rem;
+  scroll-snap-align: start;
+  width: 100%;
+}
+
+// NAVI
+
+.navi--active {
+  background-color: var(--c-primary-active) !important;
+}
