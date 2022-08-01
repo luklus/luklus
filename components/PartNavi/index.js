@@ -11,8 +11,8 @@ const linkList = [
 ]
 
 const PartNavi = () => {
-  const listElem = linkList.map((item) => (
-    <li key={item.link}>
+  const listElem = linkList.map((item, i) => (
+    <li key={i}>
       <Link
         activeClass="navi--active"
         containerId="page"

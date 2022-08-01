@@ -34,7 +34,7 @@ const experienceList = [
 ]
 const PartExperience = () => {
   const listElem = experienceList.map((item) => (
-    <li className={styles.item} key={item.name}>
+    <li className={styles.item} key={item.company}>
       <p>{item.year}</p>
       <h3>
         {item.role}, <a href={item.companyLink}>{item.company}</a>
