@@ -1,0 +1,14 @@
+.mssg {
+  background-color: var(--c-primary);
+  border-radius: 1.25rem 1.25rem 1.25rem 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  width: 12rem;
+}
+
+.imgs {
+  img {
+    margin-right: 1rem;
+  }
+}
