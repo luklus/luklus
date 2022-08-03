@@ -11,15 +11,26 @@ const linkList = [
 ]
 
 const PartNavi = () => {
+  const handleLinkActive = (event) => {
+    if (window && window.gtag) {
+      window.gtag('event', 'Page Section', {
+        event_category: 'Page Section',
+        event_label: 'Page Section',
+        value: event,
+      })
+    }
+  }
+
   const listElem = linkList.map((item, i) => (
     <li key={i}>
       <Link
         activeClass="navi--active"
         containerId="page"
         duration={100}
-        to={item.name}
-        spy
+        onSetActive={handleLinkActive}
         smooth
+        spy
+        to={item.name}
       ></Link>
     </li>
   ))
