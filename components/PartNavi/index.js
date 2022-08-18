@@ -30,6 +30,7 @@ const PartNavi = () => {
         onSetActive={handleLinkActive}
         smooth
         spy
+        hashSpy
         to={item.name}
       ></Link>
     </li>
