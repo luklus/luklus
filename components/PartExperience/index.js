@@ -3,10 +3,10 @@ import styles from './PartExperience.module.scss'
 
 const experienceList = [
   {
-    company: 'Divante S.A.',
+    company: 'Divante S.A./Cloudflight',
     companyLink: 'https://divante.com',
-    desc: 'Udział w projektach z branży e-commerce. Praca z bibliotekami Vue Storefront, Storefront UI, Spartacus SAP. Lider zespołu Frontend w jednym z projektów.',
-    role: 'Frontend Developer',
+    desc: 'Udział w projektach z branży e-commerce. Praca z bibliotekami Vue Storefront, Storefront UI, Spartacus SAP. Od 2022, Team Lider zespołu Frontend.',
+    role: 'Senior Frontend Developer',
     techList: [
       { name: 'HTML', icon: false },
       { name: 'CSS', icon: false },
