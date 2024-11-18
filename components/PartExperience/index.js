@@ -5,8 +5,8 @@ const experienceList = [
   {
     company: 'Divante S.A./Cloudflight',
     companyLink: 'https://divante.com',
-    desc: 'Udział w projektach z branży e-commerce. Praca z bibliotekami Vue Storefront, Storefront UI, Spartacus SAP. Od 2022, Team Lider zespołu Frontend.',
-    role: 'Senior Frontend Developer',
+    desc: 'Udział w projektach z branży e-commerce. Praca z bibliotekami Vue Storefront, Storefront UI, Spartacus SAP. Projekty oparte o Vue i Angular. Od 2022, Team Lider zespołu Frontendowego.',
+    role: 'Senior Frontend Developer / Team Lider',
     techList: [
       { name: 'HTML', icon: false },
       { name: 'CSS', icon: false },
@@ -20,7 +20,7 @@ const experienceList = [
   {
     company: 'Atos Poland Global Services Sp. z o.o.',
     companyLink: 'https://atos.net',
-    desc: "Realizacja kilku małych projektów na potrzeby wewnętrzne. Udział w duym projekcie e-commerce B2C pisanym od 'zera'.",
+    desc: "Realizacja kilku projektów na potrzeby wewnętrzne. Udział w dużym projekcie e-commerce B2C pisanym od 'zera' w Nuxt.",
     role: 'Frontend Developer',
     techList: [
       { name: 'HTML', icon: false },

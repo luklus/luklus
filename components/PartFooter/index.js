@@ -15,10 +15,10 @@ const PartFooter = () => {
 
         <p>Mail: </p>
         <a
-          href="mailto:ll_code@outlook.com?subject=Wiadomość ze strony luklus.me"
+          href="mailto:lukaslusiak.business@outlook.com?subject=Wiadomość ze strony luklus.me"
           rel="noreferrer"
         >
-          ll_code@outlook.com
+          lukaslusiak.business@outlook.com
         </a>
       </div>
 

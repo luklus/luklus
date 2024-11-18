@@ -1,7 +1,7 @@
 const PartInfo = () => {
   return (
     <section className="part" id="info">
-      <h2>O mnie:</h2>
+      <h2>Kilka słow o sobie:</h2>
       <p>
         Frontend Developerem jestem od 2018 roku. Wcześniej przez kilka lat -
         jako samouk - tworzyłem mniej lub bardziej udane prywatne projekty,
@@ -16,8 +16,8 @@ const PartInfo = () => {
       </p>
       <p>
         Co do frameworków, to: Lubię Vue (śledzę jego rozwój od wersji 0.12).
-        Interesuje mnie React i jego ekosystem. Ostatnio mam sporo do czynienia
-        z Angularem. Doceniam jego zalety ;)
+        Interesuje mnie React i jego ekosystem. Ostatnio najwięcej mam do
+        czynienia z Angularem. Doceniam jego zalety ;)
       </p>
     </section>
   )
