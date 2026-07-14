@@ -8,3 +8,5 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - '@nuxtjs/i18n@10.4.1'
   - eslint@10.7.0
+packages:
+  - "."
