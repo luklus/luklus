@@ -82,7 +82,7 @@ projectsList:
     to: 'https://www.zielinskiart.pl/'
     image: '/images/autotip.webp'
   - title: 'LOOP Mobi, Fryzjer Mobilny'
-    description: 'Strona zakładu fryzjerskiego oferującego usługi z dojazdem do klienta.' 
+    description: 'Strona zakładu fryzjerskiego oferującego usługi z dojazdem do klienta.'
     to: https://loop-mobilny-fryzjer.pl/'
     image: '/images/loopmobi.webp'
 

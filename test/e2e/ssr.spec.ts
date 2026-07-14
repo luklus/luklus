@@ -52,6 +52,6 @@ describe('home page (SSR)', async () => {
     expect(res.status).toBe(200)
 
     const html = await res.text()
-    expect(html).toContain('lang="en"')
+    expect(html).toContain('lang="en-US"')
   })
 })
