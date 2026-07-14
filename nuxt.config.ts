@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/i18n',
     '@nuxtjs/seo',
+    '@vercel/analytics',
     '@vite-pwa/nuxt'
   ],
 
