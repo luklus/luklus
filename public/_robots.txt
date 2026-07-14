@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Add a sitemap once the @nuxtjs/sitemap module is installed (see DEPLOYMENT.md):
+# Sitemap: https://luklus.me/sitemap.xml

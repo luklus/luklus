@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme static {
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+}
+
+:root {
+  --ui-primary: black;
+}
+
+.dark {
+  --ui-primary: white;
+}
+
+/* main {
+  background:
+    linear-gradient(rgba(10, 10, 10, 0.035) 1px, transparent 1px) 0% 0% / 64px
+      64px,
+    linear-gradient(90deg, rgba(10, 10, 10, 0.035) 1px, transparent 1px)
+      rgb(253, 253, 252);
+} */

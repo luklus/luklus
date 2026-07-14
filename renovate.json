@@ -1,0 +1,19 @@
+{
+  "extends": ["github>nuxt/renovate-config-nuxt"],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": ["resolutions"],
+      "enabled": false
+    },
+    {
+      "description": "Auto-merge non-major updates once CI is green",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "automergeStrategy": "squash"
+    }
+  ],
+  "postUpdateOptions": ["pnpmDedupe"]
+}
