@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/seo',
     '@vercel/analytics',
+    '@vercel/speed-insights',
     '@vite-pwa/nuxt'
   ],
 
