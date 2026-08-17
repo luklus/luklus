@@ -28,19 +28,19 @@ experienceTitle: 'Experience'
 experienceList:
   - dateStart: '2024'
     dateEnd: 'Present'
-    description: 'Owns frontend architecture for headless commerce products; drives adoption of AI-assisted workflows across the team.'
+    description: 'Leads frontend architecture for modern web applications; drives adoption of AI-assisted workflows across the engineering team.'
     descriptionList:
-      - 'Architecture decisions for a public product.'
-      - "Introduced AI-assisted code review into the team's workflow."
+      - 'Architectural decisions and code quality standards for public products.'
+      - 'Spearheading AI-assisted development and automated code reviews across the team.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Developer · ithouse.co'
   - dateStart: '2019'
     dateEnd: '2024'
     description: 'Led a frontend team delivering enterprise applications; owned architecture and design-system decisions.'
     descriptionList:
-      - 'Angular and SAP development.'
-      - 'Enterprise applications and headless commerce integrations.'
-      - 'Mentored engineers and set frontend architecture standards.'
+      - 'Enterprise application architecture and integrations with the SAP ecosystem.'
+      - 'Scalable frontend systems and headless commerce solutions.'
+      - 'Mentored engineers and established engineering standards.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Developer · Team Lead · Cloudflight'
   - dateStart: '2018'
@@ -58,11 +58,11 @@ skillsList:
   - header: 'Frontend'
     items: ['TypeScript', 'JavaScript', 'Vue', 'Nuxt', 'Angular', 'React']
   - header: 'Architecture'
-    items: ['SSR', 'SSG', 'Headless Commerce', 'Design Systems', 'Performance']
+    items: ['SSR / SSG', 'Headless Commerce', 'Design Systems', 'Web Performance']
   - header: 'State & Data'
     items: ['Pinia', 'REST', 'GraphQL', 'Supabase']
   - header: 'Testing'
-    items: ['Vitest', 'Code Quality tools']
+    items: ['Vitest', 'Playwright', 'ESLint', 'CI/CD']
   - header: 'Backend'
     items: ['Node', 'PHP', 'Laravel']
   - header: 'Design'
@@ -79,7 +79,8 @@ projectsList:
     to: 'https://gethomekeeper.app/'
     badges:
       - 'Founder & Owner'
-      - 'In Progress'
+      - 'In Active Development'
+      - 'SaaS Platform'
     featured: true
   - title: 'Zieliński ART, Jeweler'
     description: 'Custom portfolio and showcase website for an exclusive jewelry atelier, highlighting bespoke goldsmithing craftsmanship, project stories, and high-detail visuals.'
@@ -94,14 +95,14 @@ projectsList:
     image: '/images/autotip.webp'
     badges:
       - 'Client Project'
-      - 'Nuxt & Local SEO'
+      - 'Nuxt & Performance SEO'
   - title: 'LOOP Mobi, Mobile Hairdresser'
     description: 'Fast, responsive booking and showcase platform for a mobile hair salon, with transparent pricing tiers, service area calculation, and direct contact flows.'
     to: 'https://loop-mobilny-fryzjer.pl/'
     image: '/images/loopmobi.webp'
     badges:
       - 'Client Project'
-      - 'Next.js & Tailwind'
+      - 'Next.js & Responsive UI'
 
 # Section: AI
 aiDescription: 'AI is a tool in the workflow, not a shortcut around engineering judgment.'

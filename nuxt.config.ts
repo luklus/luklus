@@ -78,7 +78,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    name: 'Łukasz Łusiak - Senior Frontend Engineer',
+    name: 'Łukasz Łusiak — Frontend Architect & Senior Engineer',
     url: 'https://luklus.me'
   },
 
@@ -87,10 +87,10 @@ export default defineNuxtConfig({
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
-      name: 'Łukasz Łusiak - Senior Frontend Engineer',
+      name: 'Łukasz Łusiak — Frontend Architect & Senior Engineer',
       short_name: 'll.me',
       description:
-        'Senior Frontend Engineer with 8+ years of experience creating performant, maintainable web applications - from architecture to pixel.',
+        'Senior Frontend Engineer with 8+ years of experience creating performant, maintainable web applications - from architecture to pixel-perfect execution.',
       lang: 'en',
       display: 'standalone',
       start_url: '/',
