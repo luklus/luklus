@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 type ApproachItem = {
   description: string
   label: string
@@ -14,8 +14,8 @@ const { description, list, title } = defineProps<{
 
 <template>
   <section
-    class="bg-muted py-16"
     id="approach"
+    class="bg-muted py-16"
   >
     <UContainer>
       <UPageHeader
@@ -31,9 +31,9 @@ const { description, list, title } = defineProps<{
       <section>
         <ul class="flex flex-col rounded md:flex-row">
           <li
-            class="border-muted last:border-success last:bg-success/10 flex-1 border border-e-0 p-4 last:border-e"
             v-for="item in list"
             :key="item.label"
+            class="border-muted last:border-success last:bg-success/10 flex-1 border border-e-0 p-4 last:border-e"
           >
             <div class="text-success mb-1 font-mono">{{ item.label }}</div>
             <div class="text-muted">{{ item.description }}</div>

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { TimelineItem } from '@nuxt/ui'
 
 const { list, title } = defineProps<{
@@ -11,19 +11,21 @@ const active = ref(0)
 
 <template>
   <section
-    class="py-16"
     id="experience"
+    class="py-16"
   >
     <UContainer>
       <UPageHeader class="mb-8">
-        <template #title> <span class="text-success font-mono text-sm">02 /</span> {{ title }} </template>
+        <template #title>
+          <span class="text-success font-mono text-sm">02 /</span> {{ title }}
+        </template>
       </UPageHeader>
 
       <UTimeline
         v-model="active"
         :items="list"
-        size="2xl"
         color="success"
+        size="2xl"
       >
         <template #date="{ item }">
           <span class="font-mono"> {{ item.dateStart }} - {{ item.dateEnd }} </span>
@@ -33,8 +35,8 @@ const active = ref(0)
           {{ item.description }}
 
           <ul
-            class="mt-2 list-inside list-disc"
             v-if="item.descriptionList"
+            class="mt-2 list-inside list-disc"
           >
             <li
               v-for="(desc, index) in item.descriptionList"

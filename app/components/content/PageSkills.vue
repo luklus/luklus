@@ -1,10 +1,10 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 type SkillsSection = {
   header: string
   items: string[]
 }
 
-const { list, title } = defineProps<{
+const { list = [], title } = defineProps<{
   list?: SkillsSection[]
   title: string
 }>()
@@ -12,12 +12,14 @@ const { list, title } = defineProps<{
 
 <template>
   <div
-    class="bg-muted py-16"
     id="skills"
+    class="bg-muted py-16"
   >
     <UContainer>
       <UPageHeader class="mb-8">
-        <template #title> <span class="text-success font-mono text-sm">03 /</span> {{ title }} </template>
+        <template #title>
+          <span class="text-success font-mono text-sm">03 /</span> {{ title }}
+        </template>
       </UPageHeader>
 
       <UPageGrid>
@@ -32,8 +34,8 @@ const { list, title } = defineProps<{
               v-for="item in section.items"
               :key="`${section.header}-${item}`"
               color="neutral"
-              variant="subtle"
               size="lg"
+              variant="subtle"
             >
               {{ item }}
             </UBadge>

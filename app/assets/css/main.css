@@ -14,10 +14,37 @@
   --ui-primary: white;
 }
 
-/* main {
-  background:
-    linear-gradient(rgba(10, 10, 10, 0.035) 1px, transparent 1px) 0% 0% / 64px
-      64px,
-    linear-gradient(90deg, rgba(10, 10, 10, 0.035) 1px, transparent 1px)
-      rgb(253, 253, 252);
-} */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #09090b !important;
+    font-size: 10.5pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  header,
+  footer,
+  nav,
+  .no-print,
+  #pwa-status,
+  [data-no-print] {
+    display: none !important;
+  }
+
+  .break-inside-avoid {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+}

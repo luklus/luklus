@@ -36,10 +36,12 @@ const commonSchema = z.object({
   projectsTitle: z.string(),
   projectsList: z.array(
     z.object({
-      title: z.string(),
+      badges: z.array(z.string()).optional(),
       description: z.string(),
-      to: z.string(),
-      image: z.string().optional()
+      featured: z.boolean().optional(),
+      image: z.string().optional(),
+      title: z.string(),
+      to: z.string()
     })
   ),
   aiDescription: z.string(),
@@ -50,7 +52,37 @@ const commonSchema = z.object({
       description: z.string(),
       value: z.string().optional()
     })
-  )
+  ),
+  contactInfo: z
+    .object({
+      email: z.string().optional(),
+      github: z.string().optional(),
+      linkedin: z.string().optional(),
+      location: z.string().optional(),
+      phone: z.string().optional(),
+      website: z.string().optional()
+    })
+    .optional(),
+  cvSummary: z.string().optional(),
+  education: z
+    .array(
+      z.object({
+        dateEnd: z.string().optional(),
+        dateStart: z.string().optional(),
+        degree: z.string(),
+        school: z.string()
+      })
+    )
+    .optional(),
+  languages: z
+    .array(
+      z.object({
+        level: z.string(),
+        name: z.string()
+      })
+    )
+    .optional(),
+  rodoClause: z.string().optional()
 })
 
 export default defineContentConfig({

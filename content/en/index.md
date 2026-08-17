@@ -1,8 +1,8 @@
 ---
 # Section: Hero
 heroDescription: 'Senior Frontend Engineer with 8+ years of experience creating performant, maintainable web applications - from architecture to pixel-perfect execution.'
-heroHeadline: 'FRONTEND DEVELOPER — OPEN TO NEW ROLES'
-heroTitle: 'Building scalable frontend applications with Vue, Nuxt and AI.'
+heroHeadline: 'FRONTEND ARCHITECT — OPEN TO NEW OPPORTUNITIES'
+heroTitle: 'Architecting scalable frontend applications with Vue, Nuxt and AI.'
 
 # Section: Approach
 approachDescription: 'A consistent process from discovery to a shipped, optimized product.'
@@ -21,26 +21,26 @@ approachList:
   - label: '06'
     description: 'Optimization'
   - label: '07'
-    description: 'AI Collaboration'
+    description: 'AI-Assisted Delivery'
 
 # Section: Experience
 experienceTitle: 'Experience'
 experienceList:
   - dateStart: '2024'
     dateEnd: 'Present'
-    description: 'Owns frontend architecture for headless commerce products; drives adoption of AI-assisted workflows across the team.'
+    description: 'Leads frontend architecture for modern web applications; drives adoption of AI-assisted workflows across the engineering team.'
     descriptionList:
-      - 'Architecture decisions for a public product.'
-      - "Introduced AI-assisted code review into the team's workflow."
+      - 'Architectural decisions and code quality standards for public products.'
+      - 'Spearheading AI-assisted development and automated code reviews across the team.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Developer · ithouse.co'
   - dateStart: '2019'
     dateEnd: '2024'
     description: 'Led a frontend team delivering enterprise applications; owned architecture and design-system decisions.'
     descriptionList:
-      - 'Angular and SAP development.'
-      - 'Enterprise applications and headless commerce integrations.'
-      - 'Mentored engineers and set frontend architecture standards.'
+      - 'Enterprise application architecture and integrations with the SAP ecosystem.'
+      - 'Scalable frontend systems and headless commerce solutions.'
+      - 'Mentored engineers and established engineering standards.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Developer · Team Lead · Cloudflight'
   - dateStart: '2018'
@@ -58,11 +58,11 @@ skillsList:
   - header: 'Frontend'
     items: ['TypeScript', 'JavaScript', 'Vue', 'Nuxt', 'Angular', 'React']
   - header: 'Architecture'
-    items: ['SSR', 'SSG', 'Headless Commerce', 'Design Systems', 'Performance']
+    items: ['SSR / SSG', 'Headless Commerce', 'Design Systems', 'Web Performance']
   - header: 'State & Data'
     items: ['Pinia', 'REST', 'GraphQL', 'Supabase']
   - header: 'Testing'
-    items: ['Vitest', 'Quality tools']
+    items: ['Vitest', 'Playwright', 'ESLint', 'CI/CD']
   - header: 'Backend'
     items: ['Node', 'PHP', 'Laravel']
   - header: 'Design'
@@ -73,18 +73,36 @@ skillsList:
 # Section: Projects
 projectsTitle: 'Side Projects'
 projectsList:
+  - title: 'HomeKeeper · The operating system for your home'
+    description: 'All-in-one home management platform for tracking warranties, appliance maintenance, meter readings, tasks and expenses. Designed and built from scratch as founder & owner.'
+    image: '/images/homekeeper.jpg'
+    to: 'https://gethomekeeper.app/'
+    badges:
+      - 'Founder & Owner'
+      - 'In Active Development'
+      - 'SaaS Platform'
+    featured: true
   - title: 'Zieliński ART, Jeweler'
-    description: 'Website of a professional jewelry workshop offering luxury custom-made jewelry.'
+    description: 'Custom portfolio and showcase website for an exclusive jewelry atelier, highlighting bespoke goldsmithing craftsmanship, project stories, and high-detail visuals.'
     image: '/images/zielinskiart.webp'
     to: 'https://www.zielinskiart.pl/'
+    badges:
+      - 'Client Project'
+      - 'Showcase & Atelier'
   - title: 'Auto TIP, Mechanical Workshop'
-    description: 'Website of a mechanical workshop with over 30 years of experience in vehicle service and repair.'
-    to: 'https://www.zielinskiart.pl/'
+    description: 'Modern, high-performance web presence for an automotive service workshop with 30+ years of experience, featuring clear service breakdowns and local SEO optimization.'
+    to: 'https://www.autotip.pl/'
     image: '/images/autotip.webp'
+    badges:
+      - 'Client Project'
+      - 'Nuxt & Performance SEO'
   - title: 'LOOP Mobi, Mobile Hairdresser'
-    description: 'Website of a hair salon offering mobile services with home visits.'
+    description: 'Fast, responsive booking and showcase platform for a mobile hair salon, with transparent pricing tiers, service area calculation, and direct contact flows.'
     to: 'https://loop-mobilny-fryzjer.pl/'
     image: '/images/loopmobi.webp'
+    badges:
+      - 'Client Project'
+      - 'Next.js & Responsive UI'
 
 # Section: AI
 aiDescription: 'AI is a tool in the workflow, not a shortcut around engineering judgment.'
@@ -102,6 +120,31 @@ aiList:
     description: 'Testing'
   - label: '06'
     description: 'Optimization'
+
+# Section: CV & Contact Info
+contactInfo:
+  email: 'lukaslusiak.bussines@outlook.com'
+  phone: '+48 606 688 439'
+  location: 'Poland · Remote'
+  github: 'https://github.com/luklus'
+  linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b'
+  website: 'https://luklus.me'
+
+cvSummary: 'Senior Frontend Engineer & Architect with 8+ years of experience engineering scalable web applications, enterprise systems, and headless commerce platforms. Specialized in Vue / Nuxt ecosystems, modular design systems, Core Web Vitals performance tuning, and AI-augmented software engineering workflows.'
+
+languages:
+  - name: 'Polish'
+    level: 'Native'
+  - name: 'English'
+    level: 'Intermediate (B2)'
+
+education:
+  - degree: 'Technician: Computer and Internet Systems and Networks'
+    school: 'Education Center in Zabrze'
+    dateStart: '2002'
+    dateEnd: '2006'
+
+rodoClause: 'I hereby agree to the processing of personal data provided in this document for the purpose of the recruitment process in accordance with the General Data Protection Regulation (EU) 2016/679 (GDPR).'
 ---
 
 ::page-hero{:description="heroDescription" :headline="heroHeadline" :title="heroTitle"}

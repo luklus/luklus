@@ -19,12 +19,13 @@ describe('PageHero', () => {
     expect(text).toContain(props.headline)
   })
 
-  it('renders the hero image with an alt attribute', async () => {
+  it('renders the hero diagram with accessible role and label', async () => {
     const component = await mountSuspended(PageHero, { props })
-    const img = component.find('img')
+    const svg = component.find('svg')
 
-    expect(img.exists()).toBe(true)
-    expect(img.attributes('alt')).toBeTruthy()
+    expect(svg.exists()).toBe(true)
+    expect(svg.attributes('role')).toBe('img')
+    expect(svg.attributes('aria-label')).toBeTruthy()
   })
 
   it('links to phone, LinkedIn and GitHub', async () => {

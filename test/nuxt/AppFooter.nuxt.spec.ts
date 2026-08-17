@@ -22,7 +22,9 @@ describe('AppFooter', () => {
 
   it('opens external profiles in a new tab', async () => {
     const component = await mountSuspended(AppFooter)
-    const github = component.findAll('a').find((a) => a.attributes('href') === 'https://github.com/luklus')
+    const github = component
+      .findAll('a')
+      .find((a) => a.attributes('href') === 'https://github.com/luklus')
 
     expect(github?.attributes('target')).toBe('_blank')
   })

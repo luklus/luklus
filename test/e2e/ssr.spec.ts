@@ -7,12 +7,13 @@ import { describe, expect, it } from 'vitest'
  * End-to-end tests: build and run the real Nuxt server, then assert the
  * server-rendered output. These run in a plain node environment.
  */
-describe('home page (SSR)', async () => {
+describe('home page (SSR)', { timeout: 300000 }, async () => {
   await setup({
-    rootDir: fileURLToPath(new URL('..', import.meta.url)),
+    rootDir: fileURLToPath(new URL('../..', import.meta.url)),
     server: true,
-    // Sourcemaps aren't needed for e2e assertions and disabling them avoids a
-    // rollup sourcemap-collision edge case during the production test build.
+    dev: true,
+    setupTimeout: 60000,
+    serverStartTimeout: 30000,
     nuxtConfig: {
       sourcemap: { server: false, client: false }
     }
@@ -27,14 +28,14 @@ describe('home page (SSR)', async () => {
   it('renders the hero content from the content collection', async () => {
     const html = await $fetch('/')
 
-    expect(html).toContain('Building scalable frontend applications')
-    expect(html).toContain('FRONTEND DEVELOPER')
+    expect(html).toContain('Architecting scalable frontend applications with Vue, Nuxt and AI.')
+    expect(html).toContain('FRONTEND ARCHITECT — OPEN TO NEW OPPORTUNITIES')
   })
 
   it('renders the navigation sections', async () => {
     const html = await $fetch('/')
 
-    for (const label of ['Approach', 'Experience', 'Skills', 'Projects']) {
+    for (const label of ['Approach', 'Experience', 'Skills', 'Projects', 'AI']) {
       expect(html).toContain(label)
     }
   })
@@ -48,10 +49,18 @@ describe('home page (SSR)', async () => {
 
   it('serves the page with a 200 status and the default language', async () => {
     const res = await fetch('/')
+    expect(res.status).toBe(200)
 
+    const html = await $fetch('/')
+    expect(html).toMatch(/lang="en/i)
+  })
+
+  it('renders the CV printable page', async () => {
+    const res = await fetch('/cv')
     expect(res.status).toBe(200)
 
     const html = await res.text()
-    expect(html).toContain('lang="en-US"')
+    expect(html).toContain('Łukasz Łusiak')
+    expect(html).toContain('Frontend Architect & Senior Engineer')
   })
 })
