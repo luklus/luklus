@@ -4,6 +4,8 @@ const { description, headline, title } = defineProps<{
   headline: string
   title: string
 }>()
+
+const localePath = useLocalePath()
 </script>
 
 <template>
@@ -43,6 +45,16 @@ const { description, headline, title } = defineProps<{
         variant="solid"
       >
         {{ $t('contact') }}
+      </UButton>
+
+      <UButton
+        :to="localePath('/cv')"
+        color="neutral"
+        icon="i-lucide-file-text"
+        size="lg"
+        variant="link"
+      >
+        {{ $t('cv') }}
       </UButton>
 
       <UButton

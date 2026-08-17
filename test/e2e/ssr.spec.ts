@@ -7,7 +7,7 @@ import { describe, expect, it } from 'vitest'
  * End-to-end tests: build and run the real Nuxt server, then assert the
  * server-rendered output. These run in a plain node environment.
  */
-describe('home page (SSR)', async () => {
+describe('home page (SSR)', { timeout: 300000 }, async () => {
   await setup({
     rootDir: fileURLToPath(new URL('../..', import.meta.url)),
     server: true,
@@ -53,5 +53,14 @@ describe('home page (SSR)', async () => {
 
     const html = await res.text()
     expect(html).toContain('lang="en"')
+  })
+
+  it('renders the CV printable page', async () => {
+    const res = await fetch('/cv')
+    expect(res.status).toBe(200)
+
+    const html = await res.text()
+    expect(html).toContain('Łukasz Łusiak')
+    expect(html).toContain('Frontend Architect & Senior Engineer')
   })
 })

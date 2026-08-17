@@ -41,7 +41,7 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: false,
       failOnError: false,
-      routes: ['/', '/pl']
+      routes: ['/', '/pl', '/cv', '/pl/cv']
     }
   },
 

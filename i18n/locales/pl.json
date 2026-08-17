@@ -12,5 +12,16 @@
   "pwaNewVersion": "Dostępna nowa wersja",
   "pwaReadyOffline": "Aplikacja gotowa do pracy offline",
   "pwaReload": "Odśwież",
-  "skills": "Umiejętności"
+  "skills": "Umiejętności",
+  "cv": "CV",
+  "printCv": "Drukuj / Pobierz PDF",
+  "downloadPdf": "Pobierz CV (PDF)",
+  "backToHome": "Strona główna",
+  "languages": "Języki",
+  "education": "Edukacja",
+  "summary": "Profil zawodowy",
+  "contactDetails": "Kontakt",
+  "rodoClause": "Klauzula RODO",
+  "openPdfPreview": "Zobacz CV / Drukuj",
+  "printTip": "Porada: Wybierz 'Zapisz jako PDF' w oknie drukowania"
 }

@@ -120,6 +120,31 @@ aiList:
     description: 'Testing'
   - label: '06'
     description: 'Optimization'
+
+# Section: CV & Contact Info
+contactInfo:
+  email: 'lukaslusiak.bussines@outlook.com'
+  phone: '+48 606 688 439'
+  location: 'Poland · Remote'
+  github: 'https://github.com/luklus'
+  linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b'
+  website: 'https://luklus.me'
+
+cvSummary: 'Senior Frontend Engineer & Architect with 8+ years of experience engineering scalable web applications, enterprise systems, and headless commerce platforms. Specialized in Vue / Nuxt ecosystems, modular design systems, Core Web Vitals performance tuning, and AI-augmented software engineering workflows.'
+
+languages:
+  - name: 'Polish'
+    level: 'Native'
+  - name: 'English'
+    level: 'Intermediate (B2)'
+
+education:
+  - degree: 'Technician: Computer and Internet Systems and Networks'
+    school: 'Education Center in Zabrze'
+    dateStart: '2002'
+    dateEnd: '2006'
+
+rodoClause: 'I hereby agree to the processing of personal data provided in this document for the purpose of the recruitment process in accordance with the General Data Protection Regulation (EU) 2016/679 (GDPR).'
 ---
 
 ::page-hero{:description="heroDescription" :headline="heroHeadline" :title="heroTitle"}

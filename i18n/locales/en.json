@@ -12,5 +12,16 @@
   "pwaNewVersion": "New version available",
   "pwaReadyOffline": "Ready to work offline",
   "pwaReload": "Reload",
-  "skills": "Skills"
+  "skills": "Skills",
+  "cv": "CV",
+  "printCv": "Print / Download PDF",
+  "downloadPdf": "Download CV (PDF)",
+  "backToHome": "Home",
+  "languages": "Languages",
+  "education": "Education",
+  "summary": "Professional Summary",
+  "contactDetails": "Contact",
+  "rodoClause": "GDPR Clause",
+  "openPdfPreview": "View CV / Print",
+  "printTip": "Tip: Select 'Save as PDF' in the browser print dialog"
 }

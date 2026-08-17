@@ -120,6 +120,31 @@ aiList:
     description: 'Testowanie'
   - label: '06'
     description: 'Optymalizacja'
+
+# Section: CV & Contact Info
+contactInfo:
+  email: 'lukaslusiak.bussines@outlook.com'
+  phone: '+48 606 688 439'
+  location: 'Polska · Praca zdalna'
+  github: 'https://github.com/luklus'
+  linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b'
+  website: 'https://luklus.me'
+
+cvSummary: 'Senior Frontend Engineer z ponad 8-letnim doświadczeniem w projektowaniu i wdrażaniu skalowalnych aplikacji webowych, systemów enterprise oraz rozwiązań headless e-commerce. Specjalizuję się w architekturze Vue / Nuxt, systemach designu, wydajności (Core Web Vitals) oraz optymalizacji procesów wytwarzania oprogramowania przy użyciu AI.'
+
+languages:
+  - name: 'Polski'
+    level: 'Ojczysty'
+  - name: 'Angielski'
+    level: 'Średnio zaawansowany (B2)'
+
+education:
+  - degree: 'Technik: Systemy i Sieci Komputerowe i Internetowe'
+    school: 'Centrum Edukacji w Zabrzu'
+    dateStart: '2002'
+    dateEnd: '2006'
+
+rodoClause: 'Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych (RODO)).'
 ---
 
 ::page-hero{:description="heroDescription" :headline="heroHeadline" :title="heroTitle"}
