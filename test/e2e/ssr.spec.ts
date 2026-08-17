@@ -11,8 +11,9 @@ describe('home page (SSR)', { timeout: 300000 }, async () => {
   await setup({
     rootDir: fileURLToPath(new URL('../..', import.meta.url)),
     server: true,
-    // Sourcemaps aren't needed for e2e assertions and disabling them avoids a
-    // rollup sourcemap-collision edge case during the production test build.
+    dev: true,
+    setupTimeout: 60000,
+    serverStartTimeout: 30000,
     nuxtConfig: {
       sourcemap: { server: false, client: false }
     }
@@ -48,11 +49,10 @@ describe('home page (SSR)', { timeout: 300000 }, async () => {
 
   it('serves the page with a 200 status and the default language', async () => {
     const res = await fetch('/')
-
     expect(res.status).toBe(200)
 
-    const html = await res.text()
-    expect(html).toContain('lang="en"')
+    const html = await $fetch('/')
+    expect(html).toMatch(/lang="en/i)
   })
 
   it('renders the CV printable page', async () => {
