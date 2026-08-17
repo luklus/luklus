@@ -59,6 +59,13 @@ export default defineNuxtConfig({
     experimental: { sqliteConnector: 'native' }
   },
 
+  // Static-first: no runtime OG image generation (would need a serverless
+  // function + a stable NUXT_OG_IMAGE_SECRET). We ship a static og:image
+  // (public/icon.png) via useSeoMeta in app.vue instead.
+  ogImage: {
+    enabled: false
+  },
+
   fonts: {
     families: [
       { name: 'Inter', provider: 'google', weights: [400, 500, 600, 700, 800] },
@@ -73,5 +80,50 @@ export default defineNuxtConfig({
   site: {
     name: 'Łukasz Łusiak - Senior Frontend Engineer',
     url: 'https://luklus.me'
+  },
+
+  // Installable PWA with offline support. Icons live in `public/` and are
+  // precached together with the prerendered HTML/CSS/JS and self-hosted fonts.
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'Łukasz Łusiak - Senior Frontend Engineer',
+      short_name: 'll.me',
+      description:
+        'Senior Frontend Engineer with 8+ years of experience creating performant, maintainable web applications - from architecture to pixel.',
+      lang: 'en',
+      display: 'standalone',
+      start_url: '/',
+      scope: '/',
+      theme_color: '#000000',
+      background_color: '#ffffff',
+      icons: [
+        { src: 'icon-192x192.png', sizes: '192x192', type: 'image/png' },
+        { src: 'icon-256x256.png', sizes: '256x256', type: 'image/png' },
+        { src: 'icon-384x384.png', sizes: '384x384', type: 'image/png' },
+        { src: 'icon-512x512.png', sizes: '512x512', type: 'image/png' },
+        {
+          src: 'icon-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'maskable'
+        }
+      ]
+    },
+    workbox: {
+      globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,woff2}'],
+      navigateFallback: '/',
+      cleanupOutdatedCaches: true
+    },
+    client: {
+      installPrompt: true
+    },
+    // Keep the service worker off during `nuxt dev` (avoids stale-cache
+    // surprises). Test the PWA against `pnpm build && pnpm preview` instead.
+    devOptions: {
+      enabled: false,
+      suppressWarnings: true,
+      navigateFallback: '/'
+    }
   }
 })

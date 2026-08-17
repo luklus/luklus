@@ -1,0 +1,14 @@
+# Build / dependency output
+.output
+.nuxt
+.nitro
+.data
+.cache
+dist
+node_modules
+pnpm-lock.yaml
+
+# Vendored agent skills (managed by skills-lock.json, not formatted by us)
+.agents
+.claude
+skills-lock.json

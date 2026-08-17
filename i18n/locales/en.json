@@ -4,6 +4,13 @@
   "contact": "Contact me",
   "email": "Click to email",
   "experience": "Experience",
+  "footerTitle": "Have a project or opportunity? Let's talk.",
   "projects": "Projects",
+  "pwaDismiss": "Dismiss",
+  "pwaInstall": "Install",
+  "pwaInstallApp": "Install this app",
+  "pwaNewVersion": "New version available",
+  "pwaReadyOffline": "Ready to work offline",
+  "pwaReload": "Reload",
   "skills": "Skills"
 }

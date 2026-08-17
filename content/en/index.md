@@ -1,8 +1,8 @@
 ---
 # Section: Hero
 heroDescription: 'Senior Frontend Engineer with 8+ years of experience creating performant, maintainable web applications - from architecture to pixel-perfect execution.'
-heroHeadline: 'FRONTEND DEVELOPER — OPEN TO NEW ROLES'
-heroTitle: 'Building scalable frontend applications with Vue, Nuxt and AI.'
+heroHeadline: 'FRONTEND ARCHITECT — OPEN TO NEW OPPORTUNITIES'
+heroTitle: 'Architecting scalable frontend applications with Vue, Nuxt and AI.'
 
 # Section: Approach
 approachDescription: 'A consistent process from discovery to a shipped, optimized product.'
@@ -21,7 +21,7 @@ approachList:
   - label: '06'
     description: 'Optimization'
   - label: '07'
-    description: 'AI Collaboration'
+    description: 'AI-Assisted Delivery'
 
 # Section: Experience
 experienceTitle: 'Experience'
@@ -62,7 +62,7 @@ skillsList:
   - header: 'State & Data'
     items: ['Pinia', 'REST', 'GraphQL', 'Supabase']
   - header: 'Testing'
-    items: ['Vitest', 'Quality tools']
+    items: ['Vitest', 'Code Quality tools']
   - header: 'Backend'
     items: ['Node', 'PHP', 'Laravel']
   - header: 'Design'
@@ -73,18 +73,35 @@ skillsList:
 # Section: Projects
 projectsTitle: 'Side Projects'
 projectsList:
+  - title: 'HomeKeeper · The operating system for your home'
+    description: 'All-in-one home management platform for tracking warranties, appliance maintenance, meter readings, tasks and expenses. Designed and built from scratch as founder & owner.'
+    image: '/images/homekeeper.jpg'
+    to: 'https://gethomekeeper.app/'
+    badges:
+      - 'Founder & Owner'
+      - 'In Progress'
+    featured: true
   - title: 'Zieliński ART, Jeweler'
-    description: 'Website of a professional jewelry workshop offering luxury custom-made jewelry.'
+    description: 'Custom portfolio and showcase website for an exclusive jewelry atelier, highlighting bespoke goldsmithing craftsmanship, project stories, and high-detail visuals.'
     image: '/images/zielinskiart.webp'
     to: 'https://www.zielinskiart.pl/'
+    badges:
+      - 'Client Project'
+      - 'Showcase & Atelier'
   - title: 'Auto TIP, Mechanical Workshop'
-    description: 'Website of a mechanical workshop with over 30 years of experience in vehicle service and repair.'
-    to: 'https://www.zielinskiart.pl/'
+    description: 'Modern, high-performance web presence for an automotive service workshop with 30+ years of experience, featuring clear service breakdowns and local SEO optimization.'
+    to: 'https://www.autotip.pl/'
     image: '/images/autotip.webp'
+    badges:
+      - 'Client Project'
+      - 'Nuxt & Local SEO'
   - title: 'LOOP Mobi, Mobile Hairdresser'
-    description: 'Website of a hair salon offering mobile services with home visits.'
+    description: 'Fast, responsive booking and showcase platform for a mobile hair salon, with transparent pricing tiers, service area calculation, and direct contact flows.'
     to: 'https://loop-mobilny-fryzjer.pl/'
     image: '/images/loopmobi.webp'
+    badges:
+      - 'Client Project'
+      - 'Next.js & Tailwind'
 
 # Section: AI
 aiDescription: 'AI is a tool in the workflow, not a shortcut around engineering judgment.'

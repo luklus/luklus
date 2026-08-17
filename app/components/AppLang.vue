@@ -8,11 +8,11 @@ const availableLocales = computed(() => {
 
 <template>
   <UButton
+    v-for="targetLocale in availableLocales"
+    :key="targetLocale.code"
     class="font-mono"
-    v-for="locale in availableLocales"
-    :key="locale.code"
-    @click.prevent.stop="setLocale(locale.code)"
+    @click.prevent.stop="setLocale(targetLocale.code)"
   >
-    {{ locale.name }}
+    {{ targetLocale.name }}
   </UButton>
 </template>

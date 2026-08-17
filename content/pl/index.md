@@ -1,8 +1,8 @@
 ---
 # Section: Hero
-heroDescription: 'Senior Frontend Engineer z ponad 8-letnim doświadczeniem w tworzeniu wydajnych i łatwych w utrzymaniu aplikacji internetowych - od architektury po dopracowany interfejs.'
-heroHeadline: 'FRONTEND DEVELOPER — OTWARTY NA NOWE ROLE'
-heroTitle: 'Tworzę skalowalne aplikacje frontendowe z użyciem Vue, Nuxt i AI.'
+heroDescription: 'Senior Frontend Engineer z ponad 8-letnim doświadczeniem w tworzeniu wydajnych i łatwych w utrzymaniu aplikacji internetowych - od decyzji architektonicznych po dopracowany w detalach interfejs.'
+heroHeadline: 'FRONTEND ARCHITECT — OTWARTY NA NOWE WYZWANIA'
+heroTitle: 'Projektuję i tworzę skalowalne aplikacje frontendowe w oparciu o Vue, Nuxt i AI.'
 
 # Section: Approach
 approachDescription: 'Spójny proces od etapu discovery do wdrożenia i optymalizacji produktu.'
@@ -21,7 +21,7 @@ approachList:
   - label: '06'
     description: 'Optymalizacja'
   - label: '07'
-    description: 'Współpraca z AI'
+    description: 'Dostarczanie wspierane przez AI'
 
 # Section: Experience
 experienceTitle: 'Doświadczenie'
@@ -62,7 +62,7 @@ skillsList:
   - header: 'Stan i dane'
     items: ['Pinia', 'REST', 'GraphQL', 'Supabase']
   - header: 'Testowanie'
-    items: ['Vitest', 'Narzędzia jakości']
+    items: ['Vitest', 'Narzędzia jakości kodu']
   - header: 'Backend'
     items: ['Node', 'PHP', 'Laravel']
   - header: 'Projektowanie'
@@ -73,18 +73,35 @@ skillsList:
 # Section: Projects
 projectsTitle: 'Projekty poboczne'
 projectsList:
+  - title: 'HomeKeeper · System operacyjny dla Twojego domu'
+    description: 'Kompleksowa platforma do zarządzania domem: rejestr gwarancji, harmonogram przeglądów, odczyty liczników, zadania i budżet. Zaprojektowana i stworzona od podstaw jako twórca i właściciel.'
+    image: '/images/homekeeper.jpg'
+    to: 'https://gethomekeeper.app/'
+    badges:
+      - 'Twórca & Właściciel'
+      - 'W trakcie rozwoju'
+    featured: true
   - title: 'Zieliński ART, Jubiler'
-    description: 'Strona profesjonalnego zakładu jubilerskiego oferującego luksusową biżuterię na zamówienie.'
+    description: 'Dedykowana strona portfolio dla ekskluzywnej pracowni złotniczej, akcentująca unikatowe rzemiosło, historie realizacji oraz luksusową biżuterię na zamówienie.'
     image: '/images/zielinskiart.webp'
     to: 'https://www.zielinskiart.pl/'
+    badges:
+      - 'Projekt komercyjny'
+      - 'Showcase & Pracownia'
   - title: 'Auto TIP, Zakład Mechaniczny'
-    description: 'Strona zakładu mechanicznego, który ma ponad 30 lat doświadczenia w serwisowaniu i naprawie pojazdów.'
-    to: 'https://www.zielinskiart.pl/'
+    description: 'Nowoczesna, zoptymalizowana pod kątem SEO i wydajności wizytówka dla serwisu samochodowego z ponad 30-letnim doświadczeniem w diagnostyce i mechanice.'
+    to: 'https://www.autotip.pl/'
     image: '/images/autotip.webp'
+    badges:
+      - 'Projekt komercyjny'
+      - 'Nuxt & Lokalne SEO'
   - title: 'LOOP Mobi, Fryzjer Mobilny'
-    description: 'Strona zakładu fryzjerskiego oferującego usługi z dojazdem do klienta.'
-    to: https://loop-mobilny-fryzjer.pl/'
+    description: 'Szybka i intuicyjna strona usługowa dla mobilnego salonu fryzjerskiego z interaktywnym cennikiem, kalkulacją zasięgu dojazdu oraz bezpośrednim kontaktem.'
+    to: 'https://loop-mobilny-fryzjer.pl/'
     image: '/images/loopmobi.webp'
+    badges:
+      - 'Projekt komercyjny'
+      - 'Next.js & Tailwind'
 
 # Section: AI
 aiDescription: 'AI to narzędzie w workflow, a nie skrót omijający inżynierski osąd.'

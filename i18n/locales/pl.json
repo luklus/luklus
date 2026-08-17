@@ -4,6 +4,13 @@
   "contact": "Skontaktuj się",
   "email": "Kliknij, aby wysłać e-mail",
   "experience": "Doświadczenie",
+  "footerTitle": "Masz projekt lub propozycję współpracy? Porozmawiajmy.",
   "projects": "Projekty",
+  "pwaDismiss": "Zamknij",
+  "pwaInstall": "Zainstaluj",
+  "pwaInstallApp": "Zainstaluj aplikację",
+  "pwaNewVersion": "Dostępna nowa wersja",
+  "pwaReadyOffline": "Aplikacja gotowa do pracy offline",
+  "pwaReload": "Odśwież",
   "skills": "Umiejętności"
 }

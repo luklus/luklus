@@ -9,7 +9,7 @@ import { describe, expect, it } from 'vitest'
  */
 describe('home page (SSR)', async () => {
   await setup({
-    rootDir: fileURLToPath(new URL('..', import.meta.url)),
+    rootDir: fileURLToPath(new URL('../..', import.meta.url)),
     server: true,
     // Sourcemaps aren't needed for e2e assertions and disabling them avoids a
     // rollup sourcemap-collision edge case during the production test build.
@@ -27,14 +27,14 @@ describe('home page (SSR)', async () => {
   it('renders the hero content from the content collection', async () => {
     const html = await $fetch('/')
 
-    expect(html).toContain('Building scalable frontend applications')
-    expect(html).toContain('FRONTEND DEVELOPER')
+    expect(html).toContain('Architecting scalable frontend applications with Vue, Nuxt and AI.')
+    expect(html).toContain('FRONTEND ARCHITECT — OPEN TO NEW OPPORTUNITIES')
   })
 
   it('renders the navigation sections', async () => {
     const html = await $fetch('/')
 
-    for (const label of ['Approach', 'Experience', 'Skills', 'Projects']) {
+    for (const label of ['Approach', 'Experience', 'Skills', 'Projects', 'AI']) {
       expect(html).toContain(label)
     }
   })
@@ -52,6 +52,6 @@ describe('home page (SSR)', async () => {
     expect(res.status).toBe(200)
 
     const html = await res.text()
-    expect(html).toContain('lang="en-US"')
+    expect(html).toContain('lang="en"')
   })
 })

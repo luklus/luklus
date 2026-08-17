@@ -36,10 +36,12 @@ const commonSchema = z.object({
   projectsTitle: z.string(),
   projectsList: z.array(
     z.object({
-      title: z.string(),
+      badges: z.array(z.string()).optional(),
       description: z.string(),
-      to: z.string(),
-      image: z.string().optional()
+      featured: z.boolean().optional(),
+      image: z.string().optional(),
+      title: z.string(),
+      to: z.string()
     })
   ),
   aiDescription: z.string(),

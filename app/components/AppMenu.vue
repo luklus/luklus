@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { NavigationMenuItem } from '@nuxt/ui'
 
 const items = computed<NavigationMenuItem[]>(() => [
@@ -32,8 +32,8 @@ const scrollToSection = (sectionId: string) => {
 
 <template>
   <UNavigationMenu
-    color="neutral"
     :items="items"
+    color="neutral"
     variant="link"
   >
     <template #item="{ item, index }">
