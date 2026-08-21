@@ -1,8 +1,12 @@
-<script setup>
-import * as locales from '@nuxt/ui/locale'
+<script lang="ts" setup>
+import { en, pl } from '@nuxt/ui/locale'
 
 const { locale } = useI18n()
-const lang = computed(() => locales[locale.value].code)
+const uiLocales = { en, pl } as const
+const activeLocale = computed(
+  () => uiLocales[locale.value as keyof typeof uiLocales]
+)
+const lang = computed(() => activeLocale.value.code)
 
 const seo = computed(() => {
   if (locale.value === 'pl') {
@@ -63,7 +67,7 @@ useSchemaOrg([
 </script>
 
 <template>
-  <UApp :locale="locales[locale]">
+  <UApp :locale="activeLocale">
     <VitePwaManifest />
     <NuxtPwaAssets />
     <NuxtRouteAnnouncer />
