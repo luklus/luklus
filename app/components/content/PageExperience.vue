@@ -39,8 +39,8 @@ const active = ref(0)
             class="mt-2 list-inside list-disc"
           >
             <li
-              v-for="(desc, index) in item.descriptionList"
-              :key="index"
+              v-for="desc in item.descriptionList"
+              :key="`${item.title}-${desc}`"
             >
               {{ desc }}
             </li>

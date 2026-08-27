@@ -220,8 +220,8 @@ const { locale } = useI18n()
 
           <div class="space-y-4">
             <article
-              v-for="(exp, index) in experienceList"
-              :key="index"
+              v-for="exp in experienceList"
+              :key="`${exp.title}-${exp.dateStart}-${exp.dateEnd}`"
               class="relative break-inside-avoid pl-3.5 text-xs before:absolute before:top-1.5 before:bottom-0 before:left-0 before:w-0.5 before:bg-zinc-200 dark:before:bg-zinc-800 print:before:bg-zinc-300"
             >
               <div class="flex flex-wrap items-baseline justify-between gap-1">
@@ -244,8 +244,8 @@ const { locale } = useI18n()
                 class="mt-1.5 space-y-0.5 text-zinc-500 dark:text-zinc-400 print:text-zinc-700"
               >
                 <li
-                  v-for="(point, pIdx) in exp.descriptionList"
-                  :key="pIdx"
+                  v-for="point in exp.descriptionList"
+                  :key="`${exp.title}-${point}`"
                   class="flex items-start gap-1.5"
                 >
                   <span class="text-success text-xs font-bold select-none">›</span>
@@ -274,8 +274,8 @@ const { locale } = useI18n()
 
           <div class="space-y-3">
             <article
-              v-for="(project, pIndex) in projectsList.slice(0, 3)"
-              :key="pIndex"
+              v-for="project in projectsList.slice(0, 3)"
+              :key="`${project.title}-${project.to}`"
               class="break-inside-avoid rounded-lg border border-zinc-200/60 p-2.5 dark:border-zinc-800/80 print:border-zinc-300 print:p-2"
             >
               <div class="flex items-center justify-between gap-2">
@@ -287,8 +287,8 @@ const { locale } = useI18n()
                   class="flex gap-1"
                 >
                   <span
-                    v-for="(badge, bIdx) in project.badges.slice(0, 2)"
-                    :key="bIdx"
+                    v-for="badge in project.badges.slice(0, 2)"
+                    :key="`${project.title}-${badge}`"
                     class="rounded bg-zinc-100 px-1.5 py-0.5 font-mono text-[10px] text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300 print:border print:border-zinc-300 print:bg-white print:text-zinc-800"
                   >
                     {{ badge }}
@@ -429,8 +429,8 @@ const { locale } = useI18n()
               </h2>
             </div>
             <div
-              v-for="(edu, eIdx) in education"
-              :key="eIdx"
+              v-for="edu in education"
+              :key="`${edu.degree}-${edu.school}-${edu.dateStart}-${edu.dateEnd}`"
               class="text-xs"
             >
               <div class="font-semibold text-zinc-900 dark:text-zinc-100 print:text-zinc-950">
