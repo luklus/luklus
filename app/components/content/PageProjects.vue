@@ -62,8 +62,8 @@ function isPulseBadge(badge: string): boolean {
 
       <UPageGrid>
         <UPageCard
-          v-for="(card, index) in list"
-          :key="index"
+          v-for="card in list"
+          :key="`${card.title}-${card.to}`"
           :class="[
             card.featured &&
               'ring-success/30 border-success/40 bg-success/5 dark:bg-success/5 hover:ring-success/50 transition-all duration-300'
@@ -80,8 +80,8 @@ function isPulseBadge(badge: string): boolean {
           >
             <div class="flex flex-wrap gap-1.5">
               <UBadge
-                v-for="(badge, badgeIndex) in card.badges"
-                :key="badgeIndex"
+                v-for="badge in card.badges"
+                :key="`${card.title}-${badge}`"
                 class="font-mono text-xs"
                 :color="getBadgeColor(badge)"
                 size="sm"
