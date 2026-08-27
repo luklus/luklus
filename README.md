@@ -36,26 +36,29 @@ pnpm dev        # http://localhost:3000
 Build and preview the real production (static) output:
 
 ```bash
-pnpm build
-pnpm preview
+pnpm generate
+npx serve .output/public
 ```
+
+Deploy the generated `.output/public` directory to any static host.
 
 ## Scripts
 
-| Script              | Purpose                                     |
-| ------------------- | ------------------------------------------- |
-| `pnpm dev`          | Dev server with HMR                         |
-| `pnpm build`        | Production build (prerenders `/` and `/pl`) |
-| `pnpm preview`      | Serve the built output locally              |
-| `pnpm lint`         | ESLint                                      |
-| `pnpm lint:fix`     | ESLint with autofix                         |
-| `pnpm format`       | Prettier write                              |
-| `pnpm format:check` | Prettier check                              |
-| `pnpm typecheck`    | `nuxt typecheck` (vue-tsc)                  |
-| `pnpm test`         | All test suites                             |
-| `pnpm test:unit`    | Node unit tests                             |
-| `pnpm test:nuxt`    | Component tests (happy-dom)                 |
-| `pnpm test:e2e`     | SSR end-to-end (builds + runs the server)   |
+| Script              | Purpose                                         |
+| ------------------- | ----------------------------------------------- |
+| `pnpm dev`          | Dev server with HMR                             |
+| `pnpm build`        | Standard Nuxt production build                  |
+| `pnpm generate`     | Standard Nuxt static export to `.output/public` |
+| `pnpm preview`      | Previews the output of `pnpm build`             |
+| `pnpm lint`         | ESLint                                          |
+| `pnpm lint:fix`     | ESLint with autofix                             |
+| `pnpm format`       | Prettier write                                  |
+| `pnpm format:check` | Prettier check                                  |
+| `pnpm typecheck`    | `nuxt typecheck` (vue-tsc)                      |
+| `pnpm test`         | All test suites                                 |
+| `pnpm test:unit`    | Node unit tests                                 |
+| `pnpm test:nuxt`    | Component tests (happy-dom)                     |
+| `pnpm test:e2e`     | SSR end-to-end (builds + runs the server)       |
 
 ## Project structure
 

@@ -11,9 +11,9 @@ Pre-deploy checklist and DevOps notes for shipping `luklus.me` to Vercel.
   required by the `native` SQLite connector used by `@nuxt/content`
   (`content.experimental.sqliteConnector: 'native'` needs `node:sqlite`,
   available from Node 22.5).
-- **Full prerender** (`nitro.prerender` for `/` and `/pl`). The site ships as
-  static output, so the content SQLite DB is only touched at build time — no
-  serverless runtime DB and no cold-start cost.
+- **Full prerender** (`/`, `/pl`, `/cv`, `/pl/cv`). `pnpm generate` emits a
+  static artifact in `.output/public`; the content SQLite DB is only touched at
+  build time — no serverless runtime DB and no cold-start cost.
 - **Security headers** on all routes via `routeRules` (no extra dependency).
 - **robots.txt** in `public/`.
 - **Renovate** auto-merges minor/patch/pin/digest updates once CI is green.
@@ -24,18 +24,17 @@ Pre-deploy checklist and DevOps notes for shipping `luklus.me` to Vercel.
 ### 1. Verify the production build locally
 
 ```bash
-pnpm build
-pnpm preview   # serves the real production output with the deploy preset
+pnpm generate
+npx serve .output/public
 ```
 
-Confirm both `/` (en) and `/pl` render correctly. If `pnpm build` reports a
-sourcemap collision (seen once on `AppMenu.vue`), disable sourcemaps in
-`nuxt.config.ts` (`sourcemap: { server: false, client: false }`).
+Confirm `/`, `/pl`, `/cv`, and `/pl/cv` render correctly.
 
 ### 2. Connect the repo on Vercel
 
-- Import the GitHub repo; Vercel auto-detects Nuxt/Nitro — no build config
-  needed. It uses `pnpm-lock.yaml` for install + build caching.
+- Import the GitHub repo and configure a static deployment: build command
+  `pnpm generate`, output directory `.output/public`. It uses `pnpm-lock.yaml`
+  for install + build caching.
 - Set the project **Node.js version to 22.x** (Settings > General) so it matches
   `.nvmrc` and the native SQLite connector.
 - Preview deployments per PR are automatic.

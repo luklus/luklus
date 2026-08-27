@@ -2,6 +2,7 @@
 import type { Collections } from '@nuxt/content'
 
 const { locale } = useI18n()
+const localePath = useLocalePath()
 const router = useRouter()
 
 const collection = computed(() => `content_${locale.value}` as keyof Collections)
@@ -24,18 +25,18 @@ function printCv() {
 }
 
 function goBack() {
-  router.push(locale.value === 'pl' ? '/pl' : '/')
+  router.push(localePath('/'))
 }
 
 useSeoMeta({
   title: () =>
     locale.value === 'pl'
       ? 'CV — Łukasz Łusiak | Senior Frontend Architect'
-      : 'CV — Łukasz Łusiak | Senior Frontend Architect',
+      : 'Resume / CV — Łukasz Łusiak | Senior Frontend Architect',
   description: () =>
     locale.value === 'pl'
-      ? 'Oficjalne CV Łukasza Łusiaka — Senior Frontend Engineer & Architect z ponad 8-letnim doświadczeniem.'
-      : 'Official Resume / CV of Łukasz Łusiak — Senior Frontend Engineer & Architect with 8+ years of experience.'
+      ? 'Oficjalne CV Łukasza Łusiaka — Senior Frontend Engineer & Architect z ponad 8-letnim doświadczeniem w Vue 3, Nuxt 3 i architekturze enterprise.'
+      : 'Official Resume of Łukasz Łusiak — Senior Frontend Engineer & Architect specializing in Vue 3, Nuxt 3, and scalable enterprise architecture.'
 })
 </script>
 
@@ -58,7 +59,7 @@ useSeoMeta({
           </UButton>
           <div class="hidden h-4 w-px bg-zinc-300 sm:block dark:bg-zinc-700" />
           <span class="hidden font-mono text-xs text-zinc-500 sm:inline dark:text-zinc-400">
-            A4 · Vector PDF
+            2 × A4 · Vector PDF
           </span>
         </div>
 
@@ -91,7 +92,7 @@ useSeoMeta({
       </div>
     </header>
 
-    <!-- Main Printable CV Sheet (A4 Dimensions) -->
+    <!-- Main Printable CV Sheet (2 x A4 Sheets) -->
     <CvSheet
       v-if="page"
       :show-rodo="showRodo"
@@ -109,13 +110,5 @@ useSeoMeta({
 
 <style scoped>
 @media print {
-  .cv-sheet {
-    box-shadow: none !important;
-    border: none !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
 }
 </style>

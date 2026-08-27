@@ -1,5 +1,5 @@
 <template>
-  <UFooter>
+  <UFooter class="no-print">
     <UPageSection :title="$t('footerTitle')">
       <template #description> </template>
 

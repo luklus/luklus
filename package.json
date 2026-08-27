@@ -10,6 +10,7 @@
     "dev": "nuxt dev",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
+    "generate": "nuxt generate",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "postinstall": "nuxt prepare",
@@ -22,10 +23,10 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.123",
+    "@iconify-json/lucide": "^1.2.126",
     "@iconify-json/simple-icons": "^1.2.93",
     "@nuxt/fonts": "^0.14.0",
-    "@nuxt/ui": "^4.10.0",
+    "@nuxt/ui": "^4.11.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "nuxt": "^4.5.2",
@@ -40,20 +41,20 @@
     "@nuxt/image": "^2.1.0",
     "@nuxt/test-utils": "^4.1.0",
     "@nuxtjs/i18n": "^10.6.0",
-    "@nuxtjs/seo": "^5.3.12",
+    "@nuxtjs/seo": "^5.3.14",
     "@vite-pwa/nuxt": "^1.1.1",
     "@vue/test-utils": "^2.4.11",
-    "eslint": "^10.8.1",
+    "eslint": "^10.9.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.6",
-    "happy-dom": "^20.11.2",
+    "happy-dom": "^20.11.8",
     "playwright-core": "^1.62.1",
     "prettier": "^3.9.6",
     "prettier-plugin-organize-attributes": "^1.0.0",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.10",
-    "vue-tsc": "^3.3.10"
+    "vitest": "^4.1.11",
+    "vue-tsc": "^3.3.11"
   },
   "packageManager": "pnpm@11.22.0"
 }

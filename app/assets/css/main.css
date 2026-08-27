@@ -29,9 +29,6 @@
     print-color-adjust: exact;
   }
 
-  header,
-  footer,
-  nav,
   .no-print,
   #pwa-status,
   [data-no-print] {

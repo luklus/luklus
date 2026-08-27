@@ -30,6 +30,7 @@ const commonSchema = z.object({
   skillsList: z.array(
     z.object({
       header: z.string(),
+      highlighted: z.array(z.string()).optional(),
       items: z.array(z.string())
     })
   ),
