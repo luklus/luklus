@@ -1,23 +1,39 @@
 <script lang="ts" setup>
+const { isError = false } = defineProps<{
+  isError?: boolean
+}>()
+
 const localePath = useLocalePath()
 const route = useRoute()
+const { open: openCareerChat } = useCareerChat()
 
 const isCvPage = computed(() => route.path.endsWith('/cv'))
+const isStandalonePage = computed(() => isCvPage.value || isError)
 </script>
 
 <template>
-  <UHeader>
+  <UHeader class="no-print">
     <template #left>
       <NuxtLink :to="localePath('/')">
         <AppLogo />
       </NuxtLink>
     </template>
 
-    <AppMenu v-if="!isCvPage" />
+    <AppMenu v-if="!isStandalonePage" />
 
     <template #right>
       <UButton
-        v-if="!isCvPage"
+        v-if="!isStandalonePage"
+        class="font-mono text-xs"
+        color="neutral"
+        icon="i-lucide-sparkles"
+        variant="ghost"
+        @click="openCareerChat"
+      >
+        {{ $t('careerAssistant.menuLabel') }}
+      </UButton>
+      <UButton
+        v-if="!isStandalonePage"
         class="font-mono text-xs"
         :to="localePath('/cv')"
         color="neutral"
@@ -40,4 +56,6 @@ const isCvPage = computed(() => route.path.endsWith('/cv'))
       <UColorModeButton />
     </template>
   </UHeader>
+
+  <CareerChat v-if="!isStandalonePage" />
 </template>

@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 type SkillsSection = {
   header: string
+  highlighted?: string[]
   items: string[]
 }
 
@@ -27,16 +28,21 @@ const { list = [], title } = defineProps<{
           v-for="section in list"
           :key="section.header"
         >
-          <h2 class="mb-4 font-mono">{{ section.header }}</h2>
+          <h2 class="mb-4 font-mono font-semibold">{{ section.header }}</h2>
 
           <div class="flex flex-wrap gap-2">
             <UBadge
               v-for="item in section.items"
               :key="`${section.header}-${item}`"
-              color="neutral"
+              :class="section.highlighted?.includes(item) ? 'ring-success ring-1' : ''"
+              :color="section.highlighted?.includes(item) ? 'success' : 'neutral'"
               size="lg"
               variant="subtle"
             >
+              <span
+                v-if="section.highlighted?.includes(item)"
+                class="mr-1 size-1.5 rounded-full bg-emerald-500"
+              />
               {{ item }}
             </UBadge>
           </div>

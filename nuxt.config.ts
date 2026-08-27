@@ -2,13 +2,14 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/a11y',
-    '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/hints',
     '@nuxt/image',
     '@nuxt/test-utils/module',
     '@nuxt/ui',
+    '@nuxt/content',
+    '@comark/nuxt',
     '@nuxtjs/i18n',
     '@nuxtjs/seo',
     '@vercel/analytics',
@@ -40,7 +41,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: false,
-      failOnError: false,
+      failOnError: true,
       routes: ['/', '/pl', '/cv', '/pl/cv']
     }
   },
@@ -57,6 +58,13 @@ export default defineNuxtConfig({
 
   content: {
     experimental: { sqliteConnector: 'native' }
+  },
+
+  image: {
+    // This site is deployed as static files. Keep NuxtImg's consistent markup
+    // and native loading behavior while serving already-optimised public assets
+    // directly; no IPX endpoint is required at runtime.
+    provider: 'none'
   },
 
   // Static-first: no runtime OG image generation (would need a serverless
@@ -82,6 +90,10 @@ export default defineNuxtConfig({
     url: 'https://luklus.me'
   },
 
+  sitemap: {
+    zeroRuntime: true
+  },
+
   // Installable PWA with offline support. Icons live in `public/` and are
   // precached together with the prerendered HTML/CSS/JS and self-hosted fonts.
   pwa: {
@@ -90,7 +102,7 @@ export default defineNuxtConfig({
       name: 'Łukasz Łusiak — Frontend Architect & Senior Engineer',
       short_name: 'll.me',
       description:
-        'Senior Frontend Engineer with 8+ years of experience creating performant, maintainable web applications - from architecture to pixel-perfect execution.',
+        'Senior Frontend Engineer & Architect with 8+ years of experience building performant, scalable enterprise web applications — from foundational architecture to pixel-perfect UI execution.',
       lang: 'en',
       display: 'standalone',
       start_url: '/',

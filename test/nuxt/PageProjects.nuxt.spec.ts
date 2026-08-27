@@ -8,7 +8,7 @@ const list = [
     badges: ['Founder & Owner', 'In Progress'],
     description: 'All-in-one home management platform.',
     featured: true,
-    image: '/images/homekeeper.jpg',
+    image: '/images/homekeeper.webp',
     title: 'HomeKeeper',
     to: 'https://gethomekeeper.app/'
   },

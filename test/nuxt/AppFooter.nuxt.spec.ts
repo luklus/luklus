@@ -7,7 +7,7 @@ describe('AppFooter', () => {
   it('renders the call-to-action heading', async () => {
     const component = await mountSuspended(AppFooter)
 
-    expect(component.text()).toContain("Have a project or opportunity? Let's talk.")
+    expect(component.text()).toContain("Have a project or opportunity? Let's connect.")
   })
 
   it('links to phone, email, LinkedIn and GitHub', async () => {

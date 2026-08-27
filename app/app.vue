@@ -10,14 +10,14 @@ const seo = computed(() => {
   if (locale.value === 'pl') {
     return {
       description:
-        'Senior Frontend Engineer z ponad 8-letnim doświadczeniem w tworzeniu wydajnych i łatwych w utrzymaniu aplikacji internetowych - od decyzji architektonicznych po dopracowany w detalach interfejs.',
+        'Senior Frontend Engineer & Architect z ponad 8-letnim doświadczeniem w tworzeniu wydajnych, skalowalnych aplikacji webowych i systemów enterprise — od architektury po dopracowany UI.',
       title: 'Łukasz Łusiak — Frontend Architect & Senior Engineer'
     }
   }
 
   return {
     description:
-      'Senior Frontend Engineer with 8+ years of experience creating performant, maintainable web applications - from architecture to pixel-perfect execution.',
+      'Senior Frontend Engineer & Architect with 8+ years of experience building performant, scalable enterprise web applications — from architecture to pixel-perfect UI execution.',
     title: 'Łukasz Łusiak — Frontend Architect & Senior Engineer'
   }
 })

@@ -1,8 +1,8 @@
 # luklus
 
 Personal portfolio of **Łukasz Łusiak — Senior Frontend Engineer**, live at
-[luklus.me](https://luklus.me). A bilingual (EN/PL), content-driven,
-statically-prerendered Nuxt 4 site with an installable PWA.
+[luklus.me](https://luklus.me). A bilingual (EN/PL), content-driven Nuxt 4
+site with an installable PWA and an AI Career Assistant.
 
 ## Tech stack
 
@@ -18,7 +18,7 @@ statically-prerendered Nuxt 4 site with an installable PWA.
 | Quality      | ESLint (`@nuxt/eslint`), Prettier, `@nuxt/a11y`, `@nuxt/hints`               |
 | Tests        | Vitest + `@nuxt/test-utils` (unit / component / e2e)                         |
 | Analytics    | Vercel Analytics + Speed Insights                                            |
-| Hosting      | Vercel (fully prerendered static output)                                     |
+| Hosting      | Vercel (prerendered pages + serverless Career Assistant API)                 |
 
 ## Requirements
 
@@ -33,29 +33,33 @@ pnpm install
 pnpm dev        # http://localhost:3000
 ```
 
-Build and preview the real production (static) output:
+Build and preview the production output:
 
 ```bash
 pnpm build
 pnpm preview
 ```
 
+Deploy through Vercel's Nuxt.js preset. Do not use a static-only host: the
+Career Assistant needs the `/api/career-chat` server route.
+
 ## Scripts
 
-| Script              | Purpose                                     |
-| ------------------- | ------------------------------------------- |
-| `pnpm dev`          | Dev server with HMR                         |
-| `pnpm build`        | Production build (prerenders `/` and `/pl`) |
-| `pnpm preview`      | Serve the built output locally              |
-| `pnpm lint`         | ESLint                                      |
-| `pnpm lint:fix`     | ESLint with autofix                         |
-| `pnpm format`       | Prettier write                              |
-| `pnpm format:check` | Prettier check                              |
-| `pnpm typecheck`    | `nuxt typecheck` (vue-tsc)                  |
-| `pnpm test`         | All test suites                             |
-| `pnpm test:unit`    | Node unit tests                             |
-| `pnpm test:nuxt`    | Component tests (happy-dom)                 |
-| `pnpm test:e2e`     | SSR end-to-end (builds + runs the server)   |
+| Script              | Purpose                                         |
+| ------------------- | ----------------------------------------------- |
+| `pnpm dev`          | Dev server with HMR                             |
+| `pnpm build`        | Standard Nuxt production build                  |
+| `pnpm generate`     | Static export (does not include Career Assistant API) |
+| `pnpm preview`      | Previews the output of `pnpm build`             |
+| `pnpm lint`         | ESLint                                          |
+| `pnpm lint:fix`     | ESLint with autofix                             |
+| `pnpm format`       | Prettier write                                  |
+| `pnpm format:check` | Prettier check                                  |
+| `pnpm typecheck`    | `nuxt typecheck` (vue-tsc)                      |
+| `pnpm test`         | All test suites                                 |
+| `pnpm test:unit`    | Node unit tests                                 |
+| `pnpm test:nuxt`    | Component tests (happy-dom)                     |
+| `pnpm test:e2e`     | SSR end-to-end (builds + runs the server)       |
 
 ## Project structure
 
@@ -126,8 +130,8 @@ to avoid stale-cache surprises — test the PWA against `pnpm build && pnpm prev
 
 ## Deployment
 
-Fully prerendered to static output and hosted on Vercel. See
-[DEPLOYMENT.md](DEPLOYMENT.md) for the pre-deploy checklist, Node version,
+Hosted on Vercel with prerendered portfolio pages and a serverless API route.
+See [DEPLOYMENT.md](DEPLOYMENT.md) for the pre-deploy checklist, Node version,
 environment variables and CI details.
 
 ## License

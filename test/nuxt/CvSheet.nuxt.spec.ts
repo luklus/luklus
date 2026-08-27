@@ -5,7 +5,7 @@ import CvSheet from '~/components/CvSheet.vue'
 
 const props = {
   contactInfo: {
-    email: 'lukaslusiak.bussines@outlook.com',
+    email: 'lukaslusiak.business@outlook.com',
     github: 'https://github.com/luklus',
     linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b',
     location: 'Polska · Praca zdalna',
@@ -72,7 +72,7 @@ describe('CvSheet', () => {
     const component = await mountSuspended(CvSheet, { props })
     const text = component.text()
 
-    expect(text).toContain('lukaslusiak.bussines@outlook.com')
+    expect(text).toContain('lukaslusiak.business@outlook.com')
     expect(text).toContain('+48 606 688 439')
     expect(text).toContain('Polska · Praca zdalna')
   })

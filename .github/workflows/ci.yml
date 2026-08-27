@@ -49,8 +49,11 @@ jobs:
       - name: Component tests
         run: pnpm run test:nuxt
 
-      - name: Build
+      - name: Build Nuxt application
         run: pnpm run build
+
+      - name: Generate static site
+        run: pnpm run generate
 
   e2e:
     runs-on: ubuntu-latest

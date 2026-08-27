@@ -2,6 +2,7 @@ import { defineCollection, defineContentConfig } from '@nuxt/content'
 import { z } from 'zod'
 
 const commonSchema = z.object({
+  careerContext: z.string(),
   heroDescription: z.string(),
   heroHeadline: z.string(),
   heroTitle: z.string(),
@@ -30,6 +31,7 @@ const commonSchema = z.object({
   skillsList: z.array(
     z.object({
       header: z.string(),
+      highlighted: z.array(z.string()).optional(),
       items: z.array(z.string())
     })
   ),
