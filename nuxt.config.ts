@@ -2,13 +2,14 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/a11y',
-    '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/hints',
     '@nuxt/image',
     '@nuxt/test-utils/module',
     '@nuxt/ui',
+    '@nuxt/content',
+    '@comark/nuxt',
     '@nuxtjs/i18n',
     '@nuxtjs/seo',
     '@vercel/analytics',

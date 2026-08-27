@@ -23,12 +23,18 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
+    "@ai-sdk/vue": "^4.0.79",
+    "@comark/nuxt": "^0.6.2",
+    "@comark/vue": "^0.6.2",
     "@iconify-json/lucide": "^1.2.126",
     "@iconify-json/simple-icons": "^1.2.93",
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/ui": "^4.11.0",
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.38.3",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
+    "ai": "^7.0.79",
     "nuxt": "^4.5.2",
     "tailwindcss": "^4.3.3",
     "zod": "^4.4.3"

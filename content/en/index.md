@@ -1,5 +1,18 @@
 ---
 # Section: Hero
+careerContext: |
+  Łukasz Łusiak is a Senior Frontend Engineer and Architect with more than 8 years of experience in enterprise applications and public-sector platforms. His areas of expertise are Vue 3, Nuxt, TypeScript, frontend architecture, Core Web Vitals performance, and WCAG 2.1 AA accessibility.
+
+  Since January 2024, he has worked as a Senior Frontend Engineer & Architect at ithouse.co, co-architecting modular Vue 3 and Nuxt applications for the public sector. He introduced AI-assisted code-review workflows and Playwright E2E suites that reduced Pull Request review time by 35%. His work includes performance targets below 100 ms INP and below 1.8 s LCP, data security, and architecture standards.
+
+  From 2019 to 2024, he was a Senior Frontend Developer and Team Lead at Cloudflight. He led a five-engineer team, built Angular, RxJS and NgRx applications with SAP integrations, and created an enterprise Storybook-based Design System that reduced UI delivery time by 30%. He mentored and onboarded more than 10 engineers.
+
+  Previously, he worked as a Frontend Developer at Atos, building SPA and SSR applications with Vue.js, Nuxt.js, and REST APIs.
+
+  Selected projects: HomeKeeper — a self-owned household-management SaaS platform (Nuxt 3, Vue 3, Supabase, Tailwind); Zieliński ART — a showcase platform for a jewellery studio; Auto TIP — a website optimized for local SEO and PageSpeed; LOOP Mobi — a responsive service platform built with Next.js.
+
+  He is based in Wrocław, Poland and available for remote work. Contact: lukaslusiak.business@outlook.com, GitHub: github.com/luklus, LinkedIn: linkedin.com/in/łukasz-łusiak-58868215b.
+
 heroDescription: 'Senior Frontend Engineer & Architect with 8+ years of experience designing and delivering high-performance enterprise web applications and public sector platforms. Specialized in Vue 3, Nuxt 3, TypeScript, and modern AI-augmented workflows.'
 heroHeadline: 'SENIOR FRONTEND ARCHITECT — OPEN TO NEW OPPORTUNITIES'
 heroTitle: 'Architecting scalable frontend applications with Vue, Nuxt and AI.'

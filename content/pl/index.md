@@ -1,5 +1,18 @@
 ---
 # Section: Hero
+careerContext: |
+  Łukasz Łusiak jest Senior Frontend Engineerem i Architektem z ponad 8-letnim doświadczeniem w aplikacjach enterprise i sektorze publicznym. Specjalizuje się w Vue 3, Nuxt, TypeScript, architekturze frontendu, wydajności Core Web Vitals oraz dostępności WCAG 2.1 AA.
+
+  Od stycznia 2024 pracuje jako Senior Frontend Engineer & Architect w ithouse.co, gdzie współtworzy modułową architekturę aplikacji Vue 3 i Nuxt dla sektora publicznego. Wdrożył procesy AI-assisted code review i testy Playwright E2E, skracając weryfikację Pull Requestów o 35%. Pracuje nad wydajnością (INP poniżej 100 ms, LCP poniżej 1,8 s), bezpieczeństwem i standardami architektonicznymi.
+
+  W latach 2019–2024 był Senior Frontend Developerem i Team Leadem w Cloudflight. Prowadził pięcioosobowy zespół, rozwijał aplikacje Angular, RxJS i NgRx z integracjami SAP oraz stworzył korporacyjny Design System oparty na Storybooku, co skróciło budowę UI o 30%. Mentoringiem i onboardingiem objął ponad 10 programistów.
+
+  Wcześniej pracował jako Frontend Developer w Atos, tworząc aplikacje SPA i SSR z Vue.js, Nuxt.js oraz REST API.
+
+  Wybrane projekty: HomeKeeper — własna platforma SaaS do zarządzania domem (Nuxt 3, Vue 3, Supabase, Tailwind); Zieliński ART — platforma showcase dla pracowni jubilerskiej; Auto TIP — serwis zoptymalizowany pod SEO i PageSpeed; LOOP Mobi — responsywna platforma usługowa w Next.js.
+
+  Jest dostępny z Wrocławia do pracy zdalnej. Kontakt: lukaslusiak.business@outlook.com, GitHub: github.com/luklus, LinkedIn: linkedin.com/in/łukasz-łusiak-58868215b.
+
 heroDescription: 'Senior Frontend Engineer & Architect z ponad 8-letnim doświadczeniem w projektowaniu i wdrażaniu skalowalnych aplikacji webowych, systemów enterprise oraz platform sektora publicznego. Łączę zaawansowaną architekturę Vue / Nuxt, optymalizację Core Web Vitals i nowoczesne procesy inżynierskie wspierane przez AI.'
 heroHeadline: 'SENIOR FRONTEND ARCHITECT — OTWARTY NA NOWE WYZWANIA'
 heroTitle: 'Projektuję i wdrażam skalowalne aplikacje frontendowe z wykorzystaniem Vue, Nuxt i AI.'

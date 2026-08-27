@@ -2,6 +2,7 @@ import { defineCollection, defineContentConfig } from '@nuxt/content'
 import { z } from 'zod'
 
 const commonSchema = z.object({
+  careerContext: z.string(),
   heroDescription: z.string(),
   heroHeadline: z.string(),
   heroTitle: z.string(),

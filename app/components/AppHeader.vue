@@ -5,6 +5,7 @@ const { isError = false } = defineProps<{
 
 const localePath = useLocalePath()
 const route = useRoute()
+const { open: openCareerChat } = useCareerChat()
 
 const isCvPage = computed(() => route.path.endsWith('/cv'))
 const isStandalonePage = computed(() => isCvPage.value || isError)
@@ -21,6 +22,16 @@ const isStandalonePage = computed(() => isCvPage.value || isError)
     <AppMenu v-if="!isStandalonePage" />
 
     <template #right>
+      <UButton
+        v-if="!isStandalonePage"
+        class="font-mono text-xs"
+        color="neutral"
+        icon="i-lucide-sparkles"
+        variant="ghost"
+        @click="openCareerChat"
+      >
+        {{ $t('careerAssistant.menuLabel') }}
+      </UButton>
       <UButton
         v-if="!isStandalonePage"
         class="font-mono text-xs"
@@ -45,4 +56,6 @@ const isStandalonePage = computed(() => isCvPage.value || isError)
       <UColorModeButton />
     </template>
   </UHeader>
+
+  <CareerChat v-if="!isStandalonePage" />
 </template>

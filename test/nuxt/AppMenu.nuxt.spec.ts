@@ -19,5 +19,6 @@ describe('AppMenu', () => {
 
     expect(text).toContain('01')
     expect(text).toContain('05')
+    expect(text).not.toContain('06')
   })
 })

@@ -41,7 +41,12 @@ const scrollToSection = (sectionId: string) => {
     variant="link"
   >
     <template #item="{ item, index }">
-      <span class="text-success font-mono">0{{ index + 1 }}</span>
+      <span
+        v-if="!item.icon"
+        class="text-success font-mono"
+      >
+        0{{ index + 1 }}
+      </span>
       {{ item.label }}
     </template>
   </UNavigationMenu>
