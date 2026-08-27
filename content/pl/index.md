@@ -5,54 +5,54 @@ heroHeadline: 'SENIOR FRONTEND ARCHITECT — OTWARTY NA NOWE WYZWANIA'
 heroTitle: 'Projektuję i wdrażam skalowalne aplikacje frontendowe z wykorzystaniem Vue, Nuxt i AI.'
 
 # Section: Approach
-approachDescription: 'Uporządkowany proces od fazy analizy i discovery po wdrożenie i optymalizację produktu.'
+approachDescription: 'Ustrukturyzowany proces inżynierski — od fazy discovery i analizy wymagań po wdrożenie produkcyjne i optymalizację wydajności.'
 approachTitle: 'Jak tworzę oprogramowanie'
 approachList:
   - label: '01'
     description: 'Discovery & Analiza'
   - label: '02'
-    description: 'Architektura'
+    description: 'Architektura & Technologie'
   - label: '03'
-    description: 'Projektowanie & Prototypowanie'
+    description: 'Design UI & Prototypowanie'
   - label: '04'
-    description: 'Implementacja'
+    description: 'Implementacja & Refaktoryzacja'
   - label: '05'
-    description: 'Testowanie & QA'
+    description: 'Testowanie & QA (E2E)'
   - label: '06'
-    description: 'Optymalizacja wydajności'
+    description: 'Optymalizacja Core Web Vitals'
   - label: '07'
-    description: 'Dostarczanie wspierane przez AI'
+    description: 'Wytwarzanie wspierane AI'
 
 # Section: Experience
 experienceTitle: 'Doświadczenie'
 experienceList:
   - dateStart: '01.2024'
     dateEnd: 'Obecnie'
-    description: 'Kieruję architekturą frontendu i rozwijam wielkoskalowe systemy dla sektora publicznego, wdrażając procesy inżynierskie wspierane przez AI.'
+    description: 'Współtworzę architekturę frontendu i rozwijam wielkoskalowe systemy dla sektora publicznego, wdrażając procesy inżynierskie wspierane przez AI.'
     descriptionList:
-      - 'Projektowanie i implementacja modułowej architektury frontendu opartej na Vue 3, Nuxt 3 i TypeScript dla rozwiązań sektora publicznego o wysokiej dostępności.'
-      - 'Wdrożenie pipeline’ów automatycznego AI-assisted Code Review i testów E2E (Playwright), co skróciło czas weryfikacji PR o 35%.'
-      - 'Optymalizacja wydajności frontendu pod kątem Core Web Vitals, zgodności z dostępnością cyfrową (WCAG 2.1 AA) oraz standardów bezpieczeństwa danych.'
-      - 'Wyznaczanie standardów inżynierskich, dobór technologii i podejmowanie kluczowych decyzji architektonicznych w zespole.'
+      - 'Projektowanie i wdrażanie modułowej architektury frontendu opartej na Vue 3, Nuxt 3 i TypeScript dla rozwiązań sektora publicznego o wysokiej dostępności i rygorystycznych wymogach bezpieczeństwa.'
+      - 'Wdrożenie pipeline’ów automatycznego AI-assisted Code Review oraz zestawów testów E2E (Playwright), co skróciło czas weryfikacji Pull Requestów o 35%.'
+      - 'Optymalizacja wydajności aplikacji pod kątem Core Web Vitals (INP < 100ms, LCP < 1.8s), pełnej dostępności cyfrowej (WCAG 2.1 AA) oraz audytów bezpieczeństwa danych.'
+      - 'Współtworzenie standardów i decyzji architektonicznych (Architecture Decision Records – ADR), dobór stosu technologicznego oraz mentoring inżynierski w zespole.'
     icon: 'i-lucide-briefcase-business'
-    title: 'Senior Frontend Developer · ithouse.co'
+    title: 'Senior Frontend Engineer & Architect · ithouse.co'
   - dateStart: '03.2019'
     dateEnd: '01.2024'
-    description: 'Kierowałem zespołem frontendowym tworzącym aplikacje klasy enterprise; odpowiadałem za architekturę techniczną oraz firmowy Design System.'
+    description: 'Kierowałem 5-osobowym zespołem frontendowym tworzącym aplikacje klasy enterprise; odpowiadałem za architekturę techniczną oraz korporacyjny Design System.'
     descriptionList:
-      - 'Zarządzanie interdyscyplinarnym zespołem frontendowym (5+ inżynierów) w projektach enterprise – odpowiedzialność za roadmapę techniczną, estymacje i jakość kodu.'
-      - 'Projektowanie architektury i rozwój wielomodułowych aplikacji biznesowych w oparciu o Angular, RxJS, NgRx oraz integracje z ekosystemem SAP.'
-      - 'Zaprojektowanie i wdrożenie korporacyjnego Design Systemu opartego na reużywalnych komponentach i Storybooku, co skróciło czas budowy UI o 30%.'
-      - 'Prowadzenie procesów rekrutacyjnych, warsztatów technicznych oraz onboarding i mentoring ponad 10 inżynierów oprogramowania.'
+      - 'Kierowanie 5-osobowym zespołem frontendowym w międzynarodowych projektach enterprise – odpowiedzialność za roadmapę techniczną, estymacje architektoniczne i jakość kodu.'
+      - 'Projektowanie architektury i rozwój wielomodułowych aplikacji biznesowych opartych na Angularze, RxJS i NgRx oraz integracjach z systemami klasy ERP (SAP).'
+      - 'Zaprojektowanie i wdrożenie korporacyjnego Design Systemu w oparciu o reużywalne komponenty i Storybook, co skróciło czas budowy UI o 30%.'
+      - 'Prowadzenie technicznych procesów rekrutacyjnych, warsztatów inżynierskich oraz onboarding i mentoring ponad 10 programistów.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Developer · Team Lead · Cloudflight'
   - dateStart: '01.2018'
     dateEnd: '02.2019'
     description: 'Tworzyłem i utrzymywałem aplikacje webowe w pełnym cyklu wytwarzania oprogramowania dla globalnych klientów korporacyjnych.'
     descriptionList:
-      - 'Rozwój responsywnych aplikacji SPA/SSR z wykorzystaniem Vue.js, Nuxt oraz integracji z REST API.'
-      - 'Ścisła współpraca z zespołami UX/UI i backendu w metodykach Agile/Scrum, gwarantująca zgodność z wytycznymi WCAG i dbałość o standardy pixel-perfect.'
-      - 'Optymalizacja wydajności ładowania zasobów oraz implementacja automatycznych testów jednostkowych zapewniających wysokie pokrycie kodu.'
+      - 'Rozwój responsywnych aplikacji SPA i SSR z wykorzystaniem Vue.js, Nuxt.js oraz zaawansowanych integracji z RESTful API.'
+      - 'Ścisła współpraca z zespołami UX/UI i backendu w metodykach Agile/Scrum, gwarantująca zgodność ze standardami WCAG oraz dbałość o detale (pixel-perfect).'
+      - 'Optymalizacja bundle size i wydajności ładowania assetów oraz implementacja automatycznych testów jednostkowych (Jest), zapewniających wysokie pokrycie kodu.'
     icon: 'i-lucide-briefcase-business'
     title: 'Frontend Developer · Atos'
 
@@ -69,31 +69,48 @@ skillsList:
         'JavaScript (ES6+)',
         'Angular',
         'React',
-        'HTML5 / Semantic Web',
+        'HTML5 / Semantic HTML',
         'CSS3 / Tailwind CSS'
       ]
   - header: 'Architektura & Wydajność'
-    highlighted: ['SSR / SSG', 'Clean Architecture', 'Headless Commerce']
+    highlighted: ['SSR / SSG / ISR', 'Clean Architecture', 'Design Systems']
     items:
       [
-        'SSR / SSG',
+        'SSR / SSG / ISR',
         'Clean Architecture',
-        'Headless Commerce',
         'Design Systems',
         'Core Web Vitals',
-        'Microfrontends'
+        'Microfrontends',
+        'Headless Commerce',
+        'Architecture Decision Records (ADR)'
       ]
   - header: 'Zarządzanie stanem & API'
-    highlighted: ['Pinia', 'REST API']
-    items: ['Pinia', 'REST API', 'GraphQL', 'Supabase', 'RxJS', 'NgRx', 'WebSockets']
+    highlighted: ['Pinia', 'RESTful API']
+    items: ['Pinia', 'RESTful API', 'GraphQL', 'Supabase', 'RxJS / NgRx', 'WebSockets']
   - header: 'Testy & Narzędzia inżynierskie'
-    highlighted: ['Vite', 'Playwright']
-    items: ['Vite', 'Playwright', 'Vitest', 'Jest', 'ESLint', 'Storybook', 'Webpack', 'Git / CI/CD']
-  - header: 'Backend & Cloud'
-    items: ['Node.js', 'PHP', 'Laravel', 'RESTful Services', 'Cloudflare']
-  - header: 'Design & UX'
+    highlighted: ['Playwright (E2E)', 'Vite']
+    items:
+      [
+        'Playwright (E2E)',
+        'Vitest / Jest',
+        'Vite',
+        'Storybook',
+        'ESLint / Prettier',
+        'Git / GitHub Actions',
+        'Webpack'
+      ]
+  - header: 'Backend & Chmura'
+    items:
+      [
+        'Node.js',
+        'PHP / Laravel',
+        'PostgreSQL / Supabase',
+        'Cloudflare (Pages & Workers)',
+        'RESTful Services'
+      ]
+  - header: 'Design & Dostępność'
     highlighted: ['Figma', 'UX/UI Design']
-    items: ['Figma', 'UX/UI Design', 'Design Tokens', 'WCAG / Dostępność (A11y)']
+    items: ['Figma', 'UX/UI Design', 'Design Tokens', 'WCAG 2.1 AA / Dostępność (A11y)']
   - header: 'AI & Nowoczesna inżynieria'
     highlighted: ['AI-Assisted Development']
     items:
@@ -112,7 +129,7 @@ projectsList:
       - 'Nuxt 3 · Supabase'
     featured: true
   - title: 'Zieliński ART · Pracownia jubilerska'
-    description: 'Dedykowana strona portfolio i showcase dla ekskluzywnej pracowni złotniczej. Autorska oprawa wizualna, optymalizacja multimediów oraz bezkompromisowa wydajność pod kątem Core Web Vitals.'
+    description: 'Dedykowana platforma showcase i portfolio dla ekskluzywnej pracowni złotniczej. Autorska oprawa wizualna, zaawansowana optymalizacja multimediów oraz bezkompromisowa wydajność pod kątem Core Web Vitals (100/100).'
     image: '/images/zielinskiart.webp'
     to: 'https://zielinskiart.pl/'
     badges:
@@ -127,7 +144,7 @@ projectsList:
       - 'Projekt komercyjny'
       - 'Nuxt 3 · SEO & Performance'
   - title: 'LOOP Mobi · Mobilny salon fryzjerski'
-    description: 'Szybka i responsywna platforma usługowa dla mobilnego salonu fryzjerskiego z przejrzystym cennikiem, kalkulatorem stref dojazdu oraz bezpośrednim kontaktem.'
+    description: 'Szybka i responsywna platforma usługowa dla mobilnego salonu fryzjerskiego z przejrzystym cennikiem, kalkulatorem stref dojazdu oraz bezpośrednim modułem kontaktu.'
     to: 'https://loop-mobilny-fryzjer.pl/'
     image: '/images/loopmobi.webp'
     badges:
@@ -139,15 +156,15 @@ aiDescription: 'AI to akcelerator pracy i partner w procesie wytwórczym — uzu
 aiTitle: 'Jak wykorzystuję AI w inżynierii oprogramowania'
 aiList:
   - label: '01'
-    description: 'Planowanie architektury i systemów'
+    description: 'Architektura i planowanie'
   - label: '02'
-    description: 'Prototypowanie i scaffolding UI'
+    description: 'Prototypowanie UI & scaffolding'
   - label: '03'
     description: 'Implementacja i refaktoryzacja'
   - label: '04'
-    description: 'Automatyczny Code Review i lintery'
+    description: 'Automatyczny Code Review'
   - label: '05'
-    description: 'Generowanie testów i weryfikacja'
+    description: 'Generowanie testów i QA'
   - label: '06'
     description: 'Optymalizacja wydajności'
 
@@ -155,18 +172,18 @@ aiList:
 contactInfo:
   email: 'lukaslusiak.business@outlook.com'
   phone: '+48 606 688 439'
-  location: 'Wrocław / Polska · Praca zdalna (Remote)'
+  location: 'Wrocław, Polska · Praca zdalna (Remote)'
   github: 'https://github.com/luklus'
   linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b'
   website: 'https://luklus.me'
 
-cvSummary: 'Senior Frontend Engineer & Architect z ponad 8-letnim doświadczeniem w projektowaniu architektury skalowalnych aplikacji enterprise oraz systemów sektora publicznego. Specjalizuję się w ekosystemie Vue 3, Nuxt 3, TypeScript oraz integracjach korporacyjnych (SAP). Z sukcesem optymalizuję wskaźniki Core Web Vitals (poprawa LCP/INP o ponad 40%), wdrażam skalowalne Design Systems i skracam Time-to-Market dzięki automatyzacji wytwarzania oprogramowania oraz procesom wspieranym przez AI.'
+cvSummary: 'Senior Frontend Engineer & Architect z ponad 8-letnim doświadczeniem w projektowaniu i wdrażaniu skalowalnych aplikacji enterprise oraz systemów sektora publicznego. Specjalizuję się w ekosystemie Vue 3, Nuxt 3, TypeScript oraz integracjach korporacyjnych (m.in. SAP). Skutecznie optymalizuję wskaźniki Core Web Vitals (poprawa LCP i INP o ponad 40%), projektuję korporacyjne systemy projektowe (Design Systems) oraz skracam Time-to-Market dzięki automatyzacji CI/CD i procesom inżynierskim wspieranym przez AI.'
 
 languages:
   - name: 'Polski'
     level: 'Język ojczysty'
   - name: 'Angielski'
-    level: 'Średnio zaawansowany (B2)'
+    level: 'Średnio zaawansowany / B2 (Komunikacja biznesowa i techniczna)'
 
 education:
   - degree: 'Technik informatyk: Systemy i sieci komputerowe'

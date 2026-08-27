@@ -90,6 +90,7 @@ withDefaults(
 )
 
 const { locale } = useI18n()
+const localePath = useLocalePath()
 </script>
 
 <template>
@@ -170,18 +171,17 @@ const { locale } = useI18n()
             </div>
 
             <div class="flex items-center gap-3">
-              <a
+              <NuxtLink
                 v-if="contactInfo.website"
                 class="flex items-center gap-1 text-zinc-700 underline underline-offset-2 hover:text-emerald-600 dark:text-zinc-300 dark:hover:text-white print:text-zinc-900"
-                :href="contactInfo.website"
-                target="_blank"
+                :to="localePath('/')"
               >
                 <UIcon
                   class="size-3 text-zinc-400 print:text-zinc-600"
                   name="i-lucide-globe"
                 />
                 <span>luklus.me</span>
-              </a>
+              </NuxtLink>
               <span
                 v-if="contactInfo.website && contactInfo.github"
                 class="text-zinc-300 dark:text-zinc-700"

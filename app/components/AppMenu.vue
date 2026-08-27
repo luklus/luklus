@@ -1,32 +1,36 @@
 <script lang="ts" setup>
 import type { NavigationMenuItem } from '@nuxt/ui'
 
+const { t } = useI18n()
+
 const items = computed<NavigationMenuItem[]>(() => [
   {
-    label: $t('approach'),
+    label: t('approach'),
     onClick: () => scrollToSection('#approach')
   },
   {
-    label: $t('experience'),
+    label: t('experience'),
     onClick: () => scrollToSection('#experience')
   },
   {
-    label: $t('skills'),
+    label: t('skills'),
     onClick: () => scrollToSection('#skills')
   },
   {
-    label: $t('projects'),
+    label: t('projects'),
     onClick: () => scrollToSection('#projects')
   },
   {
-    label: $t('ai'),
+    label: t('ai'),
     onClick: () => scrollToSection('#ai')
   }
 ])
 
 const scrollToSection = (sectionId: string) => {
-  const section = document.querySelector(sectionId)
-  if (section) section.scrollIntoView({ behavior: 'smooth' })
+  if (import.meta.client) {
+    const section = document.querySelector(sectionId)
+    if (section) section.scrollIntoView({ behavior: 'smooth' })
+  }
 }
 </script>
 

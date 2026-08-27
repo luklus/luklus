@@ -1,8 +1,6 @@
 <template>
   <UFooter class="no-print">
     <UPageSection :title="$t('footerTitle')">
-      <template #description> </template>
-
       <template #links>
         <UButton
           color="primary"
@@ -44,7 +42,7 @@
         >
           GitHub
         </UButton>
-      </template></UPageSection
-    >
+      </template>
+    </UPageSection>
   </UFooter>
 </template>

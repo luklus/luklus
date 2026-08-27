@@ -1,25 +1,25 @@
 ---
 # Section: Hero
-heroDescription: 'Senior Frontend Engineer & Architect with 8+ years of experience building performant, scalable enterprise web applications and public sector platforms — from foundational architecture to pixel-perfect UI execution.'
+heroDescription: 'Senior Frontend Engineer & Architect with 8+ years of experience designing and delivering high-performance enterprise web applications and public sector platforms. Specialized in Vue 3, Nuxt 3, TypeScript, and modern AI-augmented workflows.'
 heroHeadline: 'SENIOR FRONTEND ARCHITECT — OPEN TO NEW OPPORTUNITIES'
-heroTitle: 'Architecting scalable frontend applications with Vue, Nuxt, and AI.'
+heroTitle: 'Architecting scalable frontend applications with Vue, Nuxt and AI.'
 
 # Section: Approach
-approachDescription: 'A structured, end-to-end process from discovery to shipping and performance optimization.'
+approachDescription: 'A structured engineering process from discovery and technical analysis to production release and performance optimization.'
 approachTitle: 'How I Build Software'
 approachList:
   - label: '01'
-    description: 'Discovery'
+    description: 'Discovery & Analysis'
   - label: '02'
-    description: 'Architecture'
+    description: 'Architecture & Tech Stack'
   - label: '03'
-    description: 'Design & Prototyping'
+    description: 'UI Design & Prototyping'
   - label: '04'
-    description: 'Development'
+    description: 'Implementation & Refactoring'
   - label: '05'
-    description: 'Testing & QA'
+    description: 'Testing & QA (E2E)'
   - label: '06'
-    description: 'Performance Optimization'
+    description: 'Core Web Vitals Optimization'
   - label: '07'
     description: 'AI-Augmented Delivery'
 
@@ -28,31 +28,31 @@ experienceTitle: 'Experience'
 experienceList:
   - dateStart: '01.2024'
     dateEnd: 'Present'
-    description: 'Lead frontend architecture and engineering for large-scale public sector systems, driving AI-augmented engineering workflows.'
+    description: 'Co-architect and develop large-scale public sector systems, driving AI-augmented engineering workflows.'
     descriptionList:
-      - 'Architecting and implementing modular frontend systems using Vue 3, Nuxt 3, and TypeScript for mission-critical public sector applications.'
-      - 'Spearheaded automated AI-assisted Code Review pipelines and Playwright E2E testing, cutting PR cycle times by 35%.'
-      - 'Optimized web performance for Core Web Vitals, ensured WCAG 2.1 AA accessibility compliance, and reinforced frontend data security.'
-      - 'Established technical guidelines, evaluated tech stacks, and owned key architectural frontend decisions.'
+      - 'Architected and implemented modular frontend systems using Vue 3, Nuxt 3, and TypeScript for mission-critical public sector applications with high-availability and stringent security requirements.'
+      - 'Spearheaded automated AI-assisted Code Review pipelines and Playwright E2E testing suites, cutting Pull Request review cycles by 35%.'
+      - 'Optimized frontend performance targeting Core Web Vitals (sub-100ms INP, sub-1.8s LCP), guaranteed WCAG 2.1 AA accessibility compliance, and reinforced data security.'
+      - 'Contributed to architectural governance (Architecture Decision Records – ADRs), technology stack selection, and engineering mentorship across the team.'
     icon: 'i-lucide-briefcase-business'
-    title: 'Senior Frontend Developer · ithouse.co'
+    title: 'Senior Frontend Engineer & Architect · ithouse.co'
   - dateStart: '03.2019'
     dateEnd: '01.2024'
-    description: 'Led a frontend engineering team delivering enterprise-grade applications; owned technical architecture and the enterprise Design System.'
+    description: 'Led a 5-engineer frontend team delivering enterprise-grade applications; owned technical architecture and the enterprise Design System.'
     descriptionList:
-      - 'Led a cross-functional frontend team (5+ engineers) across enterprise client projects — responsible for technical roadmap, sprint estimations, and code quality.'
-      - 'Architected and developed multi-module enterprise applications using Angular, RxJS, NgRx, and robust integrations with the SAP ecosystem.'
-      - 'Designed and deployed an enterprise-wide Design System based on reusable components and Storybook, reducing feature UI build times by 30%.'
-      - 'Conducted technical interviews, led internal workshops, and mentored 10+ software engineers.'
+      - 'Led a cross-functional team of 5+ frontend engineers on international enterprise client solutions — owning technical roadmaps, sprint estimations, and code quality standards.'
+      - 'Architected and developed multi-module enterprise web applications using Angular, RxJS, and NgRx, integrated with core SAP ERP systems.'
+      - 'Engineered and deployed an enterprise-wide Design System based on atomic reusable components and Storybook, decreasing UI feature build times by 30%.'
+      - 'Conducted technical interviews, led architecture workshops, and successfully onboarded and mentored 10+ software engineers across distributed teams.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Developer · Team Lead · Cloudflight'
   - dateStart: '01.2018'
     dateEnd: '02.2019'
     description: 'Engineered and maintained client-facing web applications across the full lifecycle for global enterprise clients.'
     descriptionList:
-      - 'Built responsive SPA/SSR applications utilizing Vue.js, Nuxt, and RESTful API integrations.'
-      - 'Collaborated closely with UX/UI designers and backend engineers in Agile/Scrum environments to ensure WCAG accessibility and pixel-perfect UI.'
-      - 'Optimized asset delivery, rendering performance, and authored automated unit tests to ensure high test coverage.'
+      - 'Developed responsive SPA and SSR web applications utilizing Vue.js, Nuxt.js, and high-throughput RESTful API integrations.'
+      - 'Collaborated closely with UX/UI designers and backend engineers in Agile/Scrum sprints, ensuring pixel-perfect execution and WCAG accessibility standards.'
+      - 'Optimized JavaScript bundle sizes and asset delivery pipelines, while authoring automated unit test suites (Jest) to ensure robust code coverage.'
     icon: 'i-lucide-briefcase-business'
     title: 'Frontend Developer · Atos'
 
@@ -69,31 +69,48 @@ skillsList:
         'JavaScript (ES6+)',
         'Angular',
         'React',
-        'HTML5 / Semantic Web',
+        'HTML5 / Semantic HTML',
         'CSS3 / Tailwind CSS'
       ]
   - header: 'Architecture & Performance'
-    highlighted: ['SSR / SSG', 'Clean Architecture', 'Headless Commerce']
+    highlighted: ['SSR / SSG / ISR', 'Clean Architecture', 'Design Systems']
     items:
       [
-        'SSR / SSG',
+        'SSR / SSG / ISR',
         'Clean Architecture',
-        'Headless Commerce',
         'Design Systems',
         'Core Web Vitals',
-        'Microfrontends'
+        'Microfrontends',
+        'Headless Commerce',
+        'Architecture Decision Records (ADR)'
       ]
   - header: 'State Management & APIs'
-    highlighted: ['Pinia', 'REST API']
-    items: ['Pinia', 'REST API', 'GraphQL', 'Supabase', 'RxJS', 'NgRx', 'WebSockets']
+    highlighted: ['Pinia', 'RESTful API']
+    items: ['Pinia', 'RESTful API', 'GraphQL', 'Supabase', 'RxJS / NgRx', 'WebSockets']
   - header: 'Testing & Tooling'
-    highlighted: ['Vite', 'Playwright']
-    items: ['Vite', 'Playwright', 'Vitest', 'Jest', 'ESLint', 'Storybook', 'Webpack', 'Git / CI/CD']
+    highlighted: ['Playwright (E2E)', 'Vite']
+    items:
+      [
+        'Playwright (E2E)',
+        'Vitest / Jest',
+        'Vite',
+        'Storybook',
+        'ESLint / Prettier',
+        'Git / GitHub Actions',
+        'Webpack'
+      ]
   - header: 'Backend & Cloud'
-    items: ['Node.js', 'PHP', 'Laravel', 'RESTful Services', 'Cloudflare']
+    items:
+      [
+        'Node.js',
+        'PHP / Laravel',
+        'PostgreSQL / Supabase',
+        'Cloudflare (Pages & Workers)',
+        'RESTful Services'
+      ]
   - header: 'Design & UX'
     highlighted: ['Figma', 'UX/UI Design']
-    items: ['Figma', 'UX/UI Design', 'Design Tokens', 'WCAG / Accessibility (A11y)']
+    items: ['Figma', 'UX/UI Design', 'Design Tokens', 'WCAG 2.1 AA / Accessibility (A11y)']
   - header: 'AI & Modern Engineering'
     highlighted: ['AI-Assisted Development']
     items:
@@ -103,7 +120,7 @@ skillsList:
 projectsTitle: 'Featured Projects'
 projectsList:
   - title: 'HomeKeeper · Home Management Platform'
-    description: 'Comprehensive home management SaaS platform: warranty tracking, maintenance schedules, utility meter readings, tasks, and household budget. Architected and built from scratch using Nuxt 3, Vue 3, Supabase, and Tailwind CSS.'
+    description: 'Comprehensive home management SaaS platform featuring warranty lifecycle tracking, scheduled maintenance, utility meter logging, tasks, and household budgeting. Architected and engineered end-to-end using Nuxt 3, Vue 3, Supabase, and Tailwind CSS.'
     image: '/images/homekeeper.webp'
     to: 'https://gethomekeeper.app/'
     badges:
@@ -112,7 +129,7 @@ projectsList:
       - 'Nuxt 3 · Supabase'
     featured: true
   - title: 'Zieliński ART · Bespoke Jewelry Atelier'
-    description: 'High-performance portfolio and showcase website for an exclusive jewelry atelier, featuring bespoke goldsmithing craftsmanship, rich visual storytelling, and top Core Web Vitals scores.'
+    description: 'Bespoke portfolio and showcase platform for an exclusive goldsmith atelier. Custom visual identity, optimized multimedia delivery pipeline, and flawless Core Web Vitals performance (100/100).'
     image: '/images/zielinskiart.webp'
     to: 'https://zielinskiart.pl/'
     badges:
@@ -120,14 +137,14 @@ projectsList:
       - 'Showcase & E-Commerce'
       - 'Nuxt 3 · Tailwind'
   - title: 'Auto TIP · Automotive Repair Service'
-    description: 'Modern, ultra-fast web presence for an automotive repair workshop with 30+ years of heritage, achieving a 100/100 PageSpeed score and strong local SEO rankings.'
+    description: 'Modern, ultra-fast web presence engineered for an automotive repair workshop with 30+ years of heritage, achieving 100/100 PageSpeed scores and top-tier local SEO visibility.'
     to: 'https://autotip.pl/'
     image: '/images/autotip.webp'
     badges:
       - 'Client Project'
       - 'Nuxt 3 · SEO & Performance'
   - title: 'LOOP Mobi · Mobile Hair Salon Platform'
-    description: 'Fast, responsive booking and service platform for a mobile hair salon, featuring transparent pricing tiers, service area calculation, and seamless customer contact flows.'
+    description: 'High-performance, responsive service platform for a mobile hair salon featuring transparent pricing tiers, interactive travel zone calculator, and streamlined booking flows.'
     to: 'https://loop-mobilny-fryzjer.pl/'
     image: '/images/loopmobi.webp'
     badges:
@@ -135,13 +152,13 @@ projectsList:
       - 'Next.js · Responsive UI'
 
 # Section: AI
-aiDescription: 'AI accelerates delivery as a powerful workflow companion, strictly guided by architectural rigor and critical engineering judgment.'
+aiDescription: 'AI accelerates delivery as a powerful workflow companion, strictly guided by architectural rigor, critical engineering judgment, and thorough testing.'
 aiTitle: 'How I Integrate AI into Modern Engineering'
 aiList:
   - label: '01'
     description: 'Architecture & System Planning'
   - label: '02'
-    description: 'Design & UI Prototyping'
+    description: 'UI Design & Prototyping'
   - label: '03'
     description: 'Implementation & Refactoring'
   - label: '04'
@@ -155,18 +172,18 @@ aiList:
 contactInfo:
   email: 'lukaslusiak.business@outlook.com'
   phone: '+48 606 688 439'
-  location: 'Wrocław / Poland · Fully Remote'
+  location: 'Wrocław, Poland · Open to Remote'
   github: 'https://github.com/luklus'
   linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b'
   website: 'https://luklus.me'
 
-cvSummary: 'Senior Frontend Engineer & Architect with 8+ years of experience building scalable enterprise web applications and public sector platforms. Specialized in Vue 3, Nuxt 3, TypeScript, and complex enterprise integrations (SAP). Proven track record of optimizing Core Web Vitals (40%+ LCP/INP improvements), establishing enterprise Design Systems, and accelerating Time-to-Market through test automation, CI/CD, and AI-augmented engineering workflows.'
+cvSummary: 'Senior Frontend Engineer & Architect with 8+ years of experience designing and delivering high-performance enterprise web applications and public sector platforms. Specialized in Vue 3, Nuxt 3, TypeScript, and enterprise backend integrations (including SAP). Proven track record of optimizing Core Web Vitals (40%+ LCP and INP improvements), engineering enterprise Design Systems, and accelerating Time-to-Market through automated CI/CD pipelines and AI-augmented workflows.'
 
 languages:
   - name: 'Polish'
     level: 'Native'
   - name: 'English'
-    level: 'Upper-Intermediate (B2)'
+    level: 'Upper-Intermediate / Professional Working Proficiency (B2)'
 
 education:
   - degree: 'IT Technician: Computer Systems and Networks'
@@ -174,7 +191,7 @@ education:
     dateStart: '2002'
     dateEnd: '2006'
 
-rodoClause: 'I hereby agree to the processing of personal data provided in this document for the purpose of the recruitment process in accordance with the General Data Protection Regulation (EU) 2016/679 (GDPR).'
+rodoClause: 'I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 (GDPR).'
 ---
 
 ::page-hero{:description="heroDescription" :headline="heroHeadline" :title="heroTitle"}
