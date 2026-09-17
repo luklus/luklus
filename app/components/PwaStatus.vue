@@ -22,7 +22,8 @@ const title = computed(() => {
   >
     <UCard
       v-if="show"
-      class="fixed right-4 bottom-4 z-50 max-w-sm shadow-lg"
+      id="pwa-status"
+      class="no-print fixed right-4 bottom-4 z-50 max-w-sm shadow-lg"
       :ui="{ body: 'p-4 sm:p-4' }"
     >
       <div class="flex items-start gap-3">

@@ -97,7 +97,7 @@ const localePath = useLocalePath()
   <div class="cv-document mx-auto max-w-[210mm] space-y-8 print:max-w-none print:space-y-0">
     <!-- ================= PAGE 1: Profile & Commercial Experience ================= -->
     <article
-      class="cv-page cv-page-1 mx-auto flex min-h-[297mm] max-w-[210mm] flex-col justify-between border border-zinc-200 bg-white p-8 text-zinc-900 shadow-xl transition-all sm:p-12 md:rounded-2xl dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-100 print:m-0 print:min-h-[277mm] print:max-w-none print:rounded-none print:border-none print:bg-white print:p-0 print:text-zinc-950 print:shadow-none"
+      class="cv-page cv-page-1 mx-auto flex min-h-[297mm] max-w-[210mm] flex-col justify-between border border-zinc-200 bg-white p-8 text-zinc-900 shadow-xl transition-all sm:p-12 md:rounded-2xl dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-100 print:m-0 print:min-h-[265mm] print:max-w-none print:rounded-none print:border-none print:bg-white print:p-0 print:text-zinc-950 print:shadow-none"
     >
       <div class="space-y-6">
         <!-- CV Header -->
@@ -123,7 +123,7 @@ const localePath = useLocalePath()
               <p
                 class="font-mono text-xs font-semibold text-zinc-600 sm:text-sm dark:text-zinc-400 print:text-xs print:text-zinc-700"
               >
-                Frontend Architect & Senior Engineer
+                {{ $t('professionalRole') }}
               </p>
             </div>
           </div>
@@ -225,13 +225,13 @@ const localePath = useLocalePath()
           class="rounded-xl border border-zinc-200/80 bg-zinc-50/50 p-4 dark:border-zinc-800/80 dark:bg-zinc-800/20 print:border-zinc-300 print:bg-zinc-50/60 print:p-3.5"
         >
           <div
-            class="mb-1 flex items-center gap-1.5 font-mono text-[11px] font-semibold text-zinc-800 dark:text-zinc-200 print:text-zinc-900"
+            class="mb-1 flex items-center gap-1.5 font-mono text-[11px] font-semibold text-zinc-800 uppercase dark:text-zinc-200 print:text-zinc-900"
           >
             <UIcon
               class="size-3.5 text-emerald-600 dark:text-emerald-400 print:text-zinc-700"
               name="i-lucide-user-check"
             />
-            <span>{{ locale === 'pl' ? 'PROFIL ZAWODOWY' : 'EXECUTIVE PROFILE' }}</span>
+            <span>{{ $t('summary') }}</span>
           </div>
           <p
             class="text-xs leading-relaxed text-zinc-600 sm:text-sm dark:text-zinc-300 print:text-[11px] print:leading-relaxed print:text-zinc-800"
@@ -307,9 +307,9 @@ const localePath = useLocalePath()
 
     <!-- ================= PAGE 2: Projects, Skills, AI, Edu & RODO ================= -->
     <article
-      class="cv-page cv-page-2 mx-auto flex min-h-[297mm] max-w-[210mm] flex-col justify-between border border-zinc-200 bg-white p-8 text-zinc-900 shadow-xl transition-all sm:p-12 md:rounded-2xl dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-100 print:m-0 print:min-h-[277mm] print:max-w-none print:rounded-none print:border-none print:bg-white print:p-0 print:text-zinc-950 print:shadow-none"
+      class="cv-page cv-page-2 mx-auto flex min-h-[297mm] max-w-[210mm] flex-col justify-between border border-zinc-200 bg-white p-8 text-zinc-900 shadow-xl transition-all sm:p-12 md:rounded-2xl dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-100 print:m-0 print:min-h-[265mm] print:max-w-none print:rounded-none print:border-none print:bg-white print:p-0 print:text-zinc-950 print:shadow-none"
     >
-      <div class="space-y-6">
+      <div class="space-y-6 print:space-y-3">
         <!-- Page 2 Mini Header -->
         <header
           class="flex items-center justify-between border-b border-zinc-200 pb-2.5 dark:border-zinc-800 print:border-zinc-300"
@@ -320,7 +320,7 @@ const localePath = useLocalePath()
             </span>
             <span class="text-zinc-400">·</span>
             <span class="font-mono text-xs text-zinc-500 dark:text-zinc-400 print:text-zinc-700">
-              Frontend Architect & Senior Engineer
+              {{ $t('professionalRole') }}
             </span>
           </div>
           <span
@@ -442,7 +442,7 @@ const localePath = useLocalePath()
             <h2
               class="font-mono text-xs font-bold tracking-wider text-zinc-900 uppercase dark:text-zinc-100 print:text-zinc-950"
             >
-              {{ locale === 'pl' ? 'Podejście Inżynierskie & AI' : 'Engineering Approach & AI' }}
+              {{ $t('engineeringApproach') }}
             </h2>
           </div>
 
@@ -493,7 +493,7 @@ const localePath = useLocalePath()
               <li
                 v-for="lang in languages"
                 :key="lang.name"
-                class="flex justify-between"
+                class="flex flex-wrap items-baseline justify-between gap-x-2"
               >
                 <span class="font-medium text-zinc-800 dark:text-zinc-200 print:text-zinc-950">
                   {{ lang.name }}
@@ -542,11 +542,11 @@ const localePath = useLocalePath()
 
       <!-- GDPR / RODO Clause Footer + Page 2 Pagination -->
       <footer
-        class="mt-6 space-y-3 border-t border-zinc-200 pt-3 dark:border-zinc-800 print:mt-4 print:border-zinc-300"
+        class="mt-6 space-y-3 border-t border-zinc-200 pt-3 dark:border-zinc-800 print:mt-3 print:space-y-1.5 print:border-zinc-300 print:pt-2"
       >
         <p
           v-if="showRodo && rodoClause"
-          class="font-mono text-[9px] leading-tight text-zinc-400 dark:text-zinc-500 print:text-[8px] print:text-zinc-600"
+          class="font-mono text-[9px] leading-tight text-zinc-400 dark:text-zinc-500 print:text-[7.5px] print:leading-tight print:text-zinc-600"
         >
           {{ rodoClause }}
         </p>
@@ -579,7 +579,7 @@ const localePath = useLocalePath()
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    min-height: 275mm !important;
+    min-height: 265mm !important;
     background: white !important;
     color: #09090b !important;
     page-break-inside: avoid !important;
@@ -588,10 +588,6 @@ const localePath = useLocalePath()
   .cv-page-2 {
     page-break-before: always !important;
     break-before: page !important;
-  }
-  header,
-  footer {
-    display: block !important;
   }
 }
 </style>

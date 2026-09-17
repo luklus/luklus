@@ -31,6 +31,7 @@ site with an installable PWA and an AI Career Assistant.
 ```bash
 pnpm install
 pnpm dev        # http://localhost:3000
+pnpm cv:pdf     # output/pdf/Lukasz_Lusiak_CV_PL.pdf
 ```
 
 Build and preview the production output:
@@ -45,21 +46,22 @@ Career Assistant needs the `/api/career-chat` server route.
 
 ## Scripts
 
-| Script              | Purpose                                         |
-| ------------------- | ----------------------------------------------- |
-| `pnpm dev`          | Dev server with HMR                             |
-| `pnpm build`        | Standard Nuxt production build                  |
+| Script              | Purpose                                               |
+| ------------------- | ----------------------------------------------------- |
+| `pnpm dev`          | Dev server with HMR                                   |
+| `pnpm build`        | Standard Nuxt production build                        |
+| `pnpm cv:pdf`       | Exports the live CV view as a two-page A4 PDF         |
 | `pnpm generate`     | Static export (does not include Career Assistant API) |
-| `pnpm preview`      | Previews the output of `pnpm build`             |
-| `pnpm lint`         | ESLint                                          |
-| `pnpm lint:fix`     | ESLint with autofix                             |
-| `pnpm format`       | Prettier write                                  |
-| `pnpm format:check` | Prettier check                                  |
-| `pnpm typecheck`    | `nuxt typecheck` (vue-tsc)                      |
-| `pnpm test`         | All test suites                                 |
-| `pnpm test:unit`    | Node unit tests                                 |
-| `pnpm test:nuxt`    | Component tests (happy-dom)                     |
-| `pnpm test:e2e`     | SSR end-to-end (builds + runs the server)       |
+| `pnpm preview`      | Previews the output of `pnpm build`                   |
+| `pnpm lint`         | ESLint                                                |
+| `pnpm lint:fix`     | ESLint with autofix                                   |
+| `pnpm format`       | Prettier write                                        |
+| `pnpm format:check` | Prettier check                                        |
+| `pnpm typecheck`    | `nuxt typecheck` (vue-tsc)                            |
+| `pnpm test`         | All test suites                                       |
+| `pnpm test:unit`    | Node unit tests                                       |
+| `pnpm test:nuxt`    | Component tests (happy-dom)                           |
+| `pnpm test:e2e`     | SSR end-to-end (builds + runs the server)             |
 
 ## Project structure
 
@@ -100,6 +102,27 @@ The body of the Markdown wires that frontmatter into components via MDC:
 Each `::page-*` maps to a component in `app/components/content/`.
 [`pages/index.vue`](app/pages/index.vue) picks the collection for the active
 locale (`content_en` / `content_pl`) and renders it with `<ContentRenderer>`.
+
+## CV PDF
+
+Generate the Polish CV directly from the printable `/pl/cv` page:
+
+```bash
+pnpm cv:pdf
+```
+
+The command starts a temporary local Nuxt server, waits for the CV content and
+fonts, applies the same print styles as the browser, and writes
+`output/pdf/Lukasz_Lusiak_CV_PL.pdf`. It also verifies that the result contains
+exactly two A4 pages. The English version and a custom output path are supported:
+
+```bash
+pnpm cv:pdf --locale en
+pnpm cv:pdf --output output/pdf/application-cv.pdf
+```
+
+When the app is already running, skip the temporary server with
+`--base-url http://127.0.0.1:3000`.
 
 **To edit content:** change the frontmatter in `content/en/index.md` and/or
 `content/pl/index.md`. **UI labels** (nav, buttons) live in
