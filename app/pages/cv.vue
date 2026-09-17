@@ -103,7 +103,7 @@ useSeoMeta({
       v-else
       class="flex min-h-[50vh] items-center justify-center font-mono text-sm text-zinc-500"
     >
-      Loading CV data...
+      {{ $t('loadingCv') }}
     </div>
   </div>
 </template>

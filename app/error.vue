@@ -6,7 +6,7 @@ const props = defineProps<{
   error: NuxtError
 }>()
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
 
@@ -17,13 +17,7 @@ const lang = computed(() => activeLocale.value.code)
 const is404 = computed(() => props.error?.statusCode === 404 || !props.error?.statusCode)
 
 const title = computed(() =>
-  is404.value
-    ? locale.value === 'pl'
-      ? '404 · Ścieżka nie została odnaleziona — Łukasz Łusiak'
-      : '404 · Route Not Found — Łukasz Łusiak'
-    : locale.value === 'pl'
-      ? 'Błąd aplikacji — Łukasz Łusiak'
-      : 'Application Error — Łukasz Łusiak'
+  is404.value ? `${t('error404Title')} — Łukasz Łusiak` : `${t('error500Title')} — Łukasz Łusiak`
 )
 
 useHead({
@@ -39,14 +33,7 @@ useHead({
 })
 
 useSeoMeta({
-  description: () =>
-    is404.value
-      ? locale.value === 'pl'
-        ? 'Żądany adres nie istnieje w strukturze aplikacji.'
-        : 'The requested endpoint does not exist.'
-      : locale.value === 'pl'
-        ? 'Wystąpił nieoczekiwany błąd podczas przetwarzania żądania.'
-        : 'An unexpected error occurred.',
+  description: () => (is404.value ? t('error404Description') : t('error500Description')),
   robots: 'noindex, nofollow',
   title: () => title.value
 })
