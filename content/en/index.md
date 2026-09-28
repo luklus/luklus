@@ -116,6 +116,7 @@ skillsList:
     highlighted: ['Node.js']
     items:
       [
+        'Node.js',
         'PHP / Laravel',
         'PostgreSQL / Supabase',
         'Cloudflare (Pages & Workers)',
