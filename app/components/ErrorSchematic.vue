@@ -8,7 +8,7 @@
 
     <svg
       class="text-default relative max-h-[300px] w-full max-w-[420px] select-none"
-      aria-label="Diagram of application routing resolution and error state"
+      :aria-label="$t('errorDiagram')"
       font-family="'JetBrains Mono', monospace"
       height="260"
       role="img"

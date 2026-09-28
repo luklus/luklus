@@ -54,9 +54,7 @@ describe('home page (SSR)', { timeout: 300000 }, async () => {
   it('renders the hero content from the content collection', async () => {
     const html = await $fetch('/')
 
-    expect(html).toContain(
-      'I design and deliver scalable frontend applications with Vue, Nuxt, and AI.'
-    )
+    expect(html).toContain('I design and build scalable web applications with Vue and Nuxt.')
     expect(html).toContain('FRONTEND ARCHITECT — OPEN TO NEW OPPORTUNITIES')
   })
 
@@ -89,22 +87,22 @@ describe('home page (SSR)', { timeout: 300000 }, async () => {
 
     const html = await res.text()
     expect(html).toContain('Łukasz Łusiak')
-    expect(html).toContain('Frontend Architect & Senior Engineer')
+    expect(html).toContain('Senior Frontend Engineer & Architect')
   })
 
   it('renders the Polish portfolio and CV translations', async () => {
     const portfolioHtml = await $fetch('/pl')
 
     expect(portfolioHtml).toContain(
-      'Projektuję i wdrażam skalowalne aplikacje frontendowe z wykorzystaniem Vue, Nuxt i AI.'
+      'Projektuję i rozwijam skalowalne aplikacje webowe w Vue i Nuxt.'
     )
-    expect(portfolioHtml).toContain('ARCHITEKT FRONTENDU — OTWARTY NA NOWE WYZWANIA')
+    expect(portfolioHtml).toContain('ARCHITEKT FRONTENDU — OTWARTY NA WSPÓŁPRACĘ')
 
     const cvResponse = await fetch('/pl/cv')
     expect(cvResponse.status).toBe(200)
 
     const cvHtml = await cvResponse.text()
-    expect(cvHtml).toContain('Architekt frontendu i starszy inżynier')
+    expect(cvHtml).toContain('Senior Frontend Engineer & Architect')
     expect(cvHtml).toContain('Profil zawodowy')
   })
 })

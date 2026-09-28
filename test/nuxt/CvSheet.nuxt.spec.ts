@@ -65,7 +65,7 @@ describe('CvSheet', () => {
     const text = component.text()
 
     expect(text).toContain('Łukasz Łusiak')
-    expect(text).toContain('Frontend Architect & Senior Engineer')
+    expect(text).toContain('Senior Frontend Engineer & Architect')
   })
 
   it('renders contact details and links', async () => {

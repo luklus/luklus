@@ -31,12 +31,12 @@ function goBack() {
 useSeoMeta({
   title: () =>
     locale.value === 'pl'
-      ? 'CV — Łukasz Łusiak | Senior Frontend Architect'
-      : 'Resume / CV — Łukasz Łusiak | Senior Frontend Architect',
+      ? 'CV — Łukasz Łusiak | Senior Frontend Engineer & Architect'
+      : 'Resume / CV — Łukasz Łusiak | Senior Frontend Engineer & Architect',
   description: () =>
     locale.value === 'pl'
-      ? 'Oficjalne CV Łukasza Łusiaka — Senior Frontend Engineer & Architect z ponad 8-letnim doświadczeniem w Vue 3, Nuxt 3 i architekturze enterprise.'
-      : 'Official Resume of Łukasz Łusiak — Senior Frontend Engineer & Architect specializing in Vue 3, Nuxt 3, and scalable enterprise architecture.'
+      ? 'CV Łukasza Łusiaka — inżyniera i architekta frontendu z ponad 8-letnim doświadczeniem. Vue 3, Nuxt 3, TypeScript i aplikacje dla dużych firm.'
+      : 'CV of Łukasz Łusiak — a senior frontend engineer and architect specializing in Vue 3, Nuxt 3, and scalable enterprise applications.'
 })
 </script>
 
@@ -59,7 +59,7 @@ useSeoMeta({
           </UButton>
           <div class="hidden h-4 w-px bg-zinc-300 sm:block dark:bg-zinc-700" />
           <span class="hidden font-mono text-xs text-zinc-500 sm:inline dark:text-zinc-400">
-            2 × A4 · Vector PDF
+            {{ $t('cvFormat') }}
           </span>
         </div>
 
@@ -72,7 +72,7 @@ useSeoMeta({
               class="accent-success text-success size-3.5 rounded"
               type="checkbox"
             />
-            <span>RODO</span>
+            <span>{{ $t('rodoClause') }}</span>
           </label>
 
           <AppLang />

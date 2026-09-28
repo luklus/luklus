@@ -22,6 +22,6 @@ const { data: page } = await useAsyncData(
       v-if="page"
       :value="page"
     />
-    <section v-else>Home not found</section>
+    <section v-else>{{ $t('homeUnavailable') }}</section>
   </UPage>
 </template>

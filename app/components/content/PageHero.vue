@@ -83,7 +83,7 @@ const localePath = useLocalePath()
     <div>
       <svg
         class="text-default w-full"
-        aria-label="Diagram of a scalable frontend system architecture"
+        :aria-label="$t('architectureDiagram')"
         font-family="'JetBrains Mono',monospace"
         height="250"
         role="img"

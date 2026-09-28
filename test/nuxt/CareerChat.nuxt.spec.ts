@@ -11,9 +11,9 @@ describe('CareerChat', () => {
     await mountSuspended(CareerChat)
     const text = document.body.textContent ?? ''
 
-    expect(text).toContain('AI Career Assistant')
+    expect(text).toContain('Ask about me · AI assistant')
     expect(text).toContain('How can I help?')
-    expect(text).toContain('What is his Nuxt experience?')
+    expect(text).toContain('What experience does Łukasz have with Nuxt?')
 
     isOpen.value = false
   })

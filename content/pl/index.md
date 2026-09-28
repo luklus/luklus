@@ -1,71 +1,71 @@
 ---
 # Section: Hero
 careerContext: |
-  Łukasz Łusiak jest starszym inżynierem i architektem frontendu z ponad ośmioletnim doświadczeniem w tworzeniu systemów klasy enterprise oraz rozwiązań dla sektora publicznego. Specjalizuje się w Vue 3, Nuxt, TypeScript, architekturze frontendu, optymalizacji Core Web Vitals oraz dostępności zgodnej z WCAG 2.1 AA.
+  Łukasz Łusiak jest inżynierem i architektem frontendu z ponad ośmioletnim doświadczeniem w tworzeniu aplikacji dla dużych firm i sektora publicznego. Specjalizuje się w Vue 3, Nuxt, TypeScript, architekturze frontendu, optymalizacji wskaźników Core Web Vitals i dostępności cyfrowej zgodnej z WCAG 2.1 AA.
 
-  Od stycznia 2024 roku pracuje jako Senior Frontend Engineer & Architect w ithouse.co, gdzie współtworzy modułową architekturę aplikacji Vue 3 i Nuxt dla sektora publicznego. Wdrożył automatyczne procesy przeglądu kodu wspierane przez AI oraz testy E2E w Playwright, skracając czas weryfikacji pull requestów o 35%. Odpowiada także za wydajność (INP poniżej 100 ms, LCP poniżej 1,8 s), bezpieczeństwo danych i standardy architektoniczne.
+  Od stycznia 2024 roku pracuje jako Senior Frontend Engineer & Architect w ithouse.co, gdzie współtworzy modułową architekturę aplikacji Vue 3 i Nuxt dla sektora publicznego. Zautomatyzował przegląd kodu z pomocą AI i wdrożył testy E2E w Playwright, skracając czas weryfikacji pull requestów o 35%. Odpowiada także za wydajność (INP poniżej 100 ms, LCP poniżej 1,8 s), bezpieczeństwo danych i standardy architektoniczne.
 
-  W latach 2019-2024 był Senior Frontend Developerem i Team Leadem w Cloudflight. Prowadził pięcioosobowy zespół frontendowy, rozwijał aplikacje oparte na Angularze, RxJS i NgRx z integracjami SAP oraz stworzył korporacyjny system projektowy oparty na Storybooku, co skróciło czas budowy interfejsów o 30%. Wprowadził do zespołu i wspierał mentoringowo ponad 10 programistów.
+  W latach 2019–2024 pracował w Cloudflight jako Senior Frontend Developer i Team Lead. Prowadził pięcioosobowy zespół frontendowy, rozwijał aplikacje oparte na Angularze, RxJS i NgRx z integracjami SAP oraz stworzył firmowy design system oparty na Storybooku, co skróciło czas budowy interfejsów o 30%. Pomagał ponad 10 programistom wdrożyć się do pracy i rozwijać umiejętności techniczne.
 
-  Wcześniej pracował jako Frontend Developer w Atos, tworząc aplikacje SPA i SSR z Vue.js, Nuxt.js oraz REST API.
+  Wcześniej pracował jako Frontend Developer w Atos, tworząc aplikacje SPA i aplikacje renderowane po stronie serwera (SSR) z użyciem Vue.js, Nuxt.js i REST API.
 
-  Wybrane projekty: HomeKeeper - autorska platforma SaaS do zarządzania domem (Nuxt 3, Vue 3, Supabase, Tailwind); Zieliński ART - platforma prezentacyjna dla pracowni jubilerskiej; Auto TIP - serwis zoptymalizowany pod kątem lokalnego SEO i PageSpeed; LOOP Mobi - responsywna platforma usługowa oparta na Next.js.
+  Wybrane projekty: HomeKeeper — autorska platforma SaaS do zarządzania domem (Nuxt 3, Vue 3, Supabase, Tailwind); Zieliński ART — strona z portfolio pracowni jubilerskiej; Auto TIP — strona serwisu samochodowego zoptymalizowana pod kątem lokalnego SEO i szybkości działania; LOOP Mobi — responsywna strona mobilnego salonu fryzjerskiego oparta na Next.js.
 
   Mieszka we Wrocławiu i jest otwarty na pracę zdalną. Kontakt: lukaslusiak.business@outlook.com, GitHub: github.com/luklus, LinkedIn: linkedin.com/in/łukasz-łusiak-58868215b.
 
-heroDescription: 'Jestem starszym inżynierem i architektem frontendu z ponad ośmioletnim doświadczeniem w projektowaniu i wdrażaniu wydajnych aplikacji webowych, systemów klasy enterprise oraz platform sektora publicznego. Łączę zaawansowaną architekturę Vue i Nuxt, optymalizację Core Web Vitals oraz nowoczesne procesy inżynierskie wspierane przez AI.'
-heroHeadline: 'ARCHITEKT FRONTENDU — OTWARTY NA NOWE WYZWANIA'
-heroTitle: 'Projektuję i wdrażam skalowalne aplikacje frontendowe z wykorzystaniem Vue, Nuxt i AI.'
+heroDescription: 'Od ponad ośmiu lat tworzę aplikacje webowe dla dużych firm i sektora publicznego. Specjalizuję się w architekturze frontendu opartej na Vue i Nuxt. Dbam o wydajność, dostępność i jakość kodu, a AI wykorzystuję do usprawniania codziennej pracy.'
+heroHeadline: 'ARCHITEKT FRONTENDU — OTWARTY NA WSPÓŁPRACĘ'
+heroTitle: 'Projektuję i rozwijam skalowalne aplikacje webowe w Vue i Nuxt.'
 
 # Section: Approach
-approachDescription: 'Ustrukturyzowany proces inżynierski — od fazy discovery i analizy wymagań po wdrożenie produkcyjne i optymalizację wydajności.'
+approachDescription: 'Zaczynam od poznania potrzeb i analizy wymagań. Następnie projektuję architekturę i interfejs, rozwijam aplikację, testuję ją i wdrażam. Na każdym etapie dbam o wydajność i jakość kodu.'
 approachTitle: 'Jak tworzę oprogramowanie'
 approachList:
   - label: '01'
-    description: 'Discovery i analiza'
+    description: 'Analiza potrzeb i wymagań'
   - label: '02'
     description: 'Architektura i technologie'
   - label: '03'
-    description: 'Projektowanie UI i prototypowanie'
+    description: 'Projektowanie interfejsów i prototypowanie'
   - label: '04'
     description: 'Implementacja i refaktoryzacja'
   - label: '05'
-    description: 'Testowanie i QA (E2E)'
+    description: 'Testy i kontrola jakości'
   - label: '06'
     description: 'Optymalizacja Core Web Vitals'
   - label: '07'
-    description: 'Wytwarzanie wspierane AI'
+    description: 'Programowanie z pomocą AI'
 
 # Section: Experience
 experienceTitle: 'Doświadczenie'
 experienceList:
   - dateStart: '01.2024'
     dateEnd: 'Obecnie'
-    description: 'Współtworzę architekturę frontendu i rozwijam wielkoskalowe systemy dla sektora publicznego, wdrażając procesy inżynierskie wspierane przez AI.'
+    description: 'Współtworzę architekturę frontendu i rozwijam rozbudowane systemy dla sektora publicznego. Wykorzystuję AI do usprawniania pracy zespołu.'
     descriptionList:
-      - 'Projektowanie i wdrażanie modułowej architektury frontendu opartej na Vue 3, Nuxt 3 i TypeScript dla rozwiązań sektora publicznego o wysokiej dostępności i rygorystycznych wymogach bezpieczeństwa.'
-      - 'Wdrożenie automatycznych procesów przeglądu kodu wspieranych przez AI oraz zestawów testów E2E w Playwright, co skróciło czas weryfikacji pull requestów o 35%.'
-      - 'Optymalizacja aplikacji pod kątem Core Web Vitals (INP < 100 ms, LCP < 1,8 s), zgodności z WCAG 2.1 AA oraz bezpieczeństwa danych.'
-      - 'Współtworzenie standardów i decyzji architektonicznych (Architecture Decision Records - ADR), dobór stosu technologicznego oraz mentoring inżynierski w zespole.'
+      - 'Projektowanie i wdrażanie modułowej architektury frontendu w Vue 3, Nuxt 3 i TypeScript dla systemów sektora publicznego wymagających wysokiej dostępności i bezpieczeństwa.'
+      - 'Automatyzacja przeglądu kodu z pomocą AI i wdrożenie testów E2E w Playwright — skrócenie czasu weryfikacji pull requestów o 35%.'
+      - 'Poprawa wydajności aplikacji (INP < 100 ms, LCP < 1,8 s), zapewnianie zgodności z WCAG 2.1 AA i dbanie o bezpieczeństwo danych.'
+      - 'Współtworzenie standardów architektury, dokumentowanie decyzji architektonicznych (ADR), dobór technologii i mentoring w zespole.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Engineer & Architect · ithouse.co'
   - dateStart: '03.2019'
     dateEnd: '01.2024'
-    description: 'Kierowałem pięcioosobowym zespołem frontendowym tworzącym aplikacje klasy enterprise; odpowiadałem za architekturę techniczną oraz korporacyjny system projektowy.'
+    description: 'Prowadziłem pięcioosobowy zespół frontendowy tworzący aplikacje dla dużych firm. Odpowiadałem za architekturę i firmowy design system.'
     descriptionList:
-      - 'Kierowanie pięcioosobowym zespołem frontendowym w międzynarodowych projektach klasy enterprise - odpowiedzialność za roadmapę techniczną, estymacje architektoniczne i jakość kodu.'
-      - 'Projektowanie architektury i rozwój wielomodułowych aplikacji biznesowych opartych na Angularze, RxJS i NgRx oraz integracjach z systemami klasy ERP (SAP).'
-      - 'Zaprojektowanie i wdrożenie korporacyjnego systemu projektowego opartego na reużywalnych komponentach i Storybooku, co skróciło czas budowy interfejsów o 30%.'
-      - 'Prowadzenie technicznych procesów rekrutacyjnych i warsztatów inżynierskich oraz wdrażanie do pracy i mentoring ponad 10 programistów.'
+      - 'Prowadzenie pięcioosobowego zespołu frontendowego w międzynarodowych projektach — planowanie rozwoju technicznego, szacowanie prac i dbanie o jakość kodu.'
+      - 'Projektowanie architektury i rozwój wielomodułowych aplikacji biznesowych w Angularze, RxJS i NgRx, zintegrowanych z systemami ERP firmy SAP.'
+      - 'Zaprojektowanie i wdrożenie firmowego design systemu opartego na komponentach wielokrotnego użytku i Storybooku — skrócenie czasu tworzenia interfejsów o 30%.'
+      - 'Prowadzenie technicznych rozmów rekrutacyjnych i warsztatów oraz wdrażanie do pracy i mentoring ponad 10 programistów.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Developer · Team Lead · Cloudflight'
   - dateStart: '01.2018'
     dateEnd: '02.2019'
-    description: 'Tworzyłem i utrzymywałem aplikacje webowe w pełnym cyklu wytwarzania oprogramowania dla globalnych klientów korporacyjnych.'
+    description: 'Tworzyłem i utrzymywałem aplikacje webowe dla międzynarodowych firm, uczestnicząc we wszystkich etapach prac nad oprogramowaniem.'
     descriptionList:
-      - 'Rozwój responsywnych aplikacji SPA i SSR z wykorzystaniem Vue.js, Nuxt.js oraz zaawansowanych integracji z RESTful API.'
-      - 'Ścisła współpraca z zespołami UX/UI i backendu w metodykach Agile/Scrum, gwarantująca zgodność ze standardami WCAG oraz dbałość o detale (pixel-perfect).'
-      - 'Optymalizacja rozmiaru pakietów i wydajności ładowania zasobów oraz implementacja automatycznych testów jednostkowych w Jest, zapewniających wysokie pokrycie kodu.'
+      - 'Rozwój responsywnych aplikacji SPA i aplikacji renderowanych po stronie serwera (SSR) w Vue.js i Nuxt.js oraz integracja z REST API.'
+      - 'Współpraca z projektantami UX/UI i zespołem backendowym w Scrumie — dbanie o zgodność z projektami graficznymi i wytycznymi WCAG.'
+      - 'Zmniejszanie rozmiaru plików wynikowych, przyspieszanie ładowania zasobów i pisanie testów jednostkowych w Jest z wysokim pokryciem kodu.'
     icon: 'i-lucide-briefcase-business'
     title: 'Frontend Developer · Atos'
 
@@ -82,24 +82,24 @@ skillsList:
         'JavaScript (ES6+)',
         'Angular',
         'React',
-        'HTML5 / Semantic HTML',
+        'HTML5 / semantyczny HTML',
         'CSS3 / Tailwind CSS'
       ]
   - header: 'Architektura i wydajność'
-    highlighted: ['SSR / SSG / ISR', 'Clean Architecture', 'Design Systems']
+    highlighted: ['SSR / SSG / ISR', 'Clean Architecture', 'Design systems']
     items:
       [
         'SSR / SSG / ISR',
         'Clean Architecture',
-        'Design Systems',
+        'Design systems',
         'Core Web Vitals',
-        'Microfrontends',
-        'Headless Commerce',
-        'Architecture Decision Records (ADR)'
+        'Mikrofrontendy',
+        'Headless commerce',
+        'Decyzje architektoniczne (ADR)'
       ]
   - header: 'Zarządzanie stanem i API'
-    highlighted: ['Pinia', 'RESTful API']
-    items: ['Pinia', 'RESTful API', 'GraphQL', 'Supabase', 'RxJS / NgRx', 'WebSockets']
+    highlighted: ['Pinia', 'REST API']
+    items: ['Pinia', 'REST API', 'GraphQL', 'Supabase', 'RxJS / NgRx', 'WebSocket']
   - header: 'Testy i narzędzia inżynierskie'
     highlighted: ['Playwright (E2E)', 'Vite']
     items:
@@ -113,27 +113,32 @@ skillsList:
         'Webpack'
       ]
   - header: 'Backend i chmura'
+    highlighted: ['Node.js']
     items:
       [
-        'Node.js',
         'PHP / Laravel',
         'PostgreSQL / Supabase',
         'Cloudflare (Pages & Workers)',
-        'RESTful Services'
+        'Usługi REST'
       ]
   - header: 'Projektowanie i dostępność'
-    highlighted: ['Figma', 'UX/UI Design']
-    items: ['Figma', 'UX/UI Design', 'Design Tokens', 'WCAG 2.1 AA / Dostępność (A11y)']
-  - header: 'AI i nowoczesna inżynieria'
-    highlighted: ['AI-Assisted Development']
+    highlighted: ['Figma', 'Projektowanie UX/UI']
+    items: ['Figma', 'Projektowanie UX/UI', 'Design tokens', 'Dostępność / WCAG 2.1 AA']
+  - header: 'AI w pracy programisty'
+    highlighted: ['Programowanie z pomocą AI']
     items:
-      ['AI-Assisted Development', 'Prompt Engineering', 'AI Workflows', 'Automated Code Review']
+      [
+        'Programowanie z pomocą AI',
+        'Projektowanie promptów',
+        'Automatyzacja z AI',
+        'Automatyczny przegląd kodu'
+      ]
 
 # Section: Projects
 projectsTitle: 'Wybrane projekty'
 projectsList:
   - title: 'HomeKeeper · System do zarządzania domem'
-    description: 'Kompleksowa platforma SaaS do zarządzania domem: rejestr gwarancji, harmonogram przeglądów, odczyty liczników, zadania i budżet domowy. Zaprojektowana i wdrożona od podstaw z wykorzystaniem Nuxt 3, Vue 3, Supabase i Tailwind CSS.'
+    description: 'Autorska aplikacja SaaS do zarządzania domem: rejestr gwarancji, harmonogram przeglądów, odczyty liczników, zadania i budżet domowy. Zaprojektowana i wdrożona od podstaw z wykorzystaniem Nuxt 3, Vue 3, Supabase i Tailwind CSS.'
     image: '/images/homekeeper.webp'
     to: 'https://gethomekeeper.app/'
     badges:
@@ -142,22 +147,22 @@ projectsList:
       - 'Nuxt 3 · Supabase'
     featured: true
   - title: 'Zieliński ART · Pracownia jubilerska'
-    description: 'Dedykowana platforma prezentacyjna i portfolio dla ekskluzywnej pracowni złotniczej. Autorska oprawa wizualna, zaawansowana optymalizacja multimediów oraz bezkompromisowa wydajność pod kątem Core Web Vitals (100/100).'
+    description: 'Strona z portfolio pracowni jubilerskiej, zaprojektowana i zbudowana na zamówienie. Autorska oprawa wizualna, zoptymalizowane multimedia i nacisk na szybkość działania.'
     image: '/images/zielinskiart.webp'
     to: 'https://zielinskiart.pl/'
     badges:
       - 'Projekt komercyjny'
       - 'Portfolio i e-commerce'
-      - 'Nuxt 3 · Tailwind'
+      - 'Nuxt 3 · Tailwind CSS'
   - title: 'Auto TIP · Serwis samochodowy'
-    description: 'Nowoczesna, zoptymalizowana pod kątem lokalnego SEO i maksymalnej wydajności (wynik 100/100 PageSpeed) wizytówka dla serwisu samochodowego z ponad 30-letnim doświadczeniem.'
+    description: 'Strona serwisu samochodowego z ponad 30-letnim doświadczeniem. Zoptymalizowana pod kątem lokalnego SEO i szybkości działania, z wynikiem 100/100 w kategorii wydajności w PageSpeed Insights.'
     to: 'https://autotip.pl/'
     image: '/images/autotip.webp'
     badges:
       - 'Projekt komercyjny'
       - 'Nuxt 3 · SEO i wydajność'
   - title: 'LOOP Mobi · Mobilny salon fryzjerski'
-    description: 'Szybka i responsywna platforma usługowa dla mobilnego salonu fryzjerskiego z przejrzystym cennikiem, kalkulatorem stref dojazdu oraz bezpośrednim modułem kontaktu.'
+    description: 'Responsywna strona mobilnego salonu fryzjerskiego z przejrzystym cennikiem, kalkulatorem stref dojazdu i łatwym dostępem do kontaktu.'
     to: 'https://loop-mobilny-fryzjer.pl/'
     image: '/images/loopmobi.webp'
     badges:
@@ -165,19 +170,19 @@ projectsList:
       - 'Next.js · Responsywny interfejs'
 
 # Section: AI
-aiDescription: 'AI przyspiesza pracę i wspiera proces wytwórczy, ale nie zastępuje inżynierskiego osądu, rygoru architektonicznego ani rzetelnego testowania.'
-aiTitle: 'Jak wykorzystuję AI w inżynierii oprogramowania'
+aiDescription: 'Wykorzystuję AI do planowania, prototypowania, pisania kodu i testów. Weryfikuję proponowane rozwiązania i odpowiadam za ich jakość.'
+aiTitle: 'Jak wykorzystuję AI w pracy'
 aiList:
   - label: '01'
     description: 'Architektura i planowanie systemów'
   - label: '02'
-    description: 'Prototypowanie UI i scaffolding'
+    description: 'Prototypowanie i tworzenie szkieletu aplikacji'
   - label: '03'
     description: 'Implementacja i refaktoryzacja'
   - label: '04'
     description: 'Automatyczny przegląd kodu'
   - label: '05'
-    description: 'Automatyzacja testów i QA'
+    description: 'Automatyzacja testów'
   - label: '06'
     description: 'Optymalizacja wydajności'
 
@@ -190,16 +195,16 @@ contactInfo:
   linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b'
   website: 'https://luklus.me'
 
-cvSummary: 'Jestem starszym inżynierem i architektem frontendu z ponad ośmioletnim doświadczeniem w projektowaniu i wdrażaniu skalowalnych aplikacji klasy enterprise oraz systemów sektora publicznego. Specjalizuję się w Vue 3, Nuxt 3, TypeScript i integracjach korporacyjnych, w tym SAP. Optymalizuję Core Web Vitals (poprawa LCP i INP o ponad 40%), projektuję korporacyjne systemy projektowe oraz skracam czas wprowadzania zmian dzięki automatyzacji CI/CD i procesom inżynierskim wspieranym przez AI.'
+cvSummary: 'Jestem inżynierem i architektem frontendu z ponad ośmioletnim doświadczeniem w tworzeniu skalowalnych aplikacji dla dużych firm i sektora publicznego. Specjalizuję się w Vue 3, Nuxt 3, TypeScript i integracji z systemami biznesowymi, w tym SAP. Poprawiam wskaźniki Core Web Vitals (LCP i INP o ponad 40%), tworzę firmowe design systemy i przyspieszam wdrażanie zmian dzięki CI/CD oraz automatyzacji z pomocą AI.'
 
 languages:
   - name: 'Polski'
     level: 'Język ojczysty'
   - name: 'Angielski'
-    level: 'Średnio zaawansowany wyższy (B2) · Komunikacja biznesowa i techniczna'
+    level: 'B2 · Komunikacja biznesowa i techniczna'
 
 education:
-  - degree: 'Technik informatyk - systemy i sieci komputerowe'
+  - degree: 'Technik informatyk — systemy i sieci komputerowe'
     school: 'Centrum Edukacji w Zabrzu'
     dateStart: '2002'
     dateEnd: '2006'
