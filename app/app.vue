@@ -10,15 +10,15 @@ const seo = computed(() => {
   if (locale.value === 'pl') {
     return {
       description:
-        'Inżynier i architekt frontendu z ponad 8-letnim doświadczeniem. Tworzę wydajne, dostępne aplikacje webowe w Vue i Nuxt dla dużych firm i sektora publicznego.',
-      title: 'Łukasz Łusiak — Senior Frontend Engineer & Architect'
+        'Senior Frontend Engineer z ponad 8-letnim doświadczeniem. Tworzę aplikacje webowe w Vue i Nuxt, dbając o ich wydajność i dostępność.',
+      title: 'Łukasz Łusiak — Senior Frontend Engineer'
     }
   }
 
   return {
     description:
-      'Senior frontend engineer and architect with 8+ years of experience. I build fast, accessible web applications with Vue and Nuxt for enterprise and public-sector clients.',
-    title: 'Łukasz Łusiak — Senior Frontend Engineer & Architect'
+      'Senior Frontend Engineer with 8+ years of experience. I build web applications with Vue and Nuxt, focusing on performance and accessibility.',
+    title: 'Łukasz Łusiak — Senior Frontend Engineer'
   }
 })
 
@@ -51,7 +51,7 @@ useSeoMeta({
 useSchemaOrg([
   definePerson({
     name: 'Łukasz Łusiak',
-    jobTitle: 'Senior Frontend Engineer & Architect',
+    jobTitle: 'Senior Frontend Engineer',
     url: 'https://luklus.me',
     image: '/icon-512x512.png',
     sameAs: [
@@ -59,7 +59,7 @@ useSchemaOrg([
       'https://github.com/luklus'
     ]
   }),
-  defineWebSite({ name: 'Łukasz Łusiak — Senior Frontend Engineer & Architect' }),
+  defineWebSite({ name: 'Łukasz Łusiak — Senior Frontend Engineer' }),
   defineWebPage()
 ])
 </script>

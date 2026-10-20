@@ -116,7 +116,7 @@ const localePath = useLocalePath()
                 >
                   <span class="size-1.5 rounded-full bg-emerald-500 print:bg-zinc-700"></span>
                   <span class="whitespace-nowrap">{{
-                    heroHeadline ? heroHeadline.split('—')[0]?.trim() : 'SENIOR ARCHITECT'
+                    heroHeadline ? heroHeadline.split('—')[0]?.trim() : 'SENIOR FRONTEND ENGINEER'
                   }}</span>
                 </span>
               </div>

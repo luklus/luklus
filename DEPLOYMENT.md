@@ -39,7 +39,7 @@ Pre-deploy checklist and DevOps notes for shipping `luklus.me` to Vercel.
    - `AI_GATEWAY_API_KEY`
    - `UPSTASH_REDIS_REST_URL`
    - `UPSTASH_REDIS_REST_TOKEN`
-   Add the last three for **Production**, **Preview**, and **Development**.
+     Add the last three for **Production**, **Preview**, and **Development**.
 4. **Branch protection**:
    - Protect `main` in GitHub repository settings to require CI checks to pass before merging.
 

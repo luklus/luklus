@@ -1,162 +1,34 @@
-# luklus
+# Łukasz Łusiak
 
-Personal portfolio of **Łukasz Łusiak — Senior Frontend Engineer**, live at
-[luklus.me](https://luklus.me). A bilingual (EN/PL), content-driven Nuxt 4
-site with an installable PWA and an AI Career Assistant.
+**Senior Frontend Engineer** · Wrocław, Poland · Open to remote opportunities
 
-## Tech stack
+I build and improve web applications, with a focus on maintainable frontend architecture, performance, and accessibility. I have more than eight years of experience working on business and public-sector software. My main tools are Vue, Nuxt, and TypeScript.
 
-| Area         | Choice                                                                       |
-| ------------ | ---------------------------------------------------------------------------- |
-| Framework    | [Nuxt 4](https://nuxt.com) (Vue 3, Nitro)                                    |
-| UI           | [@nuxt/ui](https://ui.nuxt.com) v4 + Tailwind CSS v4                         |
-| Content      | [@nuxt/content](https://content.nuxt.com) v3 (Markdown + MDC)                |
-| i18n         | [@nuxtjs/i18n](https://i18n.nuxtjs.org) — `en` (default) + `pl`              |
-| SEO          | [@nuxtjs/seo](https://nuxtseo.com)                                           |
-| PWA          | [@vite-pwa/nuxt](https://vite-pwa-org.netlify.app) (Workbox)                 |
-| Images/Fonts | [@nuxt/image](https://image.nuxt.com), [@nuxt/fonts](https://fonts.nuxt.com) |
-| Quality      | ESLint (`@nuxt/eslint`), Prettier, `@nuxt/a11y`, `@nuxt/hints`               |
-| Tests        | Vitest + `@nuxt/test-utils` (unit / component / e2e)                         |
-| Analytics    | Vercel Analytics + Speed Insights                                            |
-| Hosting      | Vercel (prerendered pages + serverless Career Assistant API)                 |
+## Experience
 
-## Requirements
+- **Senior Frontend Engineer · ithouse.co** (Jan 2024–present): I develop public-sector applications with Vue 3, Nuxt 3, and TypeScript. I help shape frontend structure, have introduced Playwright E2E tests, and support code review and technical decisions.
+- **Senior Frontend Developer · Team Lead · Cloudflight** (Mar 2019–Jan 2024): Led a five-person frontend team. I worked on Angular applications with SAP integrations, helped build a Storybook-based design system, and supported the development of other engineers.
+- **Frontend Developer · Atos** (Jan 2018–Feb 2019): Built single-page and server-rendered applications with Vue.js and Nuxt.js, integrated with REST APIs.
 
-- **Node.js ≥ 22.5** (pinned to `22` in [`.nvmrc`](.nvmrc)). The native SQLite
-  connector used by `@nuxt/content` needs `node:sqlite`, available from 22.5.
-- **pnpm** (the repo pins `pnpm@11.11.0` via `packageManager`).
+## Selected projects
 
-## Getting started
+| Project                                       | What I built                                                                                    |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [HomeKeeper](https://gethomekeeper.app/)      | A home-management SaaS app built with Nuxt 3, Vue 3, Supabase, and Tailwind CSS.                |
+| [Zieliński ART](https://zielinskiart.pl/)     | A custom portfolio website for a jewelry studio.                                                |
+| [Auto TIP](https://autotip.pl/)               | An automotive repair website focused on clear service information, local SEO, and fast loading. |
+| [LOOP Mobi](https://loop-mobilny-fryzjer.pl/) | A responsive website for a mobile hair salon, including pricing and a travel-zone calculator.   |
 
-```bash
-pnpm install
-pnpm dev        # http://localhost:3000
-pnpm cv:pdf     # output/pdf/Lukasz_Lusiak_CV_PL.pdf
-```
+## Skills
 
-Build and preview the production output:
+- **Frontend:** Vue 3, Nuxt 3, TypeScript, JavaScript, Angular, HTML, CSS, Tailwind CSS
+- **Engineering:** frontend architecture, design systems, Core Web Vitals, accessibility, Playwright, Vitest, Storybook
+- **Integrations:** REST APIs, SAP, Supabase
+- **Languages:** Polish (native), English (B2)
 
-```bash
-pnpm build
-pnpm preview
-```
+## Contact and CV
 
-Deploy through Vercel's Nuxt.js preset. Do not use a static-only host: the
-Career Assistant needs the `/api/career-chat` server route.
+- [Portfolio](https://luklus.me) · [Full CV in English](https://luklus.me/cv) · [CV po polsku](https://luklus.me/pl/cv)
+- [LinkedIn](https://www.linkedin.com/in/%C5%82ukasz-%C5%82usiak-58868215b/) · [Email](mailto:lukaslusiak.business@outlook.com)
 
-## Scripts
-
-| Script              | Purpose                                               |
-| ------------------- | ----------------------------------------------------- |
-| `pnpm dev`          | Dev server with HMR                                   |
-| `pnpm build`        | Standard Nuxt production build                        |
-| `pnpm cv:pdf`       | Exports the live CV view as a two-page A4 PDF         |
-| `pnpm generate`     | Static export (does not include Career Assistant API) |
-| `pnpm preview`      | Previews the output of `pnpm build`                   |
-| `pnpm lint`         | ESLint                                                |
-| `pnpm lint:fix`     | ESLint with autofix                                   |
-| `pnpm format`       | Prettier write                                        |
-| `pnpm format:check` | Prettier check                                        |
-| `pnpm typecheck`    | `nuxt typecheck` (vue-tsc)                            |
-| `pnpm test`         | All test suites                                       |
-| `pnpm test:unit`    | Node unit tests                                       |
-| `pnpm test:nuxt`    | Component tests (happy-dom)                           |
-| `pnpm test:e2e`     | SSR end-to-end (builds + runs the server)             |
-
-## Project structure
-
-```
-app/
-  app.vue              # root: UApp shell, SEO head, PWA manifest + status
-  app.config.ts        # Nuxt UI theme (primary: black, neutral: slate)
-  assets/css/main.css  # Tailwind + Nuxt UI import, fonts, color tokens
-  components/
-    App*.vue           # header, footer, menu, logo, language switch
-    content/Page*.vue  # section components rendered from Markdown (MDC)
-    PwaStatus.vue      # install / update / offline-ready prompt
-  pages/index.vue      # loads the locale-specific content document
-content/
-  en/index.md          # English page content (frontmatter drives all sections)
-  pl/index.md          # Polish page content
-i18n/locales/          # UI string translations (en.json, pl.json)
-public/                # favicon, PWA icons (192–512), images, robots
-content.config.ts      # typed content collections + Zod schema
-nuxt.config.ts         # modules, security headers, prerender, i18n, PWA
-```
-
-## Content & i18n
-
-The page is **data-driven**. Each locale has one Markdown document
-(`content/<locale>/index.md`) whose **frontmatter** holds every section's copy —
-hero, approach, experience, skills, projects and the AI section. The schema is
-enforced by Zod in [`content.config.ts`](content.config.ts), so a missing or
-mistyped field fails the build.
-
-The body of the Markdown wires that frontmatter into components via MDC:
-
-```md
-::page-hero{:description="heroDescription" :headline="heroHeadline" :title="heroTitle"}
-::
-```
-
-Each `::page-*` maps to a component in `app/components/content/`.
-[`pages/index.vue`](app/pages/index.vue) picks the collection for the active
-locale (`content_en` / `content_pl`) and renders it with `<ContentRenderer>`.
-
-## CV PDF
-
-Generate the Polish CV directly from the printable `/pl/cv` page:
-
-```bash
-pnpm cv:pdf
-```
-
-The command starts a temporary local Nuxt server, waits for the CV content and
-fonts, applies the same print styles as the browser, and writes
-`output/pdf/Lukasz_Lusiak_CV_PL.pdf`. It also verifies that the result contains
-exactly two A4 pages. The English version and a custom output path are supported:
-
-```bash
-pnpm cv:pdf --locale en
-pnpm cv:pdf --output output/pdf/application-cv.pdf
-```
-
-When the app is already running, skip the temporary server with
-`--base-url http://127.0.0.1:3000`.
-
-**To edit content:** change the frontmatter in `content/en/index.md` and/or
-`content/pl/index.md`. **UI labels** (nav, buttons) live in
-`i18n/locales/*.json` and are used via `$t('key')`.
-
-## PWA
-
-The site is an installable, offline-capable PWA (configured under `pwa` in
-[`nuxt.config.ts`](nuxt.config.ts)):
-
-- `registerType: 'autoUpdate'` — new deployments are picked up automatically.
-- Manifest + icons (192/256/384/512, incl. a maskable variant) ship from
-  `public/`; the manifest link is injected by `<VitePwaManifest />` in `app.vue`.
-- Workbox precaches the prerendered HTML/CSS/JS, images and self-hosted fonts.
-- [`PwaStatus.vue`](app/components/PwaStatus.vue) shows an install / reload /
-  offline-ready prompt driven by the `$pwa` state.
-
-The service worker is **disabled during `pnpm dev`** (`devOptions.enabled: false`)
-to avoid stale-cache surprises — test the PWA against `pnpm build && pnpm preview`.
-
-## SEO & security
-
-- Site identity and canonical URL come from `site` in `nuxt.config.ts`;
-  per-locale meta is set with `useSeoMeta` in `app.vue`.
-- Baseline security headers (HSTS, `X-Content-Type-Options`, `X-Frame-Options`,
-  `Referrer-Policy`, `Permissions-Policy`) are applied to every response via
-  `routeRules` — no extra dependency.
-
-## Deployment
-
-Hosted on Vercel with prerendered portfolio pages and a serverless API route.
-See [DEPLOYMENT.md](DEPLOYMENT.md) for the pre-deploy checklist, Node version,
-environment variables and CI details.
-
-## License
-
-[MIT](LICENSE)
+This repository contains the source for my bilingual portfolio, built with Nuxt 4. For local setup, run `pnpm install` and `pnpm dev`.

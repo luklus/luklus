@@ -31,12 +31,12 @@ function goBack() {
 useSeoMeta({
   title: () =>
     locale.value === 'pl'
-      ? 'CV — Łukasz Łusiak | Senior Frontend Engineer & Architect'
-      : 'Resume / CV — Łukasz Łusiak | Senior Frontend Engineer & Architect',
+      ? 'CV — Łukasz Łusiak | Senior Frontend Engineer'
+      : 'Resume / CV — Łukasz Łusiak | Senior Frontend Engineer',
   description: () =>
     locale.value === 'pl'
-      ? 'CV Łukasza Łusiaka — inżyniera i architekta frontendu z ponad 8-letnim doświadczeniem. Vue 3, Nuxt 3, TypeScript i aplikacje dla dużych firm.'
-      : 'CV of Łukasz Łusiak — a senior frontend engineer and architect specializing in Vue 3, Nuxt 3, and scalable enterprise applications.'
+      ? 'CV Łukasza Łusiaka — Senior Frontend Engineer z ponad 8-letnim doświadczeniem. Vue 3, Nuxt 3 i TypeScript.'
+      : 'CV of Łukasz Łusiak — Senior Frontend Engineer working with Vue 3, Nuxt 3, and TypeScript.'
 })
 </script>
 

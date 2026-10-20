@@ -16,10 +16,10 @@ const props = {
     'Senior Frontend Engineer z ponad 8-letnim doświadczeniem w projektowaniu i wdrażaniu skalowalnych aplikacji webowych.',
   education: [
     {
-      dateEnd: '2018',
-      dateStart: '2014',
-      degree: 'Inżynieria Oprogramowania',
-      school: 'Wyższa Szkoła Bankowa w Gdańsku'
+      dateEnd: '2006',
+      dateStart: '2002',
+      degree: 'Technik informatyk — systemy i sieci komputerowe',
+      school: 'Centrum Edukacji w Zabrzu'
     }
   ],
   experienceList: [
@@ -29,15 +29,15 @@ const props = {
       description: 'Kieruję architekturą frontendu.',
       descriptionList: ['Decyzje architektoniczne', 'AI-assisted code review'],
       icon: 'i-lucide-briefcase-business',
-      title: 'Senior Frontend Developer · ithouse.co'
+      title: 'Senior Frontend Engineer · ithouse.co'
     }
   ],
   experienceTitle: 'Doświadczenie',
   heroDescription: 'Opis profilu',
-  heroHeadline: 'ARCHITEKT FRONTENDU — OTWARTY NA WYZWANIA',
+  heroHeadline: 'SENIOR FRONTEND ENGINEER — OTWARTY NA WYZWANIA',
   languages: [
     { level: 'Ojczysty', name: 'Polski' },
-    { level: 'Biegły (C1)', name: 'Angielski' }
+    { level: 'B2', name: 'Angielski' }
   ],
   projectsList: [
     {
@@ -65,7 +65,7 @@ describe('CvSheet', () => {
     const text = component.text()
 
     expect(text).toContain('Łukasz Łusiak')
-    expect(text).toContain('Senior Frontend Engineer & Architect')
+    expect(text).toContain('Senior Frontend Engineer')
   })
 
   it('renders contact details and links', async () => {
@@ -81,7 +81,7 @@ describe('CvSheet', () => {
     const component = await mountSuspended(CvSheet, { props })
     const text = component.text()
 
-    expect(text).toContain('Senior Frontend Developer · ithouse.co')
+    expect(text).toContain('Senior Frontend Engineer · ithouse.co')
     expect(text).toContain('Decyzje architektoniczne')
     expect(text).toContain('HomeKeeper')
     expect(text).toContain('TypeScript')
@@ -92,7 +92,7 @@ describe('CvSheet', () => {
     const text = component.text()
 
     expect(text).toContain('Polski')
-    expect(text).toContain('Inżynieria Oprogramowania')
+    expect(text).toContain('Technik informatyk')
     expect(text).toContain('Wyrażam zgodę na przetwarzanie moich danych osobowych.')
   })
 })
