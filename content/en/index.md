@@ -3,7 +3,7 @@
 careerContext: |
   Łukasz Łusiak is a Senior Frontend Engineer with more than eight years of experience building web applications for businesses and the public sector. He works primarily with Vue, Nuxt, and TypeScript. His work also covers frontend architecture, performance, and accessibility.
 
-  Since January 2024, he has worked at ithouse.co. He develops public-sector applications, helps design frontend structure, introduces Playwright E2E tests, and improves code review with AI assistance.
+  Since January 2024, he has worked at ithouse.co. He develops public-sector applications, contributes to frontend architecture, introduces Playwright E2E tests, and improves code review with AI assistance.
 
   From 2019 to 2024, he worked at Cloudflight as a Senior Frontend Developer and Team Lead. He led a five-person team, built Angular, RxJS, and NgRx applications with SAP integrations, and helped create a Storybook-based design system. He supported the onboarding and development of more than 10 engineers.
 
@@ -13,7 +13,7 @@ careerContext: |
 
   He is based in Wrocław, Poland, and is open to remote work. Contact: lukaslusiak.business@outlook.com, GitHub: github.com/luklus, LinkedIn: linkedin.com/in/łukasz-łusiak-58868215b.
 
-heroDescription: 'I have spent more than eight years building web applications. I work mainly with Vue, Nuxt, and TypeScript. I design frontend structure, improve performance and accessibility, and help teams keep their code maintainable.'
+heroDescription: 'I have spent more than eight years building web applications. I work mainly with Vue, Nuxt, and TypeScript. I design frontend architecture, improve performance and accessibility, and help teams keep the code maintainable.'
 heroHeadline: 'SENIOR FRONTEND ENGINEER — OPEN TO NEW OPPORTUNITIES'
 heroTitle: 'I build and improve web applications with Vue and Nuxt.'
 
@@ -41,12 +41,12 @@ experienceTitle: 'Experience'
 experienceList:
   - dateStart: '01.2024'
     dateEnd: 'Present'
-    description: 'I develop public-sector applications, help design their frontend, and improve team workflows.'
+    description: 'I develop public-sector applications, contribute to frontend architecture, and improve engineering practices through testing and code review.'
     descriptionList:
       - 'Designed and developed modular frontends with Vue 3, Nuxt 3, and TypeScript for public-sector applications.'
       - 'Introduced Playwright E2E tests and used AI to support code review.'
       - 'Improved frontend performance and accessibility and worked with the team on security requirements.'
-      - 'Contributed to technical decisions, documented agreements, and supported other engineers on the team.'
+      - 'Selected technologies with the team, documented architecture decisions in ADRs, and mentored other engineers.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Engineer · ithouse.co'
   - dateStart: '03.2019'
@@ -54,14 +54,14 @@ experienceList:
     description: 'Led a five-person frontend team and developed business applications and a company design system.'
     descriptionList:
       - 'Led a five-person frontend team, planned work, estimated tasks, and maintained code quality.'
-      - 'Designed frontend structure and developed multi-module applications with Angular, RxJS, and NgRx, integrating them with SAP ERP systems.'
+      - 'Designed frontend architecture and developed multi-module applications with Angular, RxJS, and NgRx, integrating them with SAP ERP systems.'
       - 'Helped build a company design system with reusable components and Storybook documentation.'
       - 'Conducted technical interviews and workshops and supported the onboarding and growth of more than 10 engineers.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Developer · Team Lead · Cloudflight'
   - dateStart: '01.2018'
     dateEnd: '02.2019'
-    description: 'Engineered and maintained client-facing web applications across the full lifecycle for global enterprise clients.'
+    description: 'Developed web applications for international clients.'
     descriptionList:
       - 'Developed responsive single-page and server-rendered web applications with Vue.js and Nuxt.js, integrated with REST APIs.'
       - 'Worked with UX/UI designers and backend engineers in Scrum, implementing designs accurately and meeting WCAG accessibility guidelines.'
@@ -90,10 +90,10 @@ skillsList:
     items:
       [
         'SSR / SSG',
-        'Frontend architecture design',
+        'Frontend architecture',
         'Design Systems',
         'Core Web Vitals',
-        'Technical decisions (ADRs)'
+        'Architecture Decision Records (ADRs)'
       ]
   - header: 'State Management & APIs'
     highlighted: ['Pinia', 'REST API']
@@ -125,7 +125,7 @@ skillsList:
     items: ['Figma', 'UX/UI Design', 'Design Tokens', 'WCAG 2.1 AA / Accessibility (A11y)']
   - header: 'AI in Software Development'
     highlighted: ['AI-Assisted Development']
-    items: ['AI-Assisted Development', 'Automated Code Review']
+    items: ['AI-Assisted Development', 'AI-assisted code review']
 
 # Section: Projects
 projectsTitle: 'Featured Projects'
@@ -173,7 +173,7 @@ aiList:
   - label: '03'
     description: 'Implementation and Refactoring'
   - label: '04'
-    description: 'Automated Code Review'
+    description: 'AI-Assisted Code Review'
   - label: '05'
     description: 'Test Automation'
   - label: '06'
@@ -188,7 +188,7 @@ contactInfo:
   linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b'
   website: 'https://luklus.me'
 
-cvSummary: 'I am a Senior Frontend Engineer with more than eight years of experience developing web applications for businesses and the public sector. I work mainly with Vue 3, Nuxt 3, and TypeScript and also have experience with Angular and SAP integrations. I design frontend structure, improve performance and accessibility, and support teams through testing, code review, and documented technical decisions.'
+cvSummary: 'I am a Senior Frontend Engineer with more than eight years of experience developing web applications for businesses and the public sector. I work mainly with Vue 3, Nuxt 3, and TypeScript and also have experience with Angular and SAP integrations. I design frontend architecture, improve performance and accessibility, and support teams through testing, code review, and documented technical decisions.'
 
 languages:
   - name: 'Polish'

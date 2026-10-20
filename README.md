@@ -6,8 +6,8 @@ I build and improve web applications, with a focus on maintainable frontend arch
 
 ## Experience
 
-- **Senior Frontend Engineer · ithouse.co** (Jan 2024–present): I develop public-sector applications with Vue 3, Nuxt 3, and TypeScript. I help shape frontend structure, have introduced Playwright E2E tests, and support code review and technical decisions.
-- **Senior Frontend Developer · Team Lead · Cloudflight** (Mar 2019–Jan 2024): Led a five-person frontend team. I worked on Angular applications with SAP integrations, helped build a Storybook-based design system, and supported the development of other engineers.
+- **Senior Frontend Engineer · ithouse.co** (Jan 2024–present): I develop public-sector applications with Vue 3, Nuxt 3, and TypeScript. I contribute to frontend architecture, have introduced Playwright end-to-end tests, and support code reviews and technical decisions.
+- **Senior Frontend Developer · Team Lead · Cloudflight** (Mar 2019–Jan 2024): Led a five-person frontend team. I developed Angular applications integrated with SAP ERP, helped build a Storybook-based design system, and mentored other engineers.
 - **Frontend Developer · Atos** (Jan 2018–Feb 2019): Built single-page and server-rendered applications with Vue.js and Nuxt.js, integrated with REST APIs.
 
 ## Selected projects
@@ -22,7 +22,7 @@ I build and improve web applications, with a focus on maintainable frontend arch
 ## Skills
 
 - **Frontend:** Vue 3, Nuxt 3, TypeScript, JavaScript, Angular, HTML, CSS, Tailwind CSS
-- **Engineering:** frontend architecture, design systems, Core Web Vitals, accessibility, Playwright, Vitest, Storybook
+- **Architecture and quality:** frontend architecture, design systems, Core Web Vitals, accessibility, Playwright, Vitest, Storybook
 - **Integrations:** REST APIs, SAP, Supabase
 - **Languages:** Polish (native), English (B2)
 

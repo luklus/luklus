@@ -3,7 +3,7 @@
 careerContext: |
   Łukasz Łusiak pracuje jako Senior Frontend Engineer i ma ponad osiem lat doświadczenia w tworzeniu aplikacji webowych dla firm i sektora publicznego. Pracuje głównie z Vue, Nuxt i TypeScript. Zajmuje się także architekturą frontendu, wydajnością i dostępnością.
 
-  Od stycznia 2024 roku pracuje w ithouse.co. Rozwija aplikacje dla sektora publicznego, współprojektuje strukturę frontendu, wprowadza testy E2E w Playwright i usprawnia przegląd kodu z pomocą AI.
+  Od stycznia 2024 roku pracuje w ithouse.co. Rozwija aplikacje dla sektora publicznego, współprojektuje architekturę frontendu, wprowadza testy E2E w Playwright i usprawnia przegląd kodu z pomocą AI.
 
   W latach 2019–2024 pracował w Cloudflight jako Senior Frontend Developer i Team Lead. Prowadził pięcioosobowy zespół, rozwijał aplikacje w Angularze, RxJS i NgRx z integracjami SAP oraz współtworzył design system oparty na Storybooku. Wspierał wdrażanie i rozwój ponad 10 programistów.
 
@@ -13,7 +13,7 @@ careerContext: |
 
   Mieszka we Wrocławiu i jest otwarty na pracę zdalną. Kontakt: lukaslusiak.business@outlook.com, GitHub: github.com/luklus, LinkedIn: linkedin.com/in/łukasz-łusiak-58868215b.
 
-heroDescription: 'Od ponad ośmiu lat rozwijam aplikacje webowe. Pracuję głównie z Vue, Nuxt i TypeScript. Projektuję strukturę frontendu, dbam o wydajność i dostępność oraz pomagam zespołom utrzymywać czytelny kod.'
+heroDescription: 'Od ponad ośmiu lat rozwijam aplikacje webowe. Pracuję głównie z Vue, Nuxt i TypeScript. Projektuję architekturę frontendu, dbam o wydajność i dostępność oraz pomagam zespołom utrzymywać czytelny kod.'
 heroHeadline: 'SENIOR FRONTEND ENGINEER — OTWARTY NA WSPÓŁPRACĘ'
 heroTitle: 'Tworzę i rozwijam aplikacje webowe w Vue i Nuxt.'
 
@@ -41,12 +41,12 @@ experienceTitle: 'Doświadczenie'
 experienceList:
   - dateStart: '01.2024'
     dateEnd: 'Obecnie'
-    description: 'Rozwijam aplikacje dla sektora publicznego, współprojektuję frontend i usprawniam pracę zespołu.'
+    description: 'Rozwijam aplikacje dla sektora publicznego, współprojektuję architekturę frontendu i usprawniam procesy testowania oraz przeglądu kodu.'
     descriptionList:
       - 'Projektowanie i rozwój modułowego frontendu w Vue 3, Nuxt 3 i TypeScript dla aplikacji sektora publicznego.'
       - 'Wdrożenie testów E2E w Playwright i wykorzystanie AI do wsparcia przeglądu kodu.'
       - 'Optymalizacja wydajności i dostępności interfejsów oraz współpraca przy spełnianiu wymagań bezpieczeństwa.'
-      - 'Udział w decyzjach technicznych, dokumentowanie ustaleń i wspieranie innych programistów w zespole.'
+      - 'Dobór technologii, dokumentowanie decyzji architektonicznych (ADR) i mentoring w zespole.'
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Engineer · ithouse.co'
   - dateStart: '03.2019'
@@ -61,7 +61,7 @@ experienceList:
     title: 'Senior Frontend Developer · Team Lead · Cloudflight'
   - dateStart: '01.2018'
     dateEnd: '02.2019'
-    description: 'Tworzyłem i utrzymywałem aplikacje webowe dla międzynarodowych firm, uczestnicząc we wszystkich etapach prac nad oprogramowaniem.'
+    description: 'Tworzyłem aplikacje webowe dla międzynarodowych klientów.'
     descriptionList:
       - 'Rozwój responsywnych aplikacji SPA i aplikacji renderowanych po stronie serwera (SSR) w Vue.js i Nuxt.js oraz integracja z REST API.'
       - 'Współpraca z projektantami UX/UI i zespołem backendowym w Scrumie — dbanie o zgodność z projektami graficznymi i wytycznymi WCAG.'
@@ -93,7 +93,7 @@ skillsList:
         'Projektowanie architektury frontendu',
         'Design systems',
         'Core Web Vitals',
-        'Decyzje techniczne (ADR)'
+        'Dokumentowanie decyzji architektonicznych (ADR)'
       ]
   - header: 'Zarządzanie stanem i API'
     highlighted: ['Pinia', 'REST API']
@@ -125,7 +125,7 @@ skillsList:
     items: ['Figma', 'Projektowanie UX/UI', 'Design tokens', 'Dostępność / WCAG 2.1 AA']
   - header: 'AI w pracy programisty'
     highlighted: ['Programowanie z pomocą AI']
-    items: ['Programowanie z pomocą AI', 'Automatyczny przegląd kodu']
+    items: ['Programowanie z pomocą AI', 'Przegląd kodu wspierany przez AI']
 
 # Section: Projects
 projectsTitle: 'Wybrane projekty'
@@ -173,7 +173,7 @@ aiList:
   - label: '03'
     description: 'Implementacja i refaktoryzacja'
   - label: '04'
-    description: 'Automatyczny przegląd kodu'
+    description: 'Przegląd kodu wspierany przez AI'
   - label: '05'
     description: 'Automatyzacja testów'
   - label: '06'
@@ -188,7 +188,7 @@ contactInfo:
   linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b'
   website: 'https://luklus.me'
 
-cvSummary: 'Jako Senior Frontend Engineer mam ponad osiem lat doświadczenia w rozwijaniu aplikacji webowych dla firm i sektora publicznego. Pracuję głównie z Vue 3, Nuxt 3 i TypeScript; mam też doświadczenie z Angularem i integracjami SAP. Projektuję strukturę frontendu, dbam o wydajność i dostępność oraz wspieram zespoły przez testy, przegląd kodu i dokumentowanie decyzji.'
+cvSummary: 'Jako Senior Frontend Engineer mam ponad osiem lat doświadczenia w rozwijaniu aplikacji webowych dla firm i sektora publicznego. Pracuję głównie z Vue 3, Nuxt 3 i TypeScript; mam też doświadczenie z Angularem i integracjami SAP. Projektuję architekturę frontendu, dbam o wydajność i dostępność oraz wspieram zespoły poprzez testy, przegląd kodu i dokumentowanie decyzji.'
 
 languages:
   - name: 'Polski'
