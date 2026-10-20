@@ -101,7 +101,9 @@ const localePath = useLocalePath()
     >
       <div class="space-y-6">
         <!-- CV Header -->
-        <header class="border-b border-zinc-200 pb-4 dark:border-zinc-800 print:border-zinc-300">
+        <header
+          class="border-t-4 border-b border-zinc-200 border-t-emerald-700 bg-white p-4 dark:border-zinc-800 dark:border-t-emerald-500 dark:bg-zinc-900 print:border-zinc-300 print:border-t-emerald-700 print:bg-white print:p-3"
+        >
           <!-- Top Row: Full-width Identity & Role Badge -->
           <div class="flex flex-wrap items-center justify-between gap-3">
             <div class="space-y-0.5">
@@ -112,19 +114,14 @@ const localePath = useLocalePath()
                   Łukasz Łusiak
                 </h1>
                 <span
-                  class="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-0.5 font-mono text-[11px] font-medium text-emerald-700 dark:text-emerald-400 print:border-zinc-400 print:bg-zinc-100 print:text-zinc-800"
+                  class="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-0.5 font-mono text-[11px] font-medium text-emerald-700 dark:text-emerald-400 print:border-emerald-600/40 print:bg-emerald-100 print:text-emerald-900"
                 >
-                  <span class="size-1.5 rounded-full bg-emerald-500 print:bg-zinc-700"></span>
+                  <span class="size-1.5 rounded-full bg-emerald-500 print:bg-emerald-700"></span>
                   <span class="whitespace-nowrap">{{
                     heroHeadline ? heroHeadline.split('—')[0]?.trim() : 'SENIOR FRONTEND ENGINEER'
                   }}</span>
                 </span>
               </div>
-              <p
-                class="font-mono text-xs font-semibold text-zinc-600 sm:text-sm dark:text-zinc-400 print:text-xs print:text-zinc-700"
-              >
-                {{ $t('professionalRole') }}
-              </p>
             </div>
           </div>
 
@@ -222,7 +219,7 @@ const localePath = useLocalePath()
 
         <!-- Executive Summary -->
         <section
-          class="rounded-xl border border-zinc-200/80 bg-zinc-50/50 p-4 dark:border-zinc-800/80 dark:bg-zinc-800/20 print:border-zinc-300 print:bg-zinc-50/60 print:p-3.5"
+          class="cv-summary rounded-xl border border-zinc-200/80 bg-zinc-50/50 p-4 dark:border-zinc-800/80 dark:bg-zinc-800/20 print:border-emerald-200 print:bg-emerald-50/40 print:p-3.5"
         >
           <div
             class="mb-1 flex items-center gap-1.5 font-mono text-[11px] font-semibold text-zinc-800 uppercase dark:text-zinc-200 print:text-zinc-900"
@@ -575,8 +572,8 @@ const localePath = useLocalePath()
   .cv-page {
     box-shadow: none !important;
     border: none !important;
-    width: 100% !important;
-    max-width: 100% !important;
+    width: calc(100% - 1mm) !important;
+    max-width: calc(100% - 1mm) !important;
     margin: 0 !important;
     padding: 0 !important;
     min-height: 265mm !important;

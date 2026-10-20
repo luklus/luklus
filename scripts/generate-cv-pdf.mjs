@@ -3,6 +3,7 @@ import { mkdir } from 'node:fs/promises'
 import { createServer } from 'node:net'
 import { basename, dirname, resolve } from 'node:path'
 import process from 'node:process'
+import { fileURLToPath } from 'node:url'
 
 import { chromium } from 'playwright-core'
 
@@ -86,20 +87,21 @@ async function getAvailablePort() {
 }
 
 function startNuxt(port) {
-  const pnpmCli = process.env.npm_execpath
-  const command = pnpmCli ? process.execPath : process.platform === 'win32' ? 'pnpm.cmd' : 'pnpm'
-  const args = pnpmCli
-    ? [pnpmCli, 'exec', 'nuxt', 'dev', '--host', '127.0.0.1', '--port', String(port)]
-    : ['exec', 'nuxt', 'dev', '--host', '127.0.0.1', '--port', String(port)]
+  const nuxtCli = fileURLToPath(new URL('../node_modules/nuxt/bin/nuxt.mjs', import.meta.url))
 
-  const child = spawn(command, args, {
-    cwd: process.cwd(),
-    env: {
-      ...process.env,
-      NO_COLOR: '1'
-    },
-    stdio: ['ignore', 'pipe', 'pipe']
-  })
+  const child = spawn(
+    process.execPath,
+    [nuxtCli, 'dev', '--host', '127.0.0.1', '--port', String(port)],
+    {
+      cwd: process.cwd(),
+      env: {
+        ...process.env,
+        NO_COLOR: '1',
+        NUXT_IGNORE_LOCK: '1'
+      },
+      stdio: ['ignore', 'pipe', 'pipe']
+    }
+  )
 
   let logs = ''
   const remember = (chunk) => {
@@ -111,6 +113,19 @@ function startNuxt(port) {
   child.getLogs = () => logs
 
   return child
+}
+
+async function launchBrowser() {
+  try {
+    return await chromium.launch({ headless: true })
+  } catch (error) {
+    if (!(error instanceof Error) || !error.message.includes("Executable doesn't exist")) {
+      throw error
+    }
+
+    // Playwright's bundled Chromium may be missing while Chrome is installed.
+    return chromium.launch({ channel: 'chrome', headless: true })
+  }
 }
 
 async function waitForApp(baseUrl, child) {
@@ -170,7 +185,7 @@ try {
   const cvPath = options.locale === 'pl' ? '/pl/cv' : '/cv'
   const cvUrl = new URL(cvPath, baseUrl).toString()
 
-  browser = await chromium.launch({ headless: true })
+  browser = await launchBrowser()
   const page = await browser.newPage({ colorScheme: 'light' })
   await page.emulateMedia({ colorScheme: 'light', media: 'print' })
   await page.goto(cvUrl, { waitUntil: 'networkidle', timeout: DEFAULT_TIMEOUT_MS })
