@@ -1,7 +1,7 @@
 ---
 # Section: Hero
 careerContext: |
-  Łukasz Łusiak is a Senior Frontend Engineer with more than eight years of experience building web applications for businesses and the public sector. He works primarily with Vue, Nuxt, and TypeScript. His work also covers frontend architecture, performance, and accessibility.
+  Łukasz Łusiak is a Senior Frontend Engineer with more than eight years of commercial experience building web applications for e-commerce and the public sector. He works primarily with Vue, Nuxt, and TypeScript and also has commercial React experience. His work covers frontend architecture, component libraries, testing, performance, and accessibility.
 
   Since January 2024, he has worked at ithouse.co. He develops public-sector applications, contributes to frontend architecture, introduces Playwright E2E tests, and improves code review with AI assistance.
 
@@ -13,9 +13,9 @@ careerContext: |
 
   He is based in Wrocław, Poland, and is open to remote work. Contact: lukaslusiak.business@outlook.com, GitHub: github.com/luklus, LinkedIn: linkedin.com/in/łukasz-łusiak-58868215b.
 
-heroDescription: 'I have spent more than eight years building web applications. I work mainly with Vue, Nuxt, and TypeScript. I design frontend architecture, improve performance and accessibility, and help teams keep the code maintainable.'
+heroDescription: 'I have spent more than eight years building applications for businesses and the public sector. I specialize in Vue, Nuxt, and TypeScript and have also worked with React, Next.js, and Angular. I improve performance and accessibility, introduce tests, review code, and document technical decisions.'
 heroHeadline: 'SENIOR FRONTEND ENGINEER — OPEN TO NEW OPPORTUNITIES'
-heroTitle: 'I build and improve web applications with Vue and Nuxt.'
+heroTitle: 'I design and develop web applications from architecture to deployment.'
 
 # Section: Approach
 approachDescription: 'I start by understanding the needs and requirements, then design the architecture and interface, develop the application, test it, and deploy it. Performance and code quality matter at every stage.'
@@ -139,6 +139,8 @@ skillsList:
   - header: 'AI in Software Development'
     highlighted: ['AI-Assisted Development']
     items: ['AI-Assisted Development', 'AI-assisted code review', 'Claude Code', 'Codex']
+  - header: 'JAMstack & Headless CMS'
+    items: ['JAMstack', 'Strapi', 'Prismic', 'Storyblok']
 
 # Section: Projects
 projectsTitle: 'Featured Projects'
@@ -201,7 +203,12 @@ contactInfo:
   linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b'
   website: 'https://luklus.me'
 
-cvSummary: 'I am a Senior Frontend Engineer with more than eight years of experience developing web applications for businesses and the public sector. I work mainly with Vue 3, Nuxt 3, and TypeScript and also have experience with Angular and SAP integrations. I design frontend architecture, improve performance and accessibility, and support teams through testing, code review, and documented technical decisions.'
+cvSummary: |-
+  Senior Frontend Engineer with 8+ years of commercial experience. I build scalable web applications for e-commerce and the public sector. I specialize in Vue 3, Nuxt, and TypeScript, with additional commercial experience in React, Next.js, and Angular.
+
+  Beyond feature implementation, I contribute to frontend architecture, reusable component libraries, design systems, code quality standards, testing strategies, accessibility (WCAG), performance, and technical decisions. I enjoy working on products from their architectural foundations through implementation and long-term development.
+
+  Core stack: Vue 3, Nuxt, TypeScript, React, Pinia, Vitest, Playwright, Storybook, Vite, REST. Open to Senior Frontend Engineer, Senior Frontend Developer, and frontend-focused Software Engineer roles.
 
 languages:
   - name: 'Polish'

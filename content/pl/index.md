@@ -1,7 +1,7 @@
 ---
 # Section: Hero
 careerContext: |
-  Łukasz Łusiak pracuje jako Senior Frontend Engineer i ma ponad osiem lat doświadczenia w tworzeniu aplikacji webowych dla firm i sektora publicznego. Pracuje głównie z Vue, Nuxt i TypeScript. Zajmuje się także architekturą frontendu, wydajnością i dostępnością.
+  Łukasz Łusiak pracuje jako Senior Frontend Engineer i ma ponad osiem lat doświadczenia komercyjnego w tworzeniu aplikacji webowych dla e-commerce i sektora publicznego. Pracuje głównie z Vue, Nuxt i TypeScript; ma też doświadczenie komercyjne z Reactem. Zajmuje się architekturą frontendu, bibliotekami komponentów, testami, wydajnością i dostępnością.
 
   Od stycznia 2024 roku pracuje w ithouse.co. Rozwija aplikacje dla sektora publicznego, współprojektuje architekturę frontendu, wprowadza testy E2E w Playwright i usprawnia przegląd kodu z pomocą AI.
 
@@ -13,9 +13,9 @@ careerContext: |
 
   Mieszka we Wrocławiu i jest otwarty na pracę zdalną. Kontakt: lukaslusiak.business@outlook.com, GitHub: github.com/luklus, LinkedIn: linkedin.com/in/łukasz-łusiak-58868215b.
 
-heroDescription: 'Od ponad ośmiu lat rozwijam aplikacje webowe. Pracuję głównie z Vue, Nuxt i TypeScript. Projektuję architekturę frontendu, dbam o wydajność i dostępność oraz pomagam zespołom utrzymywać czytelny kod.'
+heroDescription: 'Od ponad ośmiu lat rozwijam aplikacje dla firm i sektora publicznego. Specjalizuję się w Vue, Nuxt i TypeScript; pracowałem też z Reactem, Next.js i Angularem. Dbam o wydajność i dostępność. Wprowadzam testy, prowadzę przeglądy kodu i dokumentuję decyzje techniczne.'
 heroHeadline: 'SENIOR FRONTEND ENGINEER — OTWARTY NA WSPÓŁPRACĘ'
-heroTitle: 'Tworzę i rozwijam aplikacje webowe w Vue i Nuxt.'
+heroTitle: 'Projektuję i rozwijam aplikacje webowe od architektury po wdrożenie.'
 
 # Section: Approach
 approachDescription: 'Zaczynam od poznania potrzeb i analizy wymagań. Następnie projektuję architekturę i interfejs, rozwijam aplikację, testuję ją i wdrażam. Na każdym etapie dbam o wydajność i jakość kodu.'
@@ -139,6 +139,8 @@ skillsList:
   - header: 'AI w pracy programisty'
     highlighted: ['Programowanie z pomocą AI']
     items: ['Programowanie z pomocą AI', 'Przegląd kodu wspierany przez AI', 'Claude Code', 'Codex']
+  - header: 'JAMstack i headless CMS'
+    items: ['JAMstack', 'Strapi', 'Prismic', 'Storyblok']
 
 # Section: Projects
 projectsTitle: 'Wybrane projekty'
@@ -201,7 +203,12 @@ contactInfo:
   linkedin: 'https://linkedin.com/in/łukasz-łusiak-58868215b'
   website: 'https://luklus.me'
 
-cvSummary: 'Jako Senior Frontend Engineer mam ponad osiem lat doświadczenia w rozwijaniu aplikacji webowych dla firm i sektora publicznego. Pracuję głównie z Vue 3, Nuxt 3 i TypeScript; mam też doświadczenie z Angularem i integracjami SAP. Projektuję architekturę frontendu, dbam o wydajność i dostępność oraz wspieram zespoły poprzez testy, przegląd kodu i dokumentowanie decyzji.'
+cvSummary: |-
+  Senior Frontend Engineer z ponad 8-letnim doświadczeniem komercyjnym. Tworzę skalowalne aplikacje webowe dla e-commerce i sektora publicznego. Specjalizuję się w Vue 3, Nuxt i TypeScript; mam też doświadczenie komercyjne z Reactem, Next.js i Angularem.
+
+  Oprócz implementacji funkcji współtworzę architekturę frontendu, biblioteki komponentów i design systemy. Dbam o standardy kodu, strategię testów, dostępność (WCAG), wydajność i decyzje techniczne. Najchętniej pracuję nad produktem od decyzji architektonicznych po jego długoterminowy rozwój.
+
+  Stack: Vue 3, Nuxt, TypeScript, React, Pinia, Vitest, Playwright, Storybook, Vite, REST. Jestem otwarty na role Senior Frontend Engineer, Senior Frontend Developer i Software Engineer ze specjalizacją frontendową.
 
 languages:
   - name: 'Polski'

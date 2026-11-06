@@ -233,7 +233,7 @@ const localePath = useLocalePath()
             <span>{{ $t('summary') }}</span>
           </div>
           <p
-            class="text-xs leading-relaxed text-zinc-600 sm:text-sm dark:text-zinc-300 print:text-[11px] print:leading-relaxed print:text-zinc-800"
+            class="text-xs leading-relaxed whitespace-pre-line text-zinc-600 sm:text-sm dark:text-zinc-300 print:text-[11px] print:leading-relaxed print:text-zinc-800"
           >
             {{ cvSummary || heroDescription }}
           </p>
