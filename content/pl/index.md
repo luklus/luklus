@@ -103,6 +103,8 @@ skillsList:
         'Projektowanie architektury frontendu',
         'Design systems',
         'Core Web Vitals',
+        'Chrome DevTools',
+        'Lighthouse',
         'Dokumentowanie decyzji architektonicznych (ADR)'
       ]
   - header: 'Zarządzanie stanem i API'
@@ -118,6 +120,7 @@ skillsList:
         'Storybook',
         'ESLint / Prettier',
         'Git / GitHub Actions',
+        'Jira',
         'Webpack'
       ]
   - header: 'Backend i chmura'
@@ -135,7 +138,7 @@ skillsList:
     items: ['Figma', 'Projektowanie UX/UI', 'Design tokens', 'Dostępność / WCAG 2.1 AA']
   - header: 'AI w pracy programisty'
     highlighted: ['Programowanie z pomocą AI']
-    items: ['Programowanie z pomocą AI', 'Przegląd kodu wspierany przez AI']
+    items: ['Programowanie z pomocą AI', 'Przegląd kodu wspierany przez AI', 'Claude Code', 'Codex']
 
 # Section: Projects
 projectsTitle: 'Wybrane projekty'

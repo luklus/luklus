@@ -103,6 +103,8 @@ skillsList:
         'Frontend architecture',
         'Design Systems',
         'Core Web Vitals',
+        'Chrome DevTools',
+        'Lighthouse',
         'Architecture Decision Records (ADRs)'
       ]
   - header: 'State Management & APIs'
@@ -118,6 +120,7 @@ skillsList:
         'Storybook',
         'ESLint / Prettier',
         'Git / GitHub Actions',
+        'Jira',
         'Webpack'
       ]
   - header: 'Backend & Cloud'
@@ -135,7 +138,7 @@ skillsList:
     items: ['Figma', 'UX/UI Design', 'Design Tokens', 'WCAG 2.1 AA / Accessibility (A11y)']
   - header: 'AI in Software Development'
     highlighted: ['AI-Assisted Development']
-    items: ['AI-Assisted Development', 'AI-assisted code review']
+    items: ['AI-Assisted Development', 'AI-assisted code review', 'Claude Code', 'Codex']
 
 # Section: Projects
 projectsTitle: 'Featured Projects'

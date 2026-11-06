@@ -348,7 +348,7 @@ const localePath = useLocalePath()
     <article
       class="cv-page cv-page-2 mx-auto flex min-h-[297mm] max-w-[210mm] flex-col justify-between border border-zinc-200 bg-white p-8 text-zinc-900 shadow-xl transition-all sm:p-12 md:rounded-2xl dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-100 print:m-0 print:min-h-[265mm] print:max-w-none print:rounded-none print:border-none print:bg-white print:p-0 print:text-zinc-950 print:shadow-none"
     >
-      <div class="space-y-6 print:space-y-5">
+      <div class="space-y-6 print:space-y-4">
         <!-- Page 2 Mini Header -->
         <header
           class="flex items-center justify-between border-b border-zinc-200 pb-2.5 dark:border-zinc-800 print:border-zinc-300"
