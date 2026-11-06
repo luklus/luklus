@@ -43,10 +43,15 @@ experienceList:
     dateEnd: 'Present'
     description: 'I develop public-sector applications, contribute to frontend architecture, and improve engineering practices through testing and code review.'
     descriptionList:
-      - 'Designed and developed modular frontends with Vue 3, Nuxt 3, and TypeScript for public-sector applications.'
+      - 'Designed and developed modular frontends with Vue 3, Nuxt 3, and TypeScript for public-sector applications, including a Module Federation implementation.'
+      - 'Rewrote an application from Vue to React using Next.js.'
       - 'Introduced Playwright E2E tests and used AI to support code review.'
-      - 'Improved frontend performance and accessibility and worked with the team on security requirements.'
+      - 'Refactored legacy modules, improved interfaces in line with WCAG guidelines, and worked with the team on security requirements.'
+      - 'Worked with business analysis and UX teams on requirements — validating assumptions, evaluating possible solutions, and improving the product.'
       - 'Selected technologies with the team, documented architecture decisions in ADRs, and mentored other engineers.'
+    technologies:
+      ['Vue 3', 'Nuxt 3', 'TypeScript', 'React', 'Next.js', 'Module Federation', 'Playwright']
+    skills: ['Frontend architecture', 'Refactoring', 'WCAG', 'Requirements analysis', 'Mentoring']
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Engineer · ithouse.co'
   - dateStart: '03.2019'
@@ -54,9 +59,12 @@ experienceList:
     description: 'Led a five-person frontend team and developed business applications and a company design system.'
     descriptionList:
       - 'Led a five-person frontend team, planned work, estimated tasks, and maintained code quality.'
-      - 'Designed frontend architecture and developed multi-module applications with Angular, RxJS, and NgRx, integrating them with SAP ERP systems.'
+      - 'Designed frontend architecture and developed multi-module e-commerce applications with Angular, RxJS, and NgRx, including Spartacus storefronts integrated with SAP Commerce Cloud and SAP ERP systems.'
       - 'Helped build a company design system with reusable components and Storybook documentation.'
       - 'Conducted technical interviews and workshops and supported the onboarding and growth of more than 10 engineers.'
+    technologies:
+      ['Angular', 'RxJS', 'NgRx', 'Spartacus', 'SAP Commerce Cloud', 'SAP ERP', 'Storybook']
+    skills: ['Team leadership', 'Frontend architecture', 'Design systems', 'Mentoring']
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Developer · Team Lead · Cloudflight'
   - dateStart: '01.2018'
@@ -66,6 +74,8 @@ experienceList:
       - 'Developed responsive single-page and server-rendered web applications with Vue.js and Nuxt.js, integrated with REST APIs.'
       - 'Worked with UX/UI designers and backend engineers in Scrum, implementing designs accurately and meeting WCAG accessibility guidelines.'
       - 'Reduced bundle sizes, improved asset loading, and wrote Jest unit tests.'
+    technologies: ['Vue.js', 'Nuxt.js', 'REST API', 'Jest']
+    skills: ['SSR', 'WCAG', 'Performance optimization', 'UX/UI collaboration']
     icon: 'i-lucide-briefcase-business'
     title: 'Frontend Developer · Atos'
 
@@ -131,7 +141,7 @@ skillsList:
 projectsTitle: 'Featured Projects'
 projectsList:
   - title: 'HomeKeeper · Home Management Platform'
-    description: 'Comprehensive home-management SaaS platform featuring warranty records, maintenance schedules, utility meter readings, tasks, and household budgeting. Designed and built from the ground up with Nuxt 3, Vue 3, Supabase, and Tailwind CSS.'
+    description: 'Home management SaaS I designed and built from scratch, covering warranties, maintenance, utility meters, tasks, and budgeting.'
     image: '/images/homekeeper.webp'
     to: 'https://gethomekeeper.app/'
     badges:
@@ -145,8 +155,8 @@ projectsList:
     to: 'https://zielinskiart.pl/'
     badges:
       - 'Client Project'
-      - 'Portfolio Website'
-      - 'Nuxt 3 · Tailwind CSS'
+      - 'Portfolio'
+      - 'Nuxt 3 · Tailwind'
   - title: 'Auto TIP · Automotive Repair Service'
     description: 'Website for an automotive repair shop with more than 30 years of experience. I focused on local SEO, fast loading, and clear presentation of its services.'
     to: 'https://autotip.pl/'

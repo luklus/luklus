@@ -23,6 +23,8 @@ const commonSchema = z.object({
       dateEnd: z.string(),
       description: z.string(),
       descriptionList: z.array(z.string()).optional(),
+      technologies: z.array(z.string()),
+      skills: z.array(z.string()),
       icon: z.string(),
       title: z.string()
     })

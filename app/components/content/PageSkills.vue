@@ -17,11 +17,20 @@ const { list = [], title } = defineProps<{
     class="bg-muted py-16"
   >
     <UContainer>
-      <UPageHeader class="mb-8">
+      <UPageHeader class="mb-3">
         <template #title>
           <span class="text-success font-mono text-sm">03 /</span> {{ title }}
         </template>
       </UPageHeader>
+
+      <p class="text-muted mb-8 text-sm">
+        <span
+          class="text-rose-600"
+          aria-hidden="true"
+          >♥</span
+        >
+        {{ $t('favoriteSkillsLegend') }}
+      </p>
 
       <UPageGrid>
         <section
@@ -34,15 +43,16 @@ const { list = [], title } = defineProps<{
             <UBadge
               v-for="item in section.items"
               :key="`${section.header}-${item}`"
-              :class="section.highlighted?.includes(item) ? 'ring-success ring-1' : ''"
-              :color="section.highlighted?.includes(item) ? 'success' : 'neutral'"
+              color="neutral"
               size="lg"
               variant="subtle"
             >
               <span
                 v-if="section.highlighted?.includes(item)"
-                class="mr-1 size-1.5 rounded-full bg-emerald-500"
-              />
+                class="mr-1 text-rose-600"
+                aria-hidden="true"
+                >♥</span
+              >
               {{ item }}
             </UBadge>
           </div>

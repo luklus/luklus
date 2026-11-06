@@ -43,10 +43,15 @@ experienceList:
     dateEnd: 'Obecnie'
     description: 'Rozwijam aplikacje dla sektora publicznego, współprojektuję architekturę frontendu i usprawniam procesy testowania oraz przeglądu kodu.'
     descriptionList:
-      - 'Projektowanie i rozwój modułowego frontendu w Vue 3, Nuxt 3 i TypeScript dla aplikacji sektora publicznego.'
+      - 'Projektowanie i rozwój modułowego frontendu w Vue 3, Nuxt 3 i TypeScript dla aplikacji sektora publicznego, w tym implementacja Module Federation.'
+      - 'Przepisanie aplikacji z Vue na React z wykorzystaniem Next.js.'
       - 'Wdrożenie testów E2E w Playwright i wykorzystanie AI do wsparcia przeglądu kodu.'
-      - 'Optymalizacja wydajności i dostępności interfejsów oraz współpraca przy spełnianiu wymagań bezpieczeństwa.'
+      - 'Refaktoryzacja starszych modułów, dostosowywanie interfejsów do wytycznych WCAG oraz współpraca przy spełnianiu wymagań bezpieczeństwa.'
+      - 'Współpraca z zespołami analitycznym i UX nad wymaganiami — weryfikacja założeń, ocena możliwych rozwiązań i doskonalenie produktu.'
       - 'Dobór technologii, dokumentowanie decyzji architektonicznych (ADR) i mentoring w zespole.'
+    technologies:
+      ['Vue 3', 'Nuxt 3', 'TypeScript', 'React', 'Next.js', 'Module Federation', 'Playwright']
+    skills: ['Architektura frontendu', 'Refaktoryzacja', 'WCAG', 'Analiza wymagań', 'Mentoring']
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Engineer · ithouse.co'
   - dateStart: '03.2019'
@@ -54,9 +59,12 @@ experienceList:
     description: 'Prowadziłem pięcioosobowy zespół frontendowy i rozwijałem aplikacje biznesowe oraz firmowy design system.'
     descriptionList:
       - 'Prowadzenie pięcioosobowego zespołu frontendowego, planowanie prac, szacowanie zadań i dbanie o jakość kodu.'
-      - 'Projektowanie architektury i rozwój wielomodułowych aplikacji biznesowych w Angularze, RxJS i NgRx, zintegrowanych z systemami ERP firmy SAP.'
+      - 'Projektowanie architektury i rozwój wielomodułowych aplikacji e-commerce w Angularze, RxJS i NgRx, w tym storefrontów opartych na Spartacusie i zintegrowanych z SAP Commerce Cloud oraz systemami ERP SAP.'
       - 'Współtworzenie firmowego design systemu z komponentami wielokrotnego użytku i dokumentacją w Storybooku.'
       - 'Prowadzenie rozmów technicznych i warsztatów oraz wspieranie wdrażania i rozwoju ponad 10 programistów.'
+    technologies:
+      ['Angular', 'RxJS', 'NgRx', 'Spartacus', 'SAP Commerce Cloud', 'SAP ERP', 'Storybook']
+    skills: ['Prowadzenie zespołu', 'Architektura frontendu', 'Design system', 'Mentoring']
     icon: 'i-lucide-briefcase-business'
     title: 'Senior Frontend Developer · Team Lead · Cloudflight'
   - dateStart: '01.2018'
@@ -66,6 +74,8 @@ experienceList:
       - 'Rozwój responsywnych aplikacji SPA i aplikacji renderowanych po stronie serwera (SSR) w Vue.js i Nuxt.js oraz integracja z REST API.'
       - 'Współpraca z projektantami UX/UI i zespołem backendowym w Scrumie — dbanie o zgodność z projektami graficznymi i wytycznymi WCAG.'
       - 'Optymalizacja rozmiaru aplikacji i ładowania zasobów oraz pisanie testów jednostkowych w Jest.'
+    technologies: ['Vue.js', 'Nuxt.js', 'REST API', 'Jest']
+    skills: ['SSR', 'WCAG', 'Optymalizacja wydajności', 'Współpraca UX/UI']
     icon: 'i-lucide-briefcase-business'
     title: 'Frontend Developer · Atos'
 
@@ -131,7 +141,7 @@ skillsList:
 projectsTitle: 'Wybrane projekty'
 projectsList:
   - title: 'HomeKeeper · System do zarządzania domem'
-    description: 'Autorska aplikacja SaaS do zarządzania domem: rejestr gwarancji, harmonogram przeglądów, odczyty liczników, zadania i budżet domowy. Zaprojektowana i wdrożona od podstaw z wykorzystaniem Nuxt 3, Vue 3, Supabase i Tailwind CSS.'
+    description: 'Autorska platforma SaaS do zarządzania domem: gwarancje, przeglądy, liczniki, zadania i budżet. Zaprojektowana i zbudowana od podstaw.'
     image: '/images/homekeeper.webp'
     to: 'https://gethomekeeper.app/'
     badges:
@@ -145,8 +155,8 @@ projectsList:
     to: 'https://zielinskiart.pl/'
     badges:
       - 'Projekt komercyjny'
-      - 'Strona portfolio'
-      - 'Nuxt 3 · Tailwind CSS'
+      - 'Portfolio'
+      - 'Nuxt 3 · Tailwind'
   - title: 'Auto TIP · Serwis samochodowy'
     description: 'Strona serwisu samochodowego z ponad 30-letnim doświadczeniem. Przy jej budowie zadbałem o lokalne SEO, szybkie ładowanie i czytelne przedstawienie usług.'
     to: 'https://autotip.pl/'

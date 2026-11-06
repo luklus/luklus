@@ -13,6 +13,8 @@ export type CvExperience = {
   dateStart: string
   description: string
   descriptionList?: string[]
+  technologies?: string[]
+  skills?: string[]
   icon?: string
   title: string
 }
@@ -288,6 +290,46 @@ const localePath = useLocalePath()
                   <span class="leading-snug">{{ point }}</span>
                 </li>
               </ul>
+
+              <div
+                v-if="exp.technologies?.length || exp.skills?.length"
+                class="mt-2 space-y-1 print:mt-1.5 print:space-y-0.5"
+              >
+                <div
+                  v-if="exp.technologies?.length"
+                  class="flex flex-wrap items-center gap-1"
+                >
+                  <span
+                    class="mr-1 font-mono text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 print:text-[9px] print:text-zinc-600"
+                  >
+                    {{ $t('experienceTechnologies') }}:
+                  </span>
+                  <span
+                    v-for="technology in exp.technologies"
+                    :key="`${exp.title}-${technology}`"
+                    class="rounded border border-zinc-200 bg-zinc-50 px-1.5 py-0.5 font-mono text-[10px] text-zinc-700 dark:border-zinc-700 dark:bg-zinc-800/50 dark:text-zinc-300 print:border-zinc-300 print:bg-white print:px-1 print:py-0 print:text-[9px] print:text-zinc-800"
+                  >
+                    {{ technology }}
+                  </span>
+                </div>
+                <div
+                  v-if="exp.skills?.length"
+                  class="flex flex-wrap items-center gap-1"
+                >
+                  <span
+                    class="mr-1 font-mono text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 print:text-[9px] print:text-zinc-600"
+                  >
+                    {{ $t('experienceSkills') }}:
+                  </span>
+                  <span
+                    v-for="skill in exp.skills"
+                    :key="`${exp.title}-${skill}`"
+                    class="rounded border border-zinc-200 bg-zinc-50 px-1.5 py-0.5 font-mono text-[10px] text-zinc-700 dark:border-zinc-700 dark:bg-zinc-800/50 dark:text-zinc-300 print:border-zinc-300 print:bg-white print:px-1 print:py-0 print:text-[9px] print:text-zinc-800"
+                  >
+                    {{ skill }}
+                  </span>
+                </div>
+              </div>
             </article>
           </div>
         </section>
@@ -306,7 +348,7 @@ const localePath = useLocalePath()
     <article
       class="cv-page cv-page-2 mx-auto flex min-h-[297mm] max-w-[210mm] flex-col justify-between border border-zinc-200 bg-white p-8 text-zinc-900 shadow-xl transition-all sm:p-12 md:rounded-2xl dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-100 print:m-0 print:min-h-[265mm] print:max-w-none print:rounded-none print:border-none print:bg-white print:p-0 print:text-zinc-950 print:shadow-none"
     >
-      <div class="space-y-6 print:space-y-3">
+      <div class="space-y-6 print:space-y-5">
         <!-- Page 2 Mini Header -->
         <header
           class="flex items-center justify-between border-b border-zinc-200 pb-2.5 dark:border-zinc-800 print:border-zinc-300"
@@ -394,6 +436,16 @@ const localePath = useLocalePath()
             >
               {{ skillsTitle || $t('skills') }}
             </h2>
+            <span
+              class="ml-auto font-mono text-[10px] text-zinc-600 dark:text-zinc-400 print:text-[9px] print:text-zinc-700"
+            >
+              <span
+                class="text-rose-600"
+                aria-hidden="true"
+                >♥</span
+              >
+              {{ $t('favoriteSkillsLegend') }}
+            </span>
           </div>
 
           <div
@@ -413,13 +465,14 @@ const localePath = useLocalePath()
                 <span
                   v-for="item in skillGroup.items"
                   :key="item"
-                  :class="[
-                    'rounded px-1.5 py-0.5 font-mono text-[9.5px]',
-                    skillGroup.highlighted?.includes(item)
-                      ? 'border border-emerald-500/40 bg-emerald-500/10 font-bold text-emerald-700 dark:border-emerald-500/50 dark:bg-emerald-500/15 dark:text-emerald-300 print:border-emerald-700 print:bg-emerald-50 print:text-emerald-900'
-                      : 'border border-zinc-200 bg-white text-zinc-700 dark:border-zinc-800 dark:bg-zinc-800/60 dark:text-zinc-300 print:border-zinc-300 print:bg-white print:text-zinc-900'
-                  ]"
+                  class="inline-flex items-center gap-1 rounded border border-zinc-200 bg-white px-1.5 py-0.5 font-mono text-[9.5px] text-zinc-700 dark:border-zinc-800 dark:bg-zinc-800/60 dark:text-zinc-300 print:border-zinc-300 print:bg-white print:text-zinc-900"
                 >
+                  <span
+                    v-if="skillGroup.highlighted?.includes(item)"
+                    class="text-rose-600"
+                    aria-hidden="true"
+                    >♥</span
+                  >
                   {{ item }}
                 </span>
               </div>
