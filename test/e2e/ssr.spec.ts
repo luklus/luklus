@@ -54,7 +54,7 @@ describe('home page (SSR)', { timeout: 300000 }, async () => {
   it('renders the hero content from the content collection', async () => {
     const html = await $fetch('/')
 
-    expect(html).toContain('I build and improve web applications with Vue and Nuxt.')
+    expect(html).toContain('I design and develop web applications from architecture to deployment.')
     expect(html).toContain('SENIOR FRONTEND ENGINEER — OPEN TO NEW OPPORTUNITIES')
   })
 
@@ -93,7 +93,9 @@ describe('home page (SSR)', { timeout: 300000 }, async () => {
   it('renders the Polish portfolio and CV translations', async () => {
     const portfolioHtml = await $fetch('/pl')
 
-    expect(portfolioHtml).toContain('Tworzę i rozwijam aplikacje webowe w Vue i Nuxt.')
+    expect(portfolioHtml).toContain(
+      'Projektuję i rozwijam aplikacje webowe od architektury po wdrożenie.'
+    )
     expect(portfolioHtml).toContain('SENIOR FRONTEND ENGINEER — OTWARTY NA WSPÓŁPRACĘ')
 
     const cvResponse = await fetch('/pl/cv')
@@ -101,6 +103,6 @@ describe('home page (SSR)', { timeout: 300000 }, async () => {
 
     const cvHtml = await cvResponse.text()
     expect(cvHtml).toContain('Senior Frontend Engineer')
-    expect(cvHtml).toContain('Profil zawodowy')
+    expect(cvHtml).toContain('O mnie')
   })
 })
